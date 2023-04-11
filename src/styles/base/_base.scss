@@ -1,0 +1,11 @@
+@use '../utils/mixins' as mix;
+@use '../utils/variables' as vars;
+@use '../utils/functions' as fn;
+
+.container {
+  width: 100%;
+  max-width: calc(vars.$container + (vars.$padding * 2));
+  margin: 0 auto;
+  padding-right: vars.$padding;
+  padding-left: vars.$padding;
+}
