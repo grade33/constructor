@@ -1,5 +1,6 @@
 block vars
-  - const name = 'main'
+  - const cssName = 'main'
+  - const jsName = false
 
 
 doctype html
@@ -8,7 +9,8 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(rel="stylesheet", href=`./assets/styles/${name}.css`)
-    script(defer src=`./assets/scripts/${name}.js`)
+    link(rel="stylesheet", href=`./assets/styles/${cssName}.css`)
+    if jsName
+      script(defer src=`./assets/scripts/${jsName}.js`)
   body
     block content

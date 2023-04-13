@@ -1,0 +1,59 @@
+@use '../utils/mixins' as mix;
+@use '../utils/variables' as vars;
+@use '../utils/functions' as fn;
+
+.btn {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  width: fit-content;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  border-radius: 10px;
+
+  &_small {
+    @include mix.button-small;
+  }
+
+  &_medium {
+    padding: 10px 24px;
+
+    @include mix.button-medium;
+  }
+
+  &_large {
+    padding: 14px 32px;
+
+    @include mix.button-large;
+
+    @media (max-width: vars.$md) {
+      padding: 10px 24px;
+
+      @include mix.button-medium;
+    }
+  }
+
+  &_white {
+    color: var(--black);
+    background: var(--white);
+    border-color: var(--white);
+  }
+
+  &_black {
+    color: var(--white);
+    background: var(--black);
+    border-color: var(--black);
+  }
+
+  &_trs {
+    &-black {
+      color: var(--black);
+      border-color: var(--black);
+    }
+
+    &-white {
+      color: var(--white);
+      border-color: var(--white);
+    }
+  }
+}

@@ -1,0 +1,82 @@
+//  Base
+@use 'normalize.css/normalize.css';
+@use '../base/reset';
+
+// Partials
+@use '../base/base';
+@use '../base/typography';
+@use '../partials/buttons';
+
+// Utils
+@use '../utils/mixins' as mix;
+@use '../utils/variables' as vars;
+@use '../utils/functions' as fn;
+
+.hero {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(20, 48);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(20, 48);
+
+    @media (max-width: vars.$md) {
+      order: 3;
+    }
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(12, 20);
+  }
+
+  &__title {
+    @include mix.h1;
+
+    max-width: 1024px;
+  }
+
+  &__desc {
+    max-width: 640px;
+    opacity: 0.5;
+
+    @include mix.p20;
+
+    @media (max-width: vars.$md) {
+      @include mix.p18;
+    }
+  }
+
+  &__btn {
+    &-block {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    &-icon {
+      width: fn.cmin(20, 24);
+      height: fn.cmin(20, 24);
+    }
+  }
+
+  &__poster {
+    &-wrap {
+      width: 100%;
+    }
+
+    width: 100%;
+    border-radius: fn.cmin(12, 20);
+
+    @include mix.ratio(1290, 516);
+
+    @media (max-width: vars.$md) {
+      @include mix.ratio(328, 240);
+    }
+  }
+}

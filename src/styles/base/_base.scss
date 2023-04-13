@@ -2,6 +2,21 @@
 @use '../utils/variables' as vars;
 @use '../utils/functions' as fn;
 
+.block {
+  @include mix.p18;
+
+  color: var(--black);
+
+  &_dark {
+    color: var(--white);
+    background: var(--black);
+  }
+}
+
+.section {
+  padding: fn.cmin(40,100) 0;
+}
+
 .container {
   width: 100%;
   max-width: calc(vars.$container + (vars.$padding * 2));

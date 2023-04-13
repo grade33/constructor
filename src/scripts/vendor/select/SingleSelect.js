@@ -10,7 +10,7 @@ export class SingleSelect {
 
     this.#initializeStructure();
 
-    document.addEventListener('click', this.toggleSelect.bind(this));
+    this.customSelect.addEventListener('click', this.toggleSelect.bind(this));
     this.optionsCollection.forEach((option) => {
       option.addEventListener('click', this.changeOption.bind(this, option));
     });
@@ -18,10 +18,11 @@ export class SingleSelect {
 
   toggleSelect(event) {
     if (!this.selectHead.contains(event.target)) {
-      this.customSelect.classList.toggle('is-open', false);
+      this.customSelect.classList.remove('is-open');
       return;
     }
-
+    
+    event.preventDefault();
     this.customSelect.classList.toggle('is-open');
   }
 
@@ -48,30 +49,34 @@ export class SingleSelect {
     this.selectBody.classList.add('select__body');
     this.customSelect.append(this.selectBody);
 
-    this.optionsCollection = Array.from(this.originalSelect.querySelectorAll('option')).map((optionEl, index) => {
+    this.optionsCollection = Array.from(this.originalSelect.children).map((optionEl, index) => {
       const newOptionEl = document.createElement('div');
-      
+
       optionEl.getAttributeNames().forEach((attr) => {
-        if (attr === 'value') return;
         newOptionEl.setAttribute(attr, optionEl.getAttribute(attr));
       });
-      
+
       newOptionEl.classList.add('select__option', 'select__option_body');
 
-      newOptionEl.textContent = optionEl.textContent;
-      newOptionEl.dataset.value = optionEl.value;
+      newOptionEl.innerHTML = optionEl.innerHTML;
       newOptionEl.dataset.id = index + 1;
 
       this.selectBody.append(newOptionEl);
       return newOptionEl;
     });
 
-    const firstOption = this.optionsCollection[0].cloneNode(true);
+    const placeholderOption =
+      this.optionsCollection.find((opt) => !opt.dataset.value) || this.optionsCollection[0].cloneNode(true);
     this.optionsCollection[0].classList.add('is-selected');
-    firstOption.classList.replace('select__option_body', 'select__option_head');
-    this.currentHeadOption = firstOption;
+    placeholderOption.classList.replace('select__option_body', 'select__option_head');
+    this.currentHeadOption = placeholderOption.cloneNode(true);
     this.selectHead.append(this.currentHeadOption);
+    placeholderOption.remove()
 
     this.originalSelect.replaceWith(this.customSelect);
+
+    const widthCol = this.optionsCollection.map((opt) => opt.scrollWidth);
+    const maxWidth = Math.max(...widthCol);
+    this.customSelect.style.width = `${maxWidth}px`;
   }
 }

@@ -24,9 +24,9 @@ exports.path = {
     resources: `${srcFolder}/assets/resources/**/*.*`,
   },
   watch: {
-    markup: `${srcFolder}/views/**/components/**/*.pug`,
-    styles: `${srcFolder}/styles/**/components/**/*.scss`,
-    scripts: `${srcFolder}/scripts/components/**/*.js`,
+    markup: `${srcFolder}/views/**/**/*.pug`,
+    styles: `${srcFolder}/styles/**/**/*.scss`,
+    scripts: `${srcFolder}/scripts/**/*.js`,
     images: `${srcFolder}/assets/img/**/*.*`,
     sprite: `${srcFolder}/assets/icons/**/*.*`,
     resources: `${srcFolder}/assets/resources/**/*.*`,

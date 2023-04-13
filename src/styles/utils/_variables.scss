@@ -18,11 +18,20 @@ $gutter: 30px;
 
 // Container
 :root {
+  --red: #e64646;
+  --green: #4bb34b;
+  --orange: #ffa000;
+  --grey: #979797;
+  --blue: #4594c0;
+  --white: #fff;
+  --light-blue: #e8eef1;
+  --light-blue-opacity-50: rgba(232, 238, 241, 50%);
+  --black: #222;
   --container: 1360px;
-  --padding: 40px;
+  --padding: 75px;
 
   @media (max-width: $xxl) {
-    --container: 1140px;
+    --container: 1290px;
     --padding: 30px;
   }
 
