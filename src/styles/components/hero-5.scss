@@ -113,16 +113,5 @@
     opacity: 0.5;
 
     @include mix.p20;
-
-    @media (max-width: vars.$md) {
-      @include mix.p16;
-    }
-  }
-
-  &__btn {
-    &-icon {
-      width: fn.cmin(20, 24);
-      height: fn.cmin(20, 24);
-    }
   }
 }

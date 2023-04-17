@@ -63,10 +63,10 @@
 
 @mixin h5 {
   font-weight: 500;
-  font-size: 20px;
+  font-size: fn.cmin(18, 20);
   font-family: Inter, sans-serif;
   font-style: normal;
-  line-height: 30px;
+  line-height: fn.cmin(28, 30);
   letter-spacing: -0.02em;
 }
 
@@ -80,10 +80,10 @@
 
 @mixin p20 {
   font-weight: 400;
-  font-size: 20px;
+  font-size: fn.cmin(18,20);
   font-family: Inter, sans-serif;
   font-style: normal;
-  line-height: 30px;
+  line-height: fn.cmin(26,30);
 }
 
 @mixin p18 {
@@ -134,7 +134,15 @@
   line-height: 18px;
 }
 
-@mixin button-large {
+@mixin btn-extralarge {
+  font-weight: 500;
+  font-size: 24px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  line-height: 32px;
+}
+
+@mixin btn-large {
   font-weight: 500;
   font-size: 18px;
   font-family: Inter, sans-serif;
@@ -142,7 +150,7 @@
   line-height: 24px;
 }
 
-@mixin button-medium {
+@mixin btn-medium {
   font-weight: 500;
   font-size: 16px;
   font-family: Inter, sans-serif;
@@ -151,7 +159,7 @@
   letter-spacing: -0.02em;
 }
 
-@mixin button-small {
+@mixin btn-small {
   font-weight: 500;
   font-size: 14px;
   font-family: Inter, sans-serif;

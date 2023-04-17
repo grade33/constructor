@@ -46,10 +46,6 @@
     opacity: 0.5;
 
     @include mix.p20;
-
-    @media (max-width: vars.$md) {
-      @include mix.p18;
-    }
   }
 
   &__btn {
@@ -57,11 +53,6 @@
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
-    }
-
-    &-icon {
-      width: fn.cmin(20, 24);
-      height: fn.cmin(20, 24);
     }
   }
 

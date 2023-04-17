@@ -1,0 +1,37 @@
+extends ../layouts/main
+
+block vars
+  - const cssName = 'benefits-8';
+  //- - const jsName = 'benefits-8';
+
+block content
+  // Добавить к block класс block_dark
+  section.benefits.section.block.block_dark
+    .benefits__container.container
+      .benefits__text-block 
+        .benefits__title-block 
+          span.benefits__subtitle Features
+          h2.benefits__title Cutting-edge features for advanced analytics
+        p.benefits__desc Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.
+      ul.row.benefits__list
+        li.col-4.col-lg-6.col-sm
+          .benefits__item 
+            picture.benefits__item-img-wrap
+              img.benefits__item-img(src="@/assets/img/benefits/benefit-8.jpg", alt="")
+            .benefits__item-text-block
+              h3.benefits__item-name Interior
+              p.benefits__item-desc An all-in-one customer service platform that helps you balance everything your customers need to be happy.
+        li.col-4.col-lg-6.col-sm
+          .benefits__item 
+            picture.benefits__item-img-wrap
+              img.benefits__item-img(src="@/assets/img/benefits/benefit-8.jpg", alt="")
+            .benefits__item-text-block
+              h3.benefits__item-name Cosiness
+              p.benefits__item-desc You can even sync designs from your cloud storage!
+        li.col-4.col-lg-6.col-sm
+          .benefits__item 
+            picture.benefits__item-img-wrap
+              img.benefits__item-img(src="@/assets/img/benefits/benefit-8.jpg", alt="")
+            .benefits__item-text-block
+              h3.benefits__item-name Comfort
+              p.benefits__item-desc An all-in-one customer service platform that helps you balance everything your customers need to be happy.
