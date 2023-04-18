@@ -6,9 +6,9 @@ new Swiper('.swiper', {
     prevEl: '.hero__slider-btn_prev',
     nextEl: '.hero__slider-btn_next',
   },
-  // autoplay: {
-  //   delay: 5000,
-  // },
+  autoplay: {
+    delay: 5000,
+  },
   speed: 1500,
   spaceBetween: 15,
   keyboard: true,

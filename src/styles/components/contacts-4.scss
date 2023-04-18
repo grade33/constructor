@@ -1,0 +1,78 @@
+//  Base
+@use 'normalize.css/normalize.css';
+@use '../base/reset';
+@use '../base/grid';
+
+// Partials
+@use '../base/base';
+@use '../base/typography';
+@use '../partials/buttons';
+
+// Utils
+@use '../utils/mixins' as mix;
+@use '../utils/variables' as vars;
+@use '../utils/functions' as fn;
+
+.contacts {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(32, 64);
+
+    @media (max-width: vars.$md) {
+      gap: 16px;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(12, 24);
+
+    @media (max-width: vars.$md) {
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(#222, 0.1);
+    }
+  }
+
+  &__title {
+    @include mix.h2;
+  }
+
+  &__heading {
+    @include mix.h4;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(12, 16);
+  }
+
+  &__item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    width: fit-content;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__text {
+    @include mix.p16;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    &_small {
+      @include mix.p14;
+
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

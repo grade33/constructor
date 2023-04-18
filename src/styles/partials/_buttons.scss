@@ -19,48 +19,32 @@
     }
   }
 
-  &_small {
-    @include mix.btn-small;
+  &_extralarge {
+    @include mix.btn-extralarge;
 
-    padding: 8px 16px;
-
-    .btn__icon {
-      width: 16px;
-      height: 16px;
-    }
-  }
-
-  &_medium {
-    @include mix.btn-medium;
-
-    padding: 10px 24px;
-
-    .btn__icon {
-      width: 20px;
-      height: 20px;
+    @media (max-width: vars.$md) {
+      @include mix.btn-large;
     }
   }
 
   &_large {
     @include mix.btn-large;
 
-    padding: 14px 32px;
-
-    .btn__icon {
-      width: 24px;
-      height: 24px;
+    @media (max-width: vars.$md) {
+      @include mix.btn-medium;
     }
   }
 
-  &_extralarge {
-    @include mix.btn-extralarge;
+  &_medium {
+    @include mix.btn-medium;
 
-    padding: 18px 48px;
-
-    .btn__icon {
-      width: 32px;
-      height: 32px;
+    @media (max-width: vars.$md) {
+      @include mix.btn-small;
     }
+  }
+
+  &_small {
+    @include mix.btn-small;
   }
 
   &_white {

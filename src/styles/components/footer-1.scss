@@ -1,0 +1,118 @@
+//  Base
+@use 'normalize.css/normalize.css';
+@use '../base/reset';
+@use '../base/grid';
+
+// Partials
+@use '../base/base';
+@use '../base/typography';
+@use '../partials/buttons';
+
+// Utils
+@use '../utils/mixins' as mix;
+@use '../utils/variables' as vars;
+@use '../utils/functions' as fn;
+
+.footer {
+  @include mix.p16;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(32, 64);
+  }
+
+  &__list {
+    row-gap: 32px;
+  }
+
+  &__item {
+    &-left {
+      margin-right: auto;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(16, 32);
+  }
+
+  &__desc {
+    opacity: 0.5;
+  }
+
+  &__nav-title,
+  &__contacts-title {
+    @include mix.p14;
+
+    display: inline-flex;
+    gap: 16px;
+    width: fit-content;
+    opacity: 0.5;
+
+    &_icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__nav-list,
+  &__contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(12, 16);
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(16, 24);
+  }
+
+  &__contacts {
+    &-block {
+      display: flex;
+      flex-direction: column;
+      gap: fn.cmin(24, 30);
+    }
+
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(20, 24);
+
+    &-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      @media (max-width: vars.$md) {
+        gap: 16px;
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 32px;
+    border-top: 1px solid rgba(#222, 0.1);
+
+    @media (max-width: vars.$md) {
+      padding-bottom: 32px;
+    }
+
+    & > * {
+      opacity: 0.5;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}

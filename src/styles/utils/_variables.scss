@@ -14,7 +14,6 @@ $md: $min-md - 0.02px;
 $sm: $min-sm - 0.02px;
 
 // Grid gutter
-$gutter: 30px;
 
 // Container
 :root {
@@ -27,8 +26,13 @@ $gutter: 30px;
   --light-blue: #e8eef1;
   --light-blue-opacity-50: rgba(232, 238, 241, 50%);
   --black: #222;
+
+  // Container
   --container: 1360px;
   --padding: 75px;
+
+  // Gutter
+  --gutter: 30px;
 
   @media (max-width: $xxl) {
     --container: 1290px;

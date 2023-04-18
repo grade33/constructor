@@ -2,7 +2,7 @@
 
 // Columns
 // Определение переменных
-$gutter-width: vars.$gutter;
+$gutter-width: #{var(--gutter)};
 $breakpoints: (
   '': 0,
   'xxl': vars.$xxl,
@@ -16,15 +16,15 @@ $breakpoints: (
 @mixin make-row() {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -0.5 * $gutter-width;
-  margin-left: -0.5 * $gutter-width;
+  margin-right: calc(-0.5 * $gutter-width);
+  margin-left: calc(-0.5 * $gutter-width);
 }
 
 @mixin make-col($size, $columns: 12) {
   flex: 0 0 percentage(calc($size / $columns));
   max-width: percentage(calc($size / $columns));
-  padding-right: 0.5 * $gutter-width;
-  padding-left: 0.5 * $gutter-width;
+  padding-right: calc(0.5 * $gutter-width);
+  padding-left: calc(0.5 * $gutter-width);
 }
 
 @mixin generate-grid($breakpoint-name: '') {

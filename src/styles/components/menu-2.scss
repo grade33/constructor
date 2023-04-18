@@ -41,7 +41,7 @@
   }
 
   &__title {
-    @include mix.h2-semi;
+    @include mix.h2;
   }
 
   &__img {
@@ -75,7 +75,7 @@
     }
 
     &-name {
-      @include mix.h5;
+      @include mix.title;
     }
 
     &-price {

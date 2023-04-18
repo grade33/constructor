@@ -21,7 +21,7 @@
   }
 
   &__title {
-    @include mix.h2-semi;
+    @include mix.h2;
 
     text-align: center;
   }
@@ -80,7 +80,7 @@
     }
 
     &-name {
-      @include mix.h5;
+      @include mix.title;
     }
 
     &-price {

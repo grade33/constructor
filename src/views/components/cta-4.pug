@@ -1,0 +1,27 @@
+extends ../layouts/main
+
+block vars
+  - const cssName = 'cta-4';
+  //- - const jsName = 'cta-4';
+
+block content
+  // Добавить к block класс block_dark
+  section.cta.section.block
+    .cta__container.container 
+      .cta__content 
+        picture.cta__bg-wrap
+          img.cta__bg(src="@/assets/img/cta/img-4.jpg", alt="")
+        .cta__content-inner
+          .cta__text-block
+            .cta__title-block
+              span.badge New
+              h2.cta__title Strong connection. Every direction.
+            p.cta__desc Create screens directly in Laurent or add your images from Sketch or Figma. You can even sync designs from your cloud storage!
+          .cta__btn-block 
+            a.btn.btn_large.btn_black(href="#") 
+              | Lean more  
+              svg.btn__icon(viewBox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                path(stroke="currentColor", stroke-width="2", stroke-linecap="round", stroke-linejoin="round" d="M6 18L18 6")
+                path(stroke="currentColor", stroke-width="2", stroke-linecap="round", stroke-linejoin="round" d="M8.25 6H18V15.75")
+            button.btn.btn_large.btn_trs-black(type="button") Lean more  
+        

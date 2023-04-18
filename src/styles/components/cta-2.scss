@@ -1,0 +1,81 @@
+//  Base
+@use 'normalize.css/normalize.css';
+@use '../base/reset';
+@use '../base/grid';
+
+// Partials
+@use '../base/base';
+@use '../base/typography';
+@use '../partials/buttons';
+
+// Utils
+@use '../utils/mixins' as mix;
+@use '../utils/variables' as vars;
+@use '../utils/functions' as fn;
+
+.cta {
+  &__list {
+    row-gap: 32px;
+  }
+
+  &__item-order {
+    @media (max-width: vars.$xl) {
+      order: 3;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(24, 48);
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: fn.cmin(24, 30) fn.cmin(16, 30);
+    text-align: center;
+    background: rgba(#222, 0.1);
+    border-radius: 20px;
+
+    &_dark {
+      background: rgba(#fff, 0.1);
+    }
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(12, 20);
+  }
+
+  &__title {
+    @include mix.h2;
+  }
+
+  &__desc {
+    opacity: 0.5;
+
+    @include mix.p20;
+  }
+
+  &__btn {
+    &-block {
+      display: flex;
+      flex-wrap: wrap;
+      gap: fn.cmin(10, 12);
+    }
+  }
+
+  &__img {
+    &-wrap,
+    & {
+      width: 100%;
+      height: 100%;
+    }
+
+    border-radius: 20px;
+
+    @media (max-width: vars.$xl) {
+      aspect-ratio: 1/1;
+    }
+  }
+}
