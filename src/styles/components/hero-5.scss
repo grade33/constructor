@@ -43,21 +43,6 @@
           bottom: 12px;
         }
       }
-
-      display: inline-flex;
-      flex: none;
-      padding: fn.cmin(9, 16);
-      color: var(--black);
-      vertical-align: middle;
-      background: var(--white);
-      border: 1px solid rgba(var(--black), 0.5);
-      border-radius: 50%;
-
-      &-icon {
-        width: fn.cmin(14, 24);
-        height: fn.cmin(14, 24);
-        opacity: 0.5;
-      }
     }
 
     width: 100%;

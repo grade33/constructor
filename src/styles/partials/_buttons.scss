@@ -77,3 +77,29 @@
     }
   }
 }
+
+.btn-arrow {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  width: fn.cmin(32, 56);
+  height: fn.cmin(32, 56);
+  color: var(--black);
+  background: var(--white);
+  border: 1px solid rgba(#222, 0.5);
+  border-radius: 50%;
+
+  &__icon {
+    width: fn.cmin(14, 24);
+    height: fn.cmin(14, 24);
+    opacity: 0.5;
+  }
+
+  &_dark {
+    color: var(--white);
+    background: var(--black);
+    border-color: rgba(#fff, 0.5);
+  }
+}
