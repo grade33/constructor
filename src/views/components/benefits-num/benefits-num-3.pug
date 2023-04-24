@@ -1,0 +1,31 @@
+extends ../../layouts/main
+
+block vars
+  - const cssName = 'benefits-num-3';
+  //- - const jsName = 'benefits-num-3';
+
+block content
+  // Добавить к block класс block_dark
+  // Добавить к benefits-num__list класс .benefits-num__list_dark
+  section.benefits-num.section.block
+    .benefits-num__container.container
+      .benefits-num__text-block
+        h2.benefits-num__title Great products, faster than ever
+        p.benefits-num__desc Everything you need to build modern UI and great products.
+      ul.row.benefits-num__list
+        li.col-4.col-md
+          .benefits-num__item 
+            h3.benefits-num__name 
+              span.benefits-num__name_big 400+
+              | Projects completed
+        li.col-4.col-md
+          .benefits-num__item 
+            h3.benefits-num__name 
+              span.benefits-num__name_big 600%
+              | Return on investment
+        li.col-4.col-md
+          .benefits-num__item 
+            h3.benefits-num__name 
+              span.benefits-num__name_big 10k
+              | Global downloads
+    

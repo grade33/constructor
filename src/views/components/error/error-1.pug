@@ -1,0 +1,26 @@
+extends ../../layouts/main
+
+block vars
+  - const cssName = 'error-1';
+  //- - const jsName = 'error-1';
+
+block content
+  // Добавить к block класс block_dark
+  // Заменить класс btn_black на btn_white
+  // Заменить класс btn_trs-black на btn_trs-white
+  section.error.section.block
+    .error__container.container 
+      .row.error__list
+        .col-6.col-lg.error__item-order
+          .error__content 
+            .error__text-block 
+              h2.error__title Page not found
+              .error__desc 
+                p Sorry, the page you are looking for doesn't exist.
+                p Here are some helpful links:
+            .error__btn-block 
+              button.btn.btn_large.btn_trs-black(type="button") Learn more 
+              button.btn.btn_large.btn_black(type="button") Take me home 
+        .col-6.col-lg
+          picture.error__img-wrap 
+            img.error__img(src="@/assets/img/error/error-1.jpg" alt="")

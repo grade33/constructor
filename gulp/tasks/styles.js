@@ -4,6 +4,7 @@ const gulpSass = require('gulp-sass');
 const postcss = require('gulp-postcss');
 const groupCssMediaQueries = require('gulp-group-css-media-queries');
 const cleanCss = require('gulp-clean-css');
+const flatten = require('gulp-flatten');
 const { isDev, isProd } = require('../config/mode');
 const { plugins } = require('../config/plugins');
 const { path } = require('../config/path');
@@ -25,6 +26,7 @@ exports.styles = function styles() {
       level: 2
     })))
     .pipe(plugins.if(isProd, postcss(postcssConfig)))
+    .pipe(flatten())
     .pipe(dest(path.build.styles, {
       sourcemaps: isDev
     }))

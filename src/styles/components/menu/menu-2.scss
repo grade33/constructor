@@ -1,0 +1,95 @@
+//  Base
+@use 'normalize.css/normalize.css';
+@use '../../base/reset';
+@use '../../base/grid';
+
+// Partials
+@use '../../base/base';
+@use '../../base/typography';
+@use '../../partials/buttons';
+
+// Utils
+@use '../../utils/mixins' as mix;
+@use '../../utils/variables' as vars;
+@use '../../utils/functions' as fn;
+
+.menu {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(32, 60);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(24, 60);
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(4, 10);
+    align-self: center;
+    text-align: center;
+  }
+
+  &__subtitle {
+    opacity: 0.5;
+
+    @include mix.p16;
+  }
+
+  &__title {
+    @include mix.h2;
+  }
+
+  &__img {
+    &-wrap,
+    & {
+      width: 100%;
+    }
+
+    @include mix.ratio(1290, 350);
+
+    @media (max-width: vars.$md) {
+      @include mix.ratio(328, 200);
+    }
+
+    border-radius: 24px;
+  }
+
+  &__list {
+    row-gap: fn.cmin(20, 40);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(12, 16);
+
+    &-text-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-name {
+      @include mix.title;
+    }
+
+    &-price {
+      @include mix.p20;
+    }
+
+    &-desc {
+      @include mix.p16;
+
+      opacity: 0.5;
+    }
+  }
+
+  &__btn {
+    align-self: center;
+  }
+}

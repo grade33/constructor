@@ -1,0 +1,83 @@
+extends ../../layouts/main
+
+block vars
+  - const cssName = 'blog-3';
+  //- - const jsName = 'blog-3';
+
+block content
+  // Добавить к block класс block_dark
+  // Заменить класс btn_black на btn_white
+  section.blog.section.block
+    .blog__container.container 
+      .blog__text-block 
+        .blog__title-block  
+          strong.blog__subtitle Latest posts
+          h2.blog__title Untitled blog
+        p.blog__title-desc Interviews, tips, guides, industry best practices, and news.
+      ul.row.blog__list
+        li.col-4.col-xl-6.col-md  
+          .blog__item
+            .blog__link
+              picture.blog__img-wrap 
+                img.blog__img(src="@/assets/img/blog/blog-3.jpg", alt="")
+              .blog__item-content
+                .blog__item-text-block
+                  span.blog__info Olivia Rhye • 20 Jan 2022
+                  .blog__name-block
+                    h3.blog__name
+                      | UX review presentations
+                      svg.blog__name_icon(viewBox="0 0 20 20", fill="none", xmlns="http://www.w3.org/2000/svg")
+                        path(d="M5 15L15 5", stroke="currentColor", stroke-width="1.25", stroke-linecap="round", stroke-linejoin="round")
+                        path(d="M6.875 5H15V13.125", stroke="currentColor", stroke-width="1.25", stroke-linecap="round", stroke-linejoin="round")
+                  p.blog__desc How do you create compelling presentations that wow your colleagues and impress your managers?
+              ul.blog__badge-list
+                li 
+                  span.badge Presentation
+                li 
+                  span.badge Presentation
+                li 
+                  span.badge Research
+        li.col-4.col-xl-6.col-md  
+          .blog__item
+            .blog__link
+              picture.blog__img-wrap 
+                img.blog__img(src="@/assets/img/blog/blog-3.jpg", alt="")
+              .blog__item-content
+                .blog__item-text-block
+                  span.blog__info Olivia Rhye • 20 Jan 2022
+                  h3.blog__name 
+                    | UX review presentations
+                    svg.blog__name_icon(viewBox="0 0 20 20", fill="none", xmlns="http://www.w3.org/2000/svg")
+                      path(d="M5 15L15 5", stroke="currentColor", stroke-width="1.25", stroke-linecap="round", stroke-linejoin="round")
+                      path(d="M6.875 5H15V13.125", stroke="currentColor", stroke-width="1.25", stroke-linecap="round", stroke-linejoin="round")
+                  p.blog__desc How do you create compelling presentations that wow your colleagues and impress your managers?
+              ul.blog__badge-list
+                li 
+                  span.badge Presentation
+                li 
+                  span.badge Presentation
+                li 
+                  span.badge Research
+        li.col-4.col-xl-6.col-md  
+          .blog__item
+            .blog__link
+              picture.blog__img-wrap 
+                img.blog__img(src="@/assets/img/blog/blog-3.jpg", alt="")
+              .blog__item-content
+                .blog__item-text-block
+                  span.blog__info Olivia Rhye • 20 Jan 2022
+                  .blog__name-block
+                    h3.blog__name
+                      | UX review presentations
+                      svg.blog__name_icon(viewBox="0 0 20 20", fill="none", xmlns="http://www.w3.org/2000/svg")
+                        path(d="M5 15L15 5", stroke="currentColor", stroke-width="1.25", stroke-linecap="round", stroke-linejoin="round")
+                        path(d="M6.875 5H15V13.125", stroke="currentColor", stroke-width="1.25", stroke-linecap="round", stroke-linejoin="round")
+                  p.blog__desc How do you create compelling presentations that wow your colleagues and impress your managers?
+              ul.blog__badge-list
+                li 
+                  span.badge Presentation
+                li 
+                  span.badge Presentation
+                li 
+                  span.badge Research
+      button.btn.btn_large.btn_black(type="button") View all posts
