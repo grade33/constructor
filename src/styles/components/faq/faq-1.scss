@@ -1,0 +1,41 @@
+//  Base
+@use 'normalize.css/normalize.css';
+@use '../../base/reset';
+
+// Partials
+@use '../../base/base';
+@use '../../base/typography';
+@use '../../partials/buttons';
+@use '../../partials/acc';
+
+// Utils
+@use '../../utils/mixins' as mix;
+@use '../../utils/variables' as vars;
+@use '../../utils/functions' as fn;
+
+.faq {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(32, 64);
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(12, 20);
+    text-align: center;
+  }
+
+  &__title {
+    @include mix.h2;
+  }
+
+  &__desc {
+    @include mix.title;
+
+    opacity: 0.5;
+  }
+}

@@ -33,11 +33,11 @@
     height: 100%;
     padding: fn.cmin(24, 30) fn.cmin(16, 30);
     text-align: center;
-    background: rgba(#222, 0.1);
+    background: rgba(vars.$black, 0.1);
     border-radius: 20px;
 
     &_dark {
-      background: rgba(#fff, 0.1);
+      background: rgba(vars.$white, 0.1);
     }
   }
 

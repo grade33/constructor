@@ -1,0 +1,137 @@
+//  Base
+@use 'normalize.css/normalize.css';
+@use '../../base/reset';
+@use '../../base/grid';
+
+// Partials
+@use '../../base/base';
+@use '../../base/typography';
+@use '../../partials/buttons';
+@use '../../partials/acc';
+@use '../../partials/checkbox';
+
+// Utils
+@use '../../utils/mixins' as mix;
+@use '../../utils/variables' as vars;
+@use '../../utils/functions' as fn;
+
+.feedback {
+  &__list {
+    row-gap: 32px;
+    align-items: flex-start;
+  }
+
+  &__item {
+    &-order {
+      @media (max-width: vars.$lg) {
+        order: 3;
+      }
+    }
+  }
+
+  &.block_dark {
+    .feedback {
+      &__content {
+        background: rgba(vars.$white, 0.1);
+      }
+    }
+
+    input,
+    textarea {
+      border-color: rgba(#fff, 0.1) !important;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(16, 48);
+    padding: fn.cmax(30, 100) fn.cmax(35, 110);
+    background: rgba(vars.$black, 0.1);
+    border-radius: 20px;
+
+    &_dark {
+      background: rgba(vars.$white, 0.1);
+    }
+
+    @media (max-width: vars.$md) {
+      padding: fn.cmin(32, 50) fn.cmin(12, 45);
+    }
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+  }
+
+  &__title {
+    @include mix.h2;
+  }
+
+  &__desc {
+    @include mix.title;
+
+    opacity: 0.5;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(24, 64);
+  }
+
+  &__field {
+    &-block {
+      &-row {
+        display: flex;
+        gap: fn.cmin(12, 16) 10px;
+
+        @media (max-width: vars.$md) {
+          flex-direction: column;
+        }
+      }
+
+      display: flex;
+      flex-direction: column;
+      gap: fn.cmin(12, 16);
+    }
+
+    width: 100%;
+
+    input,
+    textarea {
+      @include mix.p16;
+
+      width: 100%;
+      padding: 12px 0;
+      font-weight: 500;
+      line-height: 1.25;
+      border-bottom: 1px solid rgba(vars.$black, 0.1);
+
+      &::placeholder {
+        color: 0.5;
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__btn {
+    width: 100%;
+  }
+
+  &__img {
+    &-wrap,
+    & {
+      width: 100%;
+    }
+
+    border-radius: 20px;
+  }
+}

@@ -1,6 +1,6 @@
-@use '../../utils/mixins' as mix;
-@use '../../utils/variables' as vars;
-@use '../../utils/functions' as fn;
+@use '../utils/mixins' as mix;
+@use '../utils/variables' as vars;
+@use '../utils/functions' as fn;
 
 .block {
   @include mix.p18;
@@ -33,6 +33,6 @@
   width: fit-content;
   padding: 2px 10px;
   color: var(--black);
-  background: rgba(#222, 0.05);
+  background: rgba(vars.$black, 0.05);
   border-radius: 16px;
 }

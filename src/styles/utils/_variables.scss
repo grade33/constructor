@@ -13,9 +13,7 @@ $lg: $min-lg - 0.02px;
 $md: $min-md - 0.02px;
 $sm: $min-sm - 0.02px;
 
-// Grid gutter
-
-// Container
+// Vars
 :root {
   --red: #e64646;
   --green: #4bb34b;
@@ -28,19 +26,19 @@ $sm: $min-sm - 0.02px;
   --black: #222;
 
   // Container
-  --container: 1360px;
+  --container: 1290px;
   --padding: 75px;
 
   // Gutter
   --gutter: 30px;
 
   @media (max-width: $xxl) {
-    --container: 1290px;
+    --container: 1140px;
     --padding: 30px;
   }
 
   @media (max-width: $xl) {
-    --container: 950px;
+    --container: 960px;
     --padding: 25px;
   }
 
@@ -50,7 +48,7 @@ $sm: $min-sm - 0.02px;
   }
 
   @media (max-width: $md) {
-    --container: 530px;
+    --container: 540px;
     --padding: 16px;
   }
 
@@ -59,5 +57,10 @@ $sm: $min-sm - 0.02px;
   }
 }
 
+// Scss Vars
+$black: #222;
+$white: #fff;
+
+// Container, Padding
 $container: var(--container);
 $padding: var(--padding);

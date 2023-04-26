@@ -99,7 +99,7 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 32px;
-    border-top: 1px solid rgba(#222, 0.1);
+    border-top: 1px solid rgba(vars.$black, 0.1);
 
     @media (max-width: vars.$md) {
       padding-bottom: 32px;
