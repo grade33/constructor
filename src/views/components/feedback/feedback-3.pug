@@ -21,20 +21,20 @@ block content
               .feedback__field-block
                 .feedback__field-block-row
                   .feedback__field 
-                    label.visually-hidden(for="name") 
-                    input#name(type="text" placeholder="Name")
+                    label.visually-hidden(for="feedback-name") First name 
+                    input#feedback-name(type="text" placeholder="Name")
                   .feedback__field 
-                    label.visually-hidden(for="surnam") 
-                    input#surnam(type="text" placeholder="Surname")
+                    label.visually-hidden(for="feedback-surname") Last name
+                    input#feedback-surname(type="text" placeholder="Surname")
                 .feedback__field 
-                  label.visually-hidden(for="email") 
-                  input#email(type="email" placeholder="Email")
+                  label.visually-hidden(for="feedback-email") Email
+                  input#feedback-email(type="email" placeholder="Email")
                 .feedback__field 
-                  label.visually-hidden(for="tel") 
-                  input#tel(type="tel" placeholder="Phone number")
+                  label.visually-hidden(for="feedback-tel") Phone number
+                  input#feedback-tel(type="tel" placeholder="Phone number")
                 .feedback__field 
-                  label.visually-hidden(for="name") 
-                  textarea#name(name="message" placeholder="Message" rows="1")
+                  label.visually-hidden(for="feedback-message") Message
+                  textarea#feedback-message(name="message" placeholder="Message" rows="1")
               .feedback__bottom 
                 +checkbox
                 button.feedback__btn.btn.btn_large.btn_black(type="submit") Send message

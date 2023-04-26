@@ -1,0 +1,87 @@
+//  Base
+@use 'normalize.css/normalize.css';
+@use '../../base/reset';
+@use '../../base/grid';
+
+// Partials
+@use '../../base/base';
+@use '../../base/typography';
+@use '../../partials/buttons';
+
+// Utils
+@use '../../utils/mixins' as mix;
+@use '../../utils/variables' as vars;
+@use '../../utils/functions' as fn;
+
+.contacts {
+  text-align: center;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(32, 60);
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(12, 24);
+  }
+
+  &__title-block {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(4, 12);
+  }
+
+  &__subtitle {
+    @include mix.p14;
+  }
+
+  &__title {
+    @include mix.h2;
+  }
+
+  &__desc {
+    @include mix.title;
+
+    opacity: 0.5;
+  }
+
+  &__list {
+    row-gap: fn.cmin(16, 32);
+  }
+
+  &__item {
+    @include mix.title;
+
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(12, 20);
+    align-items: center;
+
+    @media (max-width: vars.$sm) {
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(vars.$black, 0.1);
+    }
+
+    &-text-block {
+      display: flex;
+      flex-direction: column;
+      gap: fn.cmin(4, 8);
+    }
+  }
+
+  &__icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  &__name {
+    @include mix.title;
+  }
+
+  &__text {
+    opacity: 0.5;
+  }
+}

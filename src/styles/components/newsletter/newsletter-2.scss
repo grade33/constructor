@@ -1,0 +1,93 @@
+//  Base
+@use 'normalize.css/normalize.css';
+@use '../../base/reset';
+@use '../../base/grid';
+
+// Partials
+@use '../../base/base';
+@use '../../base/typography';
+@use '../../partials/buttons';
+
+// Utils
+@use '../../utils/mixins' as mix;
+@use '../../utils/variables' as vars;
+@use '../../utils/functions' as fn;
+
+.newsletter {
+  &.block_dark {
+    .newsletter {
+      background: rgba(vars.$white, 0.1);
+    }
+  }
+
+  &__content {
+    display: flex;
+    gap: var(--gutter);
+    justify-content: space-between;
+    padding: fn.cmin(32, 64) 20px fn.cmin(32, 64) fn.cmin(24, 80);
+    background: rgba(vars.$black, 0.1);
+    border-radius: 20px;
+
+    @media (max-width: vars.$lg) {
+      flex-direction: column;
+    }
+
+    @media (max-width: vars.$md) {
+      padding-right: 12px;
+      padding-left: 12px;
+    }
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(12, 16);
+  }
+
+  &__title {
+    @include mix.h3;
+  }
+
+  &__desc {
+    @include mix.title;
+
+    opacity: 0.5;
+  }
+
+  &__form {
+    &-block {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    display: flex;
+    gap: fn.cmin(5, 16);
+
+    @media (max-width: vars.$sm) {
+      gap: 4px;
+    }
+  }
+
+  &__field {
+    width: 100%;
+
+    input {
+      @include mix.btn-large;
+
+      padding: fn.cmin(10, 14) fn.cmin(16, 20);
+      border: 1px solid var(--grey);
+      border-radius: 10px;
+
+      &::placeholder {
+        color: var(--grey);
+      }
+    }
+  }
+
+  &__text {
+    @include mix.p14;
+
+    opacity: 0.5;
+  }
+}
