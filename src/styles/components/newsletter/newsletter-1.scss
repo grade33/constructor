@@ -15,64 +15,70 @@
 @use '../../utils/functions' as fn;
 
 .newsletter {
-  &.block_dark {
-    .newsletter {
-      background: rgba(vars.$white, 0.1);
+  &__list {
+    row-gap: 32px;
+  }
+
+  &__item {
+    &-order {
+      @media (max-width: vars.$lg) {
+        order: 3;
+      }
     }
   }
 
   &__content {
     display: flex;
-    gap: var(--gutter);
-    justify-content: space-between;
-    padding: fn.cmin(32, 64) 20px fn.cmin(32, 64) fn.cmin(24, 80);
-    background: rgba(vars.$black, 0.1);
-    border-radius: 20px;
-
-    @media (max-width: vars.$lg) {
-      flex-direction: column;
-    }
-
-    @media (max-width: vars.$md) {
-      padding-right: 12px;
-      padding-left: 12px;
-    }
+    flex-direction: column;
+    gap: fn.cmin(24, 40);
   }
 
   &__text-block {
     display: flex;
     flex-direction: column;
-    gap: fn.cmin(12, 16);
+    gap: fn.cmin(12, 24);
   }
 
   &__title {
-    @include mix.h3;
+    @include mix.h2;
   }
 
   &__desc {
     @include mix.title;
 
+    max-width: 480px;
     opacity: 0.5;
   }
 
   &__form {
+    display: flex;
+    gap: 16px;
+
     &-block {
       display: flex;
       flex-direction: column;
       gap: 10px;
     }
 
-    display: flex;
-    gap: fn.cmin(5, 16);
+    &-desc {
+      @include mix.p14;
 
-    @media (max-width: vars.$sm) {
-      gap: 4px;
+      opacity: 0.5;
     }
   }
 
-  &__text {
-    @include mix.p14;
+  &__field {
+    @media (min-width: vars.$min-lg) {
+      max-width: 350px;
+    }
+  }
 
-    opacity: 0.5;
+  &__img {
+    &-wrap,
+    & {
+      width: 100%;
+    }
+
+    border-radius: 16px;
   }
 }

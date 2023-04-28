@@ -1,0 +1,30 @@
+extends ../../layouts/main
+
+block vars
+  - const cssName = 'newsletter-1';
+  - const jsName = 'newsletter-1';
+
+block content
+  include ../../partials/checkbox
+
+  // Добавить к block класс block_dark
+  // Заменить класс btn_black на btn_white
+  section.newsletter.section.block
+    .newsletter__cotntainer.container
+      .row.newsletter__list
+        .col-7.col-lg.newsletter__item-order
+          .newsletter__content 
+            .newsletter__text-block 
+              h2.newsletter__title Be the first to know when we launch
+              p.newsletter__desc We’re still building. Subscribe for updates and 20% off when we launch. No spam, we promise!
+            .newsletter__form-block
+              form.newsletter__form(action="#") 
+                .field.field_large
+                  label(for="newsletter-email") Enter your email
+                  input#newsletter-email(type="email", name="email" placeholder="Enter your email")
+                button.newsletter__btn.btn.btn_large.btn_black(type="submit") Subscribe 
+              span.newsletter__form-desc We care about your data in our privacy policy.
+        .col-5.col-lg
+          picutre.newsletter__img-wrap
+            img.newsletter__img(src="@/assets/img/newsletter/img-1.jpg", alt="")
+    

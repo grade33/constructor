@@ -44,6 +44,8 @@
 
     &-desc {
       @include mix.title;
+
+      opacity: 0.5;
     }
   }
 
