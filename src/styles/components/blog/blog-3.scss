@@ -3,6 +3,9 @@
 @use '../../base/reset';
 @use '../../base/grid';
 
+// Libs
+@use '../../vendor/swiper';
+
 // Partials
 @use '../../base/base';
 @use '../../base/typography';
@@ -53,6 +56,36 @@
     @include mix.p14;
   }
 
+  &__desktop {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(32, 64);
+    align-items: center;
+
+    @media (max-width: vars.$md) {
+      display: none;
+    }
+  }
+
+  &__mobile {
+    align-self: stretch;
+
+    @media (min-width: vars.$min-md) {
+      display: none;
+    }
+  }
+
+  &__slider {
+    width: 100%;
+    height: auto;
+
+    &-btn-block {
+      display: flex;
+      gap: 16px;
+      margin-top: 16px;
+    }
+  }
+
   &__list {
     row-gap: fn.cmin(16, 32);
   }
@@ -63,7 +96,7 @@
     &-content {
       display: flex;
       flex-direction: column;
-      gap: 24px;
+      gap: fn.cmin(16,24);
     }
 
     &-text-block {

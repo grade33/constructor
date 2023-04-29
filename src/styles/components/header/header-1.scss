@@ -41,6 +41,10 @@
     display: inline-flex;
     flex: none;
     height: fn.cmin(32, 36);
+
+    @media (max-width: vars.$lg) {
+      margin-right: auto;
+    }
   }
 
   &__nav {
@@ -64,6 +68,20 @@
     gap: 8px;
     margin-left: auto;
 
+    &-btn {
+      svg {
+        @media (min-width: vars.$min-lg) {
+          display: none;
+        }
+      }
+
+      &_mobile {
+        @media (min-width: vars.$min-lg) {
+          display: none;
+        }
+      }
+    }
+
     @media (max-width: vars.$lg) {
       display: none;
     }
@@ -76,7 +94,6 @@
     justify-content: space-between;
     width: 24px;
     height: 24px;
-    margin-left: auto;
     padding: 6px 4px;
     color: var(--black);
 

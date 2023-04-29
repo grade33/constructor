@@ -10,7 +10,7 @@ export class SingleSelect {
 
     this.#initializeStructure();
 
-    this.customSelect.addEventListener('click', this.toggleSelect.bind(this));
+    document.addEventListener('click', this.toggleSelect.bind(this));
     this.optionsCollection.forEach((option) => {
       option.addEventListener('click', this.changeOption.bind(this, option));
     });
@@ -18,11 +18,10 @@ export class SingleSelect {
 
   toggleSelect(event) {
     if (!this.selectHead.contains(event.target)) {
-      this.customSelect.classList.remove('is-open');
+      this.customSelect.classList.toggle('is-open', false);
       return;
     }
-    
-    event.preventDefault();
+
     this.customSelect.classList.toggle('is-open');
   }
 
@@ -65,13 +64,12 @@ export class SingleSelect {
       return newOptionEl;
     });
 
-    const placeholderOption =
+    const placehlderOption =
       this.optionsCollection.find((opt) => !opt.dataset.value) || this.optionsCollection[0].cloneNode(true);
     this.optionsCollection[0].classList.add('is-selected');
-    placeholderOption.classList.replace('select__option_body', 'select__option_head');
-    this.currentHeadOption = placeholderOption.cloneNode(true);
+    placehlderOption.classList.replace('select__option_body', 'select__option_head');
+    this.currentHeadOption = placehlderOption;
     this.selectHead.append(this.currentHeadOption);
-    placeholderOption.remove()
 
     this.originalSelect.replaceWith(this.customSelect);
 
