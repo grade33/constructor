@@ -1,0 +1,18 @@
+extends ../../layouts/main
+
+block vars
+  - const cssName = 'breadcrumbs-1';
+  //- - const jsName = 'breadcrumbs-1';
+
+block content
+  // Добавить к block класс block_dark
+  section.breadcrumbs.block
+    .container.breadcrumbs__container 
+      ul.breadcrumbs__list 
+        li.breadcrumbs__item 
+          a.breadcrumbs__link(href="#") Главная
+        li.breadcrumbs__item 
+          a.breadcrumbs__link(href="#") События 
+        li.breadcrumbs__item 
+          a.breadcrumbs__item(href="#") Анатолий Белый
+  

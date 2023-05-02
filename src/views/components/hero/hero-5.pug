@@ -1,39 +1,38 @@
 extends ../../layouts/main
 
 block vars
-  - const cssName = 'hero-4-5';
+  - const cssName = 'hero-4--5';
   - const jsName = 'hero-5';
 
 block content
   // Темной темы тут нет
   section.hero.block
-    .hero__container.container
-      .hero__slider-block
-        .hero__slider.swiper
-          ul.swiper-wrapper 
-            - let i = 0
-            while i < 4
-              - i++;
-              li.swiper-slide
-                picture.hero__bg-wrap
-                  img.hero__bg(src="@/assets/img/hero/bg-5.jpg", alt="")
-                .hero__content
-                  .hero__text-block
-                    h2.hero__title New furnishings in the main hall. There are blankets for winter gatherings
-                    p.hero__desc Discover and buy from amazing makers of food, wine, knives, ceramics and more from around the world
-                  a.hero__btn.btn.btn_large.btn_white(href="#")
-                    | Reserve a table 
-                    svg.btn__icon(viewBox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
-                      path(stroke="currentColor", d="M3.75 12H20.25", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
-                      path(stroke="currentColor", d="M13.5 5.25L20.25 12L13.5 18.75", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
-          .hero__slider-btn-block
-            button.hero__slider-btn.hero__slider-btn_prev.btn-arrow(type="button")
-              svg.btn-arrow__icon(viewBox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
-                path(d="M20.25 12H3.75", stroke="currentColor", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
-                path(d="M10.5 5.25L3.75 12L10.5 18.75", stroke="currentColor", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
-            button.hero__slider-btn.hero__slider-btn_next.btn-arrow(type="button")
-              svg.btn-arrow__icon(viewBox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
-                path(d="M3.75 12H20.25", stroke="currentColor", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
-                path(d="M13.5 5.25L20.25 12L13.5 18.75", stroke="currentColor", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+    .hero__slider.swiper
+      ul.swiper-wrapper 
+        - let i = 0
+        while i < 4
+          - i++;
+          li.swiper-slide
+            .hero__item
+              picture.hero__bg-wrap
+                img.hero__bg(src="@/assets/img/hero/bg-5.jpg", alt="")
+              .hero__content
+                .hero__text-block
+                  h2.hero__title New furnishings in the main hall. There are blankets for winter gatherings
+                  p.hero__desc Discover and buy from amazing makers of food, wine, knives, ceramics and more from around the world
+                a.hero__btn.btn.btn_large.btn_white(href="#")
+                  | Reserve a table 
+                  svg.btn__icon(viewBox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                    path(stroke="currentColor", d="M3.75 12H20.25", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                    path(stroke="currentColor", d="M13.5 5.25L20.25 12L13.5 18.75", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+      .hero__slider-btn-block
+        button.hero__slider-btn.hero__slider-btn_prev.btn-arrow(type="button")
+          svg.btn-arrow__icon(viewBox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+            path(d="M20.25 12H3.75", stroke="currentColor", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+            path(d="M10.5 5.25L3.75 12L10.5 18.75", stroke="currentColor", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+        button.hero__slider-btn.hero__slider-btn_next.btn-arrow(type="button")
+          svg.btn-arrow__icon(viewBox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+            path(d="M3.75 12H20.25", stroke="currentColor", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+            path(d="M13.5 5.25L20.25 12L13.5 18.75", stroke="currentColor", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
 
 

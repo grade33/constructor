@@ -26,6 +26,8 @@ export class SingleSelect {
   }
 
   changeOption(optionElement) {
+    if (this.selectHead.contains(optionElement)) return;
+
     this.optionsCollection.forEach((option) => {
       option.classList.toggle('is-selected', option === optionElement);
     });

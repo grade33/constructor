@@ -10,6 +10,7 @@
 @use '../../base/typography';
 @use '../../partials/buttons';
 @use '../../partials/select-nav';
+@use '../../partials/burger-menu';
 
 // Utils
 @use '../../utils/mixins' as mix;
@@ -17,15 +18,29 @@
 @use '../../utils/functions' as fn;
 
 .header {
-  display: flex;
-  align-items: center;
-  height: 80px;
+  position: relative;
+  z-index: 20;
 
-  @media (max-width: vars.$lg) {
-    height: 72px;
+  &.block_dark {
+    .header {
+      &__inner {
+        background: var(--dark);
+      }
+    }
   }
 
-  @include mix.p16;
+  &__inner {
+    @include mix.p16;
+
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background: var(--white);
+
+    @media (max-width: vars.$lg) {
+      height: 72px;
+    }
+  }
 
   &__container {
     display: flex;

@@ -1,0 +1,43 @@
+@use '../utils/mixins' as mix;
+@use '../utils/variables' as vars;
+@use '../utils/functions' as fn;
+
+.menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  padding: 16px 0;
+  background: var(--white);
+  border-top: 1px solid rgba(vars.$black, 0.1);
+  transform: translateY(-100%);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out, transform 0.5s ease-in-out;
+
+  &_active {
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+  }
+
+  @media (min-width: vars.$min-lg) {
+    display: none;
+  }
+
+  &_black {
+    background: var(--black);
+    border-color: rgba(vars.$black, 0.1);
+  }
+
+  &__nav {
+    &-list {
+      @include mix.p16;
+
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+}
