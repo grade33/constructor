@@ -1,0 +1,277 @@
+//  Base
+@use 'normalize.css/normalize.css';
+@use '../../base/reset';
+
+// Partials
+@use '../../base/base';
+@use '../../base/typography';
+@use '../../partials/buttons';
+@use '../../partials/modal';
+
+// Utils
+@use '../../utils/mixins' as mix;
+@use '../../utils/variables' as vars;
+@use '../../utils/functions' as fn;
+
+.modal-1 {
+  @include mix.p16;
+
+  &.block_dark {
+    .modal-1 {
+      &__content {
+        background: rgba(vars.$white, 0.05);
+      }
+
+      &__steps {
+        border-color: rgba(vars.$white, 0.1);
+
+        &::before {
+          background: rgba(vars.$white, 0.1);
+        }
+
+        &-item {
+          &,
+          &::before {
+            background: rgba(vars.$white, 0.1);
+          }
+
+          &_fill {
+            color: var(--black);
+            background: var(--white);
+
+            &::before {
+              background: var(--white);
+            }
+          }
+        }
+      }
+
+      &__item {
+        &-date {
+          color: var(--black);
+          background: var(--white);
+        }
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(24, 48);
+    width: 850px;
+    max-width: calc(100vw - (var(--padding) * 2));
+    margin: 0 auto;
+    padding: fn.cmin(24, 64) fn.cmin(18, 64);
+    background: rgba(vars.$black, 0.05);
+    border-radius: 12px;
+
+    @media (max-width: vars.$sm) {
+      padding: 24px 12px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 24px fn.cmin(16, 24);
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover,
+    &:focus-visible,
+    &:active {
+      opacity: 1;
+    }
+
+    &-icon {
+      width: fn.cmin(24, 32);
+      height: fn.cmin(24, 32);
+    }
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(12, 16);
+  }
+
+  &__title-block {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(8, 12);
+  }
+
+  &__title {
+    @include mix.h2;
+  }
+
+  &__subtitle {
+    @include mix.title;
+  }
+
+  &__info {
+    display: flex;
+    gap: fn.cmin(8, 12) fn.cmin(24, 40);
+  }
+
+  &__steps {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: fn.cmin(24, 48) 0;
+    overflow: hidden;
+    border-top: 1px solid rgba(vars.$black, 0.1);
+    border-bottom: 1px solid rgba(vars.$black, 0.1);
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      z-index: -1;
+      z-index: 2;
+      width: 100%;
+      height: 1px;
+      margin-right: -50vw;
+      background: rgba(vars.$black, 0.1);
+      transform: translateY(-50%);
+      content: '';
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      background: rgba(vars.$black, 0.1);
+      border-bottom: 1px solid rgba(vars.$black, 0.1);
+      border-radius: 50%;
+
+      @media (max-width: vars.$md) {
+        width: 48px;
+        height: 48px;
+      }
+
+      &_fill {
+        color: var(--white);
+        background: var(--black);
+
+        &::before {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          width: 0;
+          height: 1px;
+          margin-right: -50vw;
+          background: var(--black);
+          transform: translateY(-50%);
+          content: '';
+        }
+
+        &:first-child {
+          &::before {
+            width: 25%;
+          }
+        }
+
+        &:nth-child(2) {
+          &::before {
+            width: 75%;
+          }
+        }
+
+        &:nth-child(3) {
+          &::before {
+            width: 100%;
+          }
+        }
+      }
+
+      &-text {
+        position: relative;
+        z-index: 2;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(24, 48);
+  }
+
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 22px;
+    align-items: center;
+
+    &-content {
+      display: flex;
+      gap: fn.cmin(12, 24);
+      align-items: flex-start;
+    }
+
+    &-date {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: center;
+      justify-content: center;
+      min-width: 60px;
+      min-height: 68px;
+      color: var(--white);
+      text-align: center;
+      background: var(--black);
+
+      @media (max-width: vars.$md) {
+        gap: 10px;
+      }
+
+      &-num {
+        @include mix.p20;
+      }
+
+      &-text {
+        @include mix.p14;
+      }
+    }
+
+    &-text-block {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    &-name {
+      @include mix.h4;
+    }
+
+    &-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+
+      &-item {
+        display: flex;
+        gap: 8px;
+      }
+
+      &-icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    &-btn {
+      @media (max-width: vars.$lg) {
+        width: 100%;
+      }
+    }
+  }
+}

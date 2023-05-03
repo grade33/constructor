@@ -17,12 +17,12 @@
 @use '../../utils/variables' as vars;
 @use '../../utils/functions' as fn;
 
-.header {
+.header-1 {
   position: relative;
   z-index: 20;
 
   &.block_dark {
-    .header {
+    .header-1 {
       &__inner {
         background: var(--dark);
       }

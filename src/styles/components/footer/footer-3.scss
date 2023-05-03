@@ -14,7 +14,7 @@
 @use '../../utils/variables' as vars;
 @use '../../utils/functions' as fn;
 
-.footer {
+.footer-3 {
   @include mix.p16;
 
   &__container {

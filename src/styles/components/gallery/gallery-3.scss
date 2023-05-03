@@ -16,9 +16,9 @@
 @use '../../utils/variables' as vars;
 @use '../../utils/functions' as fn;
 
-.gallery {
+.gallery-3 {
   &_4 {
-    .gallery {
+    .gallery-3 {
       &__item {
         @media (max-width: vars.$md) {
           &:nth-child(9n - 8),
@@ -43,7 +43,7 @@
   }
 
   &_6 {
-    .gallery {
+    .gallery-3 {
       &__slider {
         width: 100%;
 
@@ -89,7 +89,7 @@
   }
 
   @for $i from 1 through 12 {
-    .gallery__item_#{$i} {
+    .gallery-3__item_#{$i} {
       grid-column: span #{$i};
     }
   }

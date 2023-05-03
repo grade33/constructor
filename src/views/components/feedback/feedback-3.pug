@@ -9,36 +9,36 @@ block content
 
   // Добавить к block класс block_dark
   // Заменить класс btn_black на btn_white
-  section.feedback.section.block
-    .feedback__container.container
-      .row.feedback__list
-        .col-6.col-xl-7.col-lg.feedback__item-order 
-          .feedback__content 
-            .feedback__text-block 
-              h2.feedback__title Get in touch
-              p.feedback__desc Our friendly team would love to hear from you.
-            form.feedback__form(action="#") 
-              .feedback__field-block
-                .feedback__field-block-row
-                  .feedback__field 
+  section.feedback-3.section.block
+    .feedback-3__container.container
+      .row.feedback-3__list
+        .col-6.col-xl-7.col-lg.feedback-3__item-order 
+          .feedback-3__content 
+            .feedback-3__text-block 
+              h2.feedback-3__title Get in touch
+              p.feedback-3__desc Our friendly team would love to hear from you.
+            form.feedback-3__form(action="#") 
+              .feedback-3__field-block
+                .feedback-3__field-block-row
+                  .feedback-3__field 
                     label.visually-hidden(for="feedback-name") First name 
                     input#feedback-name(type="text" placeholder="Name")
-                  .feedback__field 
+                  .feedback-3__field 
                     label.visually-hidden(for="feedback-surname") Last name
                     input#feedback-surname(type="text" placeholder="Surname")
-                .feedback__field 
+                .feedback-3__field 
                   label.visually-hidden(for="feedback-email") Email
                   input#feedback-email(type="email" placeholder="Email")
-                .feedback__field 
+                .feedback-3__field 
                   label.visually-hidden(for="feedback-tel") Phone number
                   input#feedback-tel(type="tel" placeholder="Phone number")
-                .feedback__field 
+                .feedback-3__field 
                   label.visually-hidden(for="feedback-message") Message
                   textarea#feedback-message(name="message" placeholder="Message" rows="1")
-              .feedback__bottom 
+              .feedback-3__bottom 
                 +checkbox
-                button.feedback__btn.btn.btn_large.btn_black(type="submit") Send message
+                button.feedback-3__btn.btn.btn_large.btn_black(type="submit") Send message
         .col-6.col-xl-5.col-lg
-          picture.feedback__img-wrap
-            img.feedback__img(src="@/assets/img/feedback/img-3.jpg" alt="")
+          picture.feedback-3__img-wrap
+            img.feedback-3__img(src="@/assets/img/feedback/img-3.jpg" alt="")
 

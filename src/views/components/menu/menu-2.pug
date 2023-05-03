@@ -7,25 +7,25 @@ block vars
 block content
   // Добавить к block класс block_dark
   // Заменить класс btn_black на btn_white
-  section.menu.section.block
-    .menu__container.container 
-      .menu__text-block 
-        span.menu__subtitle Delicious
-        h2.menu__title Weekly Lunch menu excerpt
-      .menu__content
-        picture.menu__img-wrap 
-          img.menu__img(src="@/assets/img/menu/menu-2.jpg", alt="")
-        ul.row.menu__list
+  section.menu-2.section.block
+    .menu-2__container.container 
+      .menu-2__text-block 
+        span.menu-2__subtitle Delicious
+        h2.menu-2__title Weekly Lunch menu excerpt
+      .menu-2__content
+        picture.menu-2__img-wrap 
+          img.menu-2__img(src="@/assets/img/menu/menu-2.jpg", alt="")
+        ul.row.menu-2__list
           - let i = 0;
           while i < 9
             - i++
             li.col-4.col-lg-6.col-md
-              .menu__item
-                .menu__item-text-block 
-                  strong.menu__item-name Shrimp tacos
-                  span.menu__item-price 12.95€ 
-                p.menu__item-desc Shrimps, lettuce, cucumbers, sauce, tomatoes, cheese, herbs, corn, cabbage, beans
-        button.menu__btn.btn.btn_large.btn_black.btn_all(type="button") View menu
+              .menu-2__item
+                .menu-2__item-text-block 
+                  strong.menu-2__item-name Shrimp tacos
+                  span.menu-2__item-price 12.95€ 
+                p.menu-2__item-desc Shrimps, lettuce, cucumbers, sauce, tomatoes, cheese, herbs, corn, cabbage, beans
+        button.menu-2__btn.btn.btn_large.btn_black.btn_all(type="button") View menu
           
 
       

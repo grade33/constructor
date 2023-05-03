@@ -1,0 +1,60 @@
+extends ../../layouts/main
+
+block vars
+  - const cssName = 'modal-1';
+  - const jsName = 'modal-1';
+
+block content
+  // Удалить класс modal_active перед добавления в конструктор
+  // Кнопкам для открытия дать data-modal-open атрибут с значением modal-1
+  // Theme!!!
+  // Добавить к block класс block_dark
+  // Заменить класс btn_black на btn_white
+  section.modal-1.modal.modal_active.block(data-modal="modal-1")
+    .modal__inner
+      .modal-1__content
+        button.modal-1__close(type="button")
+          svg.modal-1__close-icon(viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+            path(d="M25 7L7 25", stroke="currentColor", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+            path(d="M25 25L7 7", stroke="currentColor", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+        .modal-1__text-block
+          .modal-1__title-block
+            h2.modal-1__title Анатолий Белый  
+            span.modal-1__subtitle "Я здесь!"
+          ul.modal-1__info 
+            li.modal-1__info-item 26.03.2023 - 17.12.2023
+            li.modal-1__info-item € 35,00 - € 80,00
+        ul.modal-1__steps
+          li.modal-1__steps-item.modal-1__steps-item_fill 
+            span.modal-1__steps-item-text 1
+          li.modal-1__steps-item
+            span.modal-1__steps-item-text 2
+          li.modal-1__steps-item 
+            span.modal-1__steps-item-text 3
+        ul.modal-1__list 
+          - let i = 0
+          while i< 5
+            - i++
+            li.modal-1__item
+              .modal-1__item-content
+                .modal-1__item-date 
+                  span.modal-1__item-date-num 31
+                  span.modal-1__item-date-text Мар 
+                .modal-1__item-text-block 
+                  h3.modal-1__item-name Гамбург
+                  ul.modal-1__item-info 
+                    li.modal-1__item-info-item 
+                      svg.modal-1__item-info-icon(viewBox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                        path(stroke="currentColor", stroke-width="1.5", stroke-miterlimit="10", d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z")
+                        path(stroke="currentColor", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round" d="M12 6.75V12H17.25")
+                      span.modal-1__item-info-text 20:00
+                    li.modal-1__item-info-item 
+                      svg.modal-1__item-info-icon(viewBox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                        path(stroke="currentColor", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round", d="M5.25 21.75H18.75")
+                        path(stroke="currentColor", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round", d="M12 12.75C13.6569 12.75 15 11.4069 15 9.75C15 8.09315 13.6569 6.75 12 6.75C10.3431 6.75 9 8.09315 9 9.75C9 11.4069 10.3431 12.75 12 12.75Z")
+                        path(stroke="currentColor", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round", d="M19.5 9.75C19.5 16.5 12 21.75 12 21.75C12 21.75 4.5 16.5 4.5 9.75C4.5 7.76088 5.29018 5.85322 6.6967 4.4467C8.10322 3.04018 10.0109 2.25 12 2.25C13.9891 2.25 15.8968 3.04018 17.3033 4.4467C18.7098 5.85322 19.5 7.76088 19.5 9.75V9.75Z")
+                      address.modal-1__item-info-text Bürgerhaus Wilhelmsburg, Mengestr. 20, 
+              button.modal-1__item-btn.btn.btn_large.btn_black(type="button") Купить билет
+
+              
+        

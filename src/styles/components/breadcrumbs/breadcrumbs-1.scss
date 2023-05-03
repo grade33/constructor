@@ -12,11 +12,11 @@
 @use '../../utils/variables' as vars;
 @use '../../utils/functions' as fn;
 
-.breadcrumbs {
+.breadcrumbs-1 {
   padding: fn.cmin(16, 32) 0;
 
   &.block_dark {
-    .breadcrumbs {
+    .breadcrumbs-1 {
       &__item {
         &:not(&:last-child) {
           &::after {

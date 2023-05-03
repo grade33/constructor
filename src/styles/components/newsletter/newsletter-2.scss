@@ -14,9 +14,9 @@
 @use '../../utils/variables' as vars;
 @use '../../utils/functions' as fn;
 
-.newsletter {
+.newsletter-2 {
   &.block_dark {
-    .newsletter {
+    .newsletter-2 {
       background: rgba(vars.$white, 0.1);
     }
   }

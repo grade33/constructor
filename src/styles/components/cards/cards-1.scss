@@ -1,0 +1,103 @@
+//  Base
+@use 'normalize.css/normalize.css';
+@use '../../base/reset';
+
+// Partials
+@use '../../base/base';
+@use '../../base/typography';
+@use '../../partials/buttons';
+
+// Utils
+@use '../../utils/mixins' as mix;
+@use '../../utils/variables' as vars;
+@use '../../utils/functions' as fn;
+
+.cards-1 {
+  &.block_dark {
+    .cards-1 {
+      &__item {
+        background: rgba(vars.$white, 0.1);
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__item {
+    display: flex;
+    gap: fn.cmin(8, 16);
+    align-items: flex-start;
+    padding: 16px fn.cmin(12, 24);
+    background: rgba(vars.$black, 0.1);
+    border-radius: 10px;
+
+    @include mix.p16;
+
+    &_contacts {
+      display: flex;
+      flex-direction: column;
+      gap: fn.cmin(12, 16);
+    }
+  }
+
+  &__icon {
+    width: fn.cmin(28, 32);
+    height: fn.cmin(28, 32);
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__title {
+    @include mix.title;
+  }
+
+  &__text {
+    opacity: 0.5;
+
+    &_big {
+      @include mix.p20;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(8, 12);
+
+    &-item {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+
+    &-name-block {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    &-icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    &-link {
+      opacity: 0.5;
+      transition: opacity 0.3s ease-in-out;
+
+      &:hover,
+      &:focus-visible,
+      &:active {
+        opacity: 1;
+      }
+    }
+  }
+}

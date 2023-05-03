@@ -15,7 +15,7 @@
 @use '../../utils/variables' as vars;
 @use '../../utils/functions' as fn;
 
-.feedback {
+.feedback-3 {
   &__list {
     row-gap: 32px;
     align-items: flex-start;
@@ -30,7 +30,7 @@
   }
 
   &.block_dark {
-    .feedback {
+    .feedback-3 {
       &__content {
         background: rgba(vars.$white, 0.1);
       }

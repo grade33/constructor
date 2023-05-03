@@ -2,11 +2,11 @@ import Swiper, { Autoplay, Navigation } from 'swiper';
 
 import { breakpointsMin } from '../utils/breakpoints';
 
-new Swiper('.swiper', {
+new Swiper('.gallery-5_2 .swiper', {
   modules: [Navigation, Autoplay],
   navigation: {
-    prevEl: '.gallery__slider-btn_prev',
-    nextEl: '.gallery__slider-btn_next',
+    prevEl: '.gallery-5__slider-btn_prev',
+    nextEl: '.gallery-5__slider-btn_next',
   },
   autoplay: {
     delay: 5000,
@@ -16,7 +16,6 @@ new Swiper('.swiper', {
   spaceBetween: 12,
   keyboard: true,
   loop: true,
-  simulateTouch: false,
   centeredSlides: true,
   breakpoints: {
     [breakpointsMin.md]: {

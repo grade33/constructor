@@ -6,30 +6,30 @@ block vars
 
 block content
   // Добавить к block класс block_dark
-  section.menu.section.block
-    .menu__container.container 
-        h2.menu__title Weekly Lunch menu excerpt
+  section.menu-4.section.block
+    .menu-4__container.container 
+        h2.menu-4__title Weekly Lunch menu excerpt
         - let i = 0;
         while i < 3
           - i++
           - orderClass = i % 2 === 0 ? 'menu__block-item-order' : ''
-          .menu__block 
-            h3.menu__block-title Mexican cuisine
-            .row.menu__block-list
+          .menu-4__block 
+            h3.menu-4__block-title Mexican cuisine
+            .row.menu-4__block-list
               .col-4.col-xl(class=orderClass)
-                picture.menu__img-wrap 
-                  img.menu__img(src="@/assets/img/menu/menu-4.jpg", alt="")
+                picture.menu-4__img-wrap 
+                  img.menu-4__img(src="@/assets/img/menu/menu-4.jpg", alt="")
               .col-8.col-xl
-                ul.row.menu__list
+                ul.row.menu-4__list
                   - let j = 0;
                   while j < 6
                     - j++
                     li.col-6.col-md
-                      .menu__item
-                        .menu__item-text-block 
-                          strong.menu__item-name Shrimp tacos
-                          span.menu__item-price 12.95€ 
-                        p.menu__item-desc Shrimps, lettuce, cucumbers, sauce, tomatoes, cheese, herbs, corn, cabbage, beans
+                      .menu-4__item
+                        .menu-4__item-text-block 
+                          strong.menu-4__item-name Shrimp tacos
+                          span.menu-4__item-price 12.95€ 
+                        p.menu-4__item-desc Shrimps, lettuce, cucumbers, sauce, tomatoes, cheese, herbs, corn, cabbage, beans
                   
 
               

@@ -1,6 +1,6 @@
 import Swiper, { Autoplay} from 'swiper';
 
-new Swiper('.swiper', {
+new Swiper('.gallery-3_6 .swiper', {
   modules: [Autoplay],
   autoplay: {
     delay: 5000,
