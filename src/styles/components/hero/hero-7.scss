@@ -1,0 +1,34 @@
+//  Base
+@use 'normalize.css/normalize.css';
+@use '../../base/reset';
+
+// Partials
+@use '../../base/base';
+@use '../../base/typography';
+@use '../../partials/buttons';
+
+// Utils
+@use '../../utils/mixins' as mix;
+@use '../../utils/variables' as vars;
+@use '../../utils/functions' as fn;
+
+.hero-7 {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(12, 32);
+  }
+
+  &__img {
+    &-wrap,
+    & {
+      width: 100%;
+    }
+
+    border-radius: fn.cmin(10, 20);
+  }
+
+  &__title {
+    @include mix.h1;
+  }
+}

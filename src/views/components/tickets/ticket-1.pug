@@ -1,0 +1,28 @@
+extends ../../layouts/main
+
+block vars
+  - const cssName = 'ticket-1';
+  //- - const jsName = 'ticket-1';
+
+block content
+  include ../../partials/tickets
+  
+  // Добавить к block класс block_dark
+  // Добавить к tickets класс tickets_dark
+  // Заменить класс btn_black на btn_white
+  section.ticket-1.section.block
+    .ticket-1__container.container 
+      .row.ticket-1__list
+        .col-8.col-xl-10.col-lg
+          .ticket-1__head 
+            .ticket-1__title-block
+              span.ticket-1__subtitle Die Anzahl der Plätze ist begrenzt
+              h2.ticket-1__title Tickets
+            p.ticket-1__desc Die Anzahl der Plätze ist begrenzt. Greif zu. Die Tickets sind auch auf der Seite unseres Partners tixcom.de erhältlich.
+          .ticket-1__content
+            .ticket-1__content-text-block 
+              h3.ticket-1__content-title Stand Up open mic in Karlsruhe
+              ul.ticket-1__info 
+                li.ticket-1__info-item 26.03.2023 - 17.12.2023
+                li.ticket-1__info-item € 35,00 - € 80,00
+            +tickets(false)

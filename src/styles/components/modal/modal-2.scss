@@ -1,0 +1,107 @@
+//  Base
+@use 'normalize.css/normalize.css';
+@use '../../base/reset';
+
+// Partials
+@use '../../base/base';
+@use '../../base/typography';
+@use '../../partials/buttons';
+@use '../../partials/modal';
+
+// Utils
+@use '../../utils/mixins' as mix;
+@use '../../utils/variables' as vars;
+@use '../../utils/functions' as fn;
+
+.modal-2 {
+  @include mix.p16;
+
+  &.block_dark {
+    .modal-2 {
+      &__content {
+        background: #2d2d2d;
+
+        &-inner {
+          border-top: 1px solid rgba(vars.$white, 0.1);
+        }
+      }
+
+      &__field {
+        background: var(--black);
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(16, 24);
+    width: 740px;
+    max-width: calc(100vw - (var(--padding) * 2));
+    margin: 0 auto;
+    padding: fn.cmin(16, 32) fn.cmin(12, 32);
+    background: #f4f4f4;
+    border-radius: 20px;
+
+    &-inner {
+      display: flex;
+      flex-direction: column;
+      gap: fn.cmin(24, 48);
+      padding-top: 24px;
+      border-top: 1px solid rgba(vars.$black, 0.1);
+    }
+  }
+
+  &__title {
+    @include mix.h4;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__label {
+    @include mix.title;
+  }
+
+  &__field {
+    @include mix.p16;
+
+    width: 100%;
+    min-height: fn.cmin(120, 144);
+    padding: fn.cmin(12, 24);
+    background: var(--white);
+    border-radius: 20px;
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(12, 16);
+
+    &-title {
+      @include mix.p20;
+    }
+
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: fn.cmin(24, 54);
+      align-items: center;
+    }
+
+    &-item {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    &-icon {
+      width: fn.cmin(32, 48);
+      height: fn.cmin(32, 48);
+    }
+  }
+}

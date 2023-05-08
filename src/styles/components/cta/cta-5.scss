@@ -1,0 +1,39 @@
+//  Base
+@use 'normalize.css/normalize.css';
+@use '../../base/reset';
+
+// Partials
+@use '../../base/base';
+@use '../../base/typography';
+@use '../../partials/buttons';
+
+// Utils
+@use '../../utils/mixins' as mix;
+@use '../../utils/variables' as vars;
+@use '../../utils/functions' as fn;
+
+.cta-5 {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title-block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__subtitle {
+    @include mix.p14;
+  }
+
+  &__title {
+    @include mix.h2;
+  }
+}

@@ -1,0 +1,76 @@
+//  Base
+@use 'normalize.css/normalize.css';
+@use '../../base/reset';
+@use '../../base/grid';
+
+// Partials
+@use '../../base/base';
+@use '../../base/typography';
+@use '../../partials/buttons';
+@use '../../partials/tickets';
+
+// Utils
+@use '../../utils/mixins' as mix;
+@use '../../utils/variables' as vars;
+@use '../../utils/functions' as fn;
+
+.ticket-1 {
+  &__list {
+    justify-content: center;
+  }
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(16, 32);
+    max-width: 450px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title-block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__subtitle {
+    @include mix.p14;
+  }
+
+  &__title {
+    @include mix.h2;
+  }
+
+  &__desc {
+    @include mix.title;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(24, 48);
+    padding: fn.cmin(24, 64) fn.cmin(18, 64);
+
+    @media (max-width: vars.$sm) {
+      padding-right: 12px;
+      padding-left: 12px;
+    }
+
+    &-text-block {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    &-title {
+      @include mix.h4;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: fn.cmin(8, 12) fn.cmin(24, 40);
+  }
+}

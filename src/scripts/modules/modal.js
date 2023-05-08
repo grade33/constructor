@@ -1,5 +1,5 @@
-export function openModal(name) {
-  document.querySelectorAll(`[data-modal-open="${name}"]`).forEach((openBtn) => {
+export function openModal() {
+  document.querySelectorAll(`[data-modal-open]`).forEach((openBtn) => {
     openBtn.addEventListener('click', () => {
       const modalName = openBtn.dataset.modalOpen;
       const modal = document.querySelector(`[data-modal="${modalName}"]`);
@@ -10,17 +10,18 @@ export function openModal(name) {
   });
 
   document.addEventListener('click', (e) => {
-    const modal = document.querySelector(`[data-modal="${name}"].modal_active`);
-    const closeBtn = document.querySelector(`[data-modal="${name}"] .modal__close`);
+    document.querySelectorAll(`[data-modal].modal_active`).forEach((modal) => {
+      const closeBtn = modal.querySelector(`.modal__close`);
 
-    if (
-      e.target.closest('[data-modal-open]') ||
-      !modal ||
-      (e.target.closest('.modal__content') && !closeBtn.contains(e.target))
-    )
-      return;
+      if (
+        e.target.closest('[data-modal-open]') ||
+        !modal ||
+        (e.target.closest('.modal__inner') && !closeBtn.contains(e.target))
+      )
+        return;
 
-    modal.classList.remove('modal_active');
-    document.body.style.overflow = null;
+      modal.classList.remove('modal_active');
+      document.body.style.overflow = null;
+    });
   });
 }

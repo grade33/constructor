@@ -24,4 +24,25 @@
     overflow-y: auto;
     transform: translate(-50%, -50%);
   }
+
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 24px fn.cmin(16, 24);
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover,
+    &:focus-visible,
+    &:active {
+      opacity: 1;
+    }
+
+    &-icon {
+      width: fn.cmin(24, 32);
+      height: fn.cmin(24, 32);
+    }
+  }
+
 }
