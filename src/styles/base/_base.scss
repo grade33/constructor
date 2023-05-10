@@ -1,3 +1,24 @@
+//  Base
+@use 'normalize.css/normalize.css';
+@use './reset';
+@use './grid';
+@use './typography';
+
+// Vendors
+@use '../vendor/select';
+@use '../vendor/swiper';
+
+// Partials
+@use '../partials/acc';
+@use '../partials/burger-menu';
+@use '../partials/buttons';
+@use '../partials/checkbox';
+@use '../partials/inputs';
+@use '../partials/modal';
+@use '../partials/select-nav';
+@use '../partials/tickets';
+
+// Utils
 @use '../utils/mixins' as mix;
 @use '../utils/variables' as vars;
 @use '../utils/functions' as fn;
@@ -35,8 +56,4 @@
   color: var(--black);
   background: rgba(vars.$black, 0.05);
   border-radius: 16px;
-}
-
-input {
-  width: 100%;
 }

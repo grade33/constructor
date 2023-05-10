@@ -1,0 +1,144 @@
+// Main Styles
+@use '../../base/base';
+
+// Utils
+@use '../../utils/mixins' as mix;
+@use '../../utils/variables' as vars;
+@use '../../utils/functions' as fn;
+
+.blog-3-3 {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(32, 64);
+    align-items: center;
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(4, 12);
+    text-align: center;
+
+    @media (max-width: vars.$sm) {
+      align-self: flex-start;
+      text-align: left;
+    }
+  }
+
+  &__title {
+    @include mix.h2;
+
+    &-block {
+      display: flex;
+      flex-direction: column;
+      gap: fn.cmin(12, 20);
+    }
+
+    &-desc {
+      @include mix.title;
+
+      opacity: 0.5;
+    }
+  }
+
+  &__subtitle {
+    @include mix.p14;
+  }
+
+  &__desktop {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(32, 64);
+    align-items: center;
+
+    @media (max-width: vars.$md) {
+      display: none;
+    }
+  }
+
+  &__mobile {
+    align-self: stretch;
+
+    @media (min-width: vars.$min-md) {
+      display: none;
+    }
+  }
+
+  &__slider {
+    width: 100%;
+    height: auto;
+
+    &-btn-block {
+      display: flex;
+      gap: 16px;
+      margin-top: 16px;
+    }
+  }
+
+  &__list {
+    row-gap: fn.cmin(16, 32);
+  }
+
+  &__item {
+    height: 100%;
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: fn.cmin(16,24);
+    }
+
+    &-text-block {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+  }
+
+  &__img {
+    &-wrap,
+    & {
+      width: 100%;
+    }
+
+    border-radius: 20px;
+  }
+
+  &__info {
+    @include mix.p14;
+  }
+
+  &__name {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+
+    @include mix.h4;
+
+    &_icon {
+      width: fn.cmin(20, 24);
+      height: fn.cmin(20, 24);
+    }
+  }
+
+  &__desc {
+    @include mix.p16;
+  }
+
+  &__badge {
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: auto;
+    }
+  }
+}

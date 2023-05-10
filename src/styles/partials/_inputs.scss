@@ -2,6 +2,10 @@
 @use '../utils/variables' as vars;
 @use '../utils/functions' as fn;
 
+input {
+  width: 100%;
+}
+
 .field {
   position: relative;
   width: 100%;

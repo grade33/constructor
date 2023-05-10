@@ -7,14 +7,20 @@ const OptimizeCSSAssetsPlugin = require('css-minimizer-webpack-plugin');
 
 const isDev = process.env.NODE_ENV !== 'production';
 
-function getEntries(folder) {
-  const files = fs.readdirSync(folder);
-  const entries = {};
+function getEntries(folder, parent = '') {
+  let entries = {};
 
+  const files = fs.readdirSync(folder);
   files.forEach(file => {
     const filePath = path.resolve(folder, file);
-    const fileName = path.basename(file, path.extname(file));
-    entries[fileName] = filePath;
+    const fileName = path.join(parent, path.basename(file, path.extname(file)));
+
+    if (fs.lstatSync(filePath).isDirectory()) {
+      // Если это папка, рекурсивно получаем вложенные файлы
+      entries = { ...entries, ...getEntries(filePath, fileName) };
+    } else {
+      entries[fileName] = filePath;
+    }
   });
 
   return entries;

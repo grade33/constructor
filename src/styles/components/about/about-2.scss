@@ -1,0 +1,74 @@
+// Main Styles
+@use '../../base/base';
+
+// Utils
+@use '../../utils/mixins' as mix;
+@use '../../utils/variables' as vars;
+@use '../../utils/functions' as fn;
+
+.about-2 {
+  &__container {
+    display: flex;
+    gap: fn.cmax(32, 80);
+    align-items: center;
+
+    @media (max-width: vars.$lg) {
+      flex-direction: column;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(32, 50);
+    order: 2;
+    width: 50%;
+
+    @media (max-width: vars.$lg) {
+      order: 2;
+      width: 100%;
+    }
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(16, 30);
+  }
+
+  &__title-block {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(4, 12);
+  }
+
+  &__subtitle {
+    @include mix.p16;
+
+    opacity: 0.5;
+  }
+
+  &__title {
+    @include mix.h2;
+  }
+
+  &__desc {
+    @include mix.p16;
+
+    opacity: 0.5;
+  }
+
+  &__img {
+    &-block {
+      flex-grow: 1;
+    }
+
+    @include mix.ratio(576, 550);
+
+    @media (max-width: vars.$md) {
+      aspect-ratio: 1/1;
+    }
+
+    border-radius: 20px;
+  }
+}

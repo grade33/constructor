@@ -1,0 +1,25 @@
+extends ../../layouts/main
+
+block vars
+  - const groupName = 'about';
+  - const cssName = 'about-1';
+  //- - const jsName = 'about-1';
+
+block content
+  // Добавить к block класс block_dark
+  // Заменить класс btn_black на btn_white
+  section.about-1.section.block
+    .about-1__container.container 
+      .about-1__content
+        .about-1__text-block
+          .about-1__title-block 
+            span.about-1__subtitle Our studio
+            h2.about-1__title Design that influences how people work, learn, live and experience the world. 
+          .about-1__desc 
+            p Dolor enim eu tortor urna sed duis nulla. Aliquam vestibulum, nulla odio nisl vitae. In aliquet pellentesque aenean hac vestibulum turpis mi bibendum diam. Tempor integer aliquam in vitae malesuada fringilla.
+            p Elit nisi in eleifend sed nisi. Pulvinar at orci, proin imperdiet commodo consectetur convallis risus. 
+        button.about-1__btn.btn.btn_all.btn_extralarge.btn_black(type="button") Get in touch 
+      .about-1__img-block 
+        picture.about-1__img-wrap 
+          img.about-1__img(src="@/assets/img/about/img-1.jpg", alt="")
+      

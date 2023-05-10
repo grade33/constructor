@@ -1,0 +1,60 @@
+// Main Styles
+@use '../../base/base';
+
+// Utils
+@use '../../utils/mixins' as mix;
+@use '../../utils/variables' as vars;
+@use '../../utils/functions' as fn;
+
+.gallery-3-4 {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(24, 32);
+  }
+
+  &__title {
+    @include mix.h2;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+  }
+
+  @for $i from 1 through 12 {
+    &__item_#{$i} {
+      grid-column: span #{$i};
+
+      @media (max-width: vars.$md) {
+        &:nth-child(9n - 8),
+        &:nth-child(9n - 5),
+        &:nth-child(9n) {
+          grid-column: span 12;
+          height: 360px;
+        }
+
+        &:nth-child(9n - 7),
+        &:nth-child(9n - 6),
+        &:nth-child(9n - 4),
+        &:nth-child(9n - 3),
+        &:nth-child(9n - 2),
+        &:nth-child(9n - 1) {
+          grid-column: span 6;
+          height: 158px;
+        }
+      }
+    }
+  }
+
+  &__img {
+    &-wrap,
+    & {
+      width: 100%;
+      height: 100%;
+    }
+
+    border-radius: 20px;
+  }
+}

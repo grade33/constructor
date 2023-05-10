@@ -1,11 +1,5 @@
-//  Base
-@use 'normalize.css/normalize.css';
-@use '../../base/reset';
-
-// Partials
+// Main Styles
 @use '../../base/base';
-@use '../../base/typography';
-@use '../../partials/buttons';
 
 // Utils
 @use '../../utils/mixins' as mix;

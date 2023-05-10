@@ -1,8 +1,9 @@
 extends ../../layouts/main
 
 block vars
-  - const cssName = 'header-1';
-  - const jsName = 'header-1';
+  - const groupName = 'header';
+  - const cssName = 'header-1-4';
+  - const jsName = 'header-1-4';
 
 block content
   include ../../partials/burger-menu
@@ -10,50 +11,50 @@ block content
   // Добавить к block класс block_dark
   // Добавить к select-nav класс select-nav_dark
   // Заменить класс btn_black на btn_white
-  // Добавить к header-1__burger класс header-1__burger_dark
-  header.header-1.block
-    .header-1__inner
-      .header-1__container.container
-        a.header-1__logo(href="#") 
-          img.header-1__logo-img(src="http://via.placeholder.com/158x36" alt="")
-        nav.header-1__nav 
-          ul.header-1__nav-list 
-            li.header-1__nav-item 
+  // Добавить к header-1-4__burger класс header-1-4__burger_dark
+  header.header-1-4.block
+    .header-1-4__inner
+      .header-1-4__container.container
+        a.header-1-4__logo(href="#") 
+          img.header-1-4__logo-img(src="http://via.placeholder.com/158x36" alt="")
+        nav.header-1-4__nav 
+          ul.header-1-4__nav-list 
+            li.header-1-4__nav-item 
               .select.select-nav
                 div(data-value="") Locations
                 div(data-value="link1")
-                  a.header-1__nav-link(href="#") Link 1
+                  a.header-1-4__nav-link(href="#") Link 1
                 div(data-value="link2")
-                  a.header-1__nav-link(href="#") Link 2
+                  a.header-1-4__nav-link(href="#") Link 2
                 div(data-value="link3")
-                  a.header-1__nav-link(href="#") Link 3
+                  a.header-1-4__nav-link(href="#") Link 3
                 div(data-value="link4")
-                  a.header-1__nav-link(href="#") Link 4
-            li.header-1__nav-item 
-              a.header-1__nav-link(href="#") Restaurant
-            li.header-1__nav-item 
+                  a.header-1-4__nav-link(href="#") Link 4
+            li.header-1-4__nav-item 
+              a.header-1-4__nav-link(href="#") Restaurant
+            li.header-1-4__nav-item 
               .select.select-nav
                 div(data-value="") Services
                 div(data-value="link1")
-                  a.header-1__nav-link(href="#") Link 1
+                  a.header-1-4__nav-link(href="#") Link 1
                 div(data-value="link2")
-                  a.header-1__nav-link(href="#") Link 2
-            li.header-1__nav-item 
-              a.header-1__nav-link(href="#") Menu
-            li.header-1__nav-item 
-              a.header-1__nav-link(href="#") Contacts
-        .header-1__contacts
-          a.header-1__contacts-tel.btn.btn_medium(href="#") Call us
-          button.header-1__contacts-btn.btn.btn_medium.btn_black(type="button") 
+                  a.header-1-4__nav-link(href="#") Link 2
+            li.header-1-4__nav-item 
+              a.header-1-4__nav-link(href="#") Menu
+            li.header-1-4__nav-item 
+              a.header-1-4__nav-link(href="#") Contacts
+        .header-1-4__contacts
+          a.header-1-4__contacts-tel.btn.btn_medium(href="#") Call us
+          button.header-1-4__contacts-btn.btn.btn_medium.btn_black(type="button") 
             | Book a table
             svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
               path(stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" d="M3.33398 7.99992H12.6673M12.6673 7.99992L8.00065 3.33325M12.6673 7.99992L8.00065 12.6666")
-        button.header-1__contacts-btn.header-1__contacts-btn_mobile.btn.btn_medium.btn_black(type="button") 
+        button.header-1-4__contacts-btn.header-1-4__contacts-btn_mobile.btn.btn_medium.btn_black(type="button") 
           | Book a table
           svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
             path(stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" d="M3.33398 7.99992H12.6673M12.6673 7.99992L8.00065 3.33325M12.6673 7.99992L8.00065 12.6666")
-        button.header-1__burger(type="button")    
-          span.header-1__burger-item
-          span.header-1__burger-item
-          span.header-1__burger-item
+        button.header-1-4__burger(type="button")    
+          span.header-1-4__burger-item
+          span.header-1-4__burger-item
+          span.header-1-4__burger-item
         +menu

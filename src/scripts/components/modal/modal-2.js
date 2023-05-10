@@ -1,0 +1,2 @@
+window.helpFunctions.openModal();
+

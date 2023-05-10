@@ -1,51 +1,52 @@
 extends ../../layouts/main
 
 block vars
-  - const cssName = 'gallery-5';
+  - const groupName = 'gallery';
+  - const cssName = 'gallery-5-2';
   - const jsName = 'gallery-5-2';
 
 block content
   // Добавить к block класс block_dark
   // Добавить к btn-arrow класс btn-arrow_dark
-  section.gallery-5.gallery-5_2.section.block
-    .gallery-5__content
-      .gallery-5__container.container 
-        h2.gallery-5__title Gallery 
-      .swiper.gallery-5__slider
+  section.gallery-5-2.section.block
+    .gallery-5-2__content
+      .gallery-5-2__container.container 
+        h2.gallery-5-2__title Gallery 
+      .swiper.gallery-5-2__slider
         ul.swiper-wrapper 
           li.swiper-slide
-            picture.gallery-5__img-wrap
-              img.gallery-5__img(src="@/assets/img/gallery/4/item-1.jpg", alt="")
+            picture.gallery-5-2__img-wrap
+              img.gallery-5-2__img(src="@/assets/img/gallery/4/item-1.jpg", alt="")
           li.swiper-slide
-            picture.gallery-5__img-wrap
-              img.gallery-5__img(src="@/assets/img/gallery/4/item-2.jpg", alt="")
+            picture.gallery-5-2__img-wrap
+              img.gallery-5-2__img(src="@/assets/img/gallery/4/item-2.jpg", alt="")
           li.swiper-slide
-            picture.gallery-5__img-wrap
-              img.gallery-5__img(src="@/assets/img/gallery/4/item-3.jpg", alt="")
+            picture.gallery-5-2__img-wrap
+              img.gallery-5-2__img(src="@/assets/img/gallery/4/item-3.jpg", alt="")
           li.swiper-slide
-            picture.gallery-5__img-wrap
-              img.gallery-5__img(src="@/assets/img/gallery/4/item-4.jpg", alt="")
+            picture.gallery-5-2__img-wrap
+              img.gallery-5-2__img(src="@/assets/img/gallery/4/item-4.jpg", alt="")
           li.swiper-slide
-            picture.gallery-5__img-wrap
-              img.gallery-5__img(src="@/assets/img/gallery/4/item-5.jpg", alt="")
+            picture.gallery-5-2__img-wrap
+              img.gallery-5-2__img(src="@/assets/img/gallery/4/item-5.jpg", alt="")
           li.swiper-slide
-            picture.gallery-5__img-wrap
-              img.gallery-5__img(src="@/assets/img/gallery/4/item-6.jpg", alt="")
+            picture.gallery-5-2__img-wrap
+              img.gallery-5-2__img(src="@/assets/img/gallery/4/item-6.jpg", alt="")
           li.swiper-slide
-            picture.gallery-5__img-wrap
-              img.gallery-5__img(src="@/assets/img/gallery/4/item-7.jpg", alt="")
+            picture.gallery-5-2__img-wrap
+              img.gallery-5-2__img(src="@/assets/img/gallery/4/item-7.jpg", alt="")
           li.swiper-slide
-            picture.gallery-5__img-wrap
-              img.gallery-5__img(src="@/assets/img/gallery/4/item-8.jpg", alt="")
+            picture.gallery-5-2__img-wrap
+              img.gallery-5-2__img(src="@/assets/img/gallery/4/item-8.jpg", alt="")
           li.swiper-slide
-            picture.gallery-5__img-wrap
-              img.gallery-5__img(src="@/assets/img/gallery/4/item-9.jpg", alt="")
-        .gallery-5__slider-btn-block
-          button.gallery-5__slider-btn.gallery-5__slider-btn_prev.btn-arrow(type="button")
+            picture.gallery-5-2__img-wrap
+              img.gallery-5-2__img(src="@/assets/img/gallery/4/item-9.jpg", alt="")
+        .gallery-5-2__slider-btn-block
+          button.gallery-5-2__slider-btn.gallery-5-2__slider-btn_prev.btn-arrow(type="button")
             svg.btn-arrow__icon(viewBox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
               path(d="M20.25 12H3.75", stroke="currentColor", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
               path(d="M10.5 5.25L3.75 12L10.5 18.75", stroke="currentColor", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
-          button.gallery-5__slider-btn.gallery-5__slider-btn_next.btn-arrow(type="button")
+          button.gallery-5-2__slider-btn.gallery-5-2__slider-btn_next.btn-arrow(type="button")
             svg.btn-arrow__icon(viewBox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
               path(d="M3.75 12H20.25", stroke="currentColor", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
               path(d="M13.5 5.25L20.25 12L13.5 18.75", stroke="currentColor", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")            
