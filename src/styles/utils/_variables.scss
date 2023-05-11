@@ -13,50 +13,6 @@ $lg: $min-lg - 0.02px;
 $md: $min-md - 0.02px;
 $sm: $min-sm - 0.02px;
 
-// Vars
-:root {
-  --red: #e64646;
-  --green: #4bb34b;
-  --orange: #ffa000;
-  --grey: #979797;
-  --blue: #4594c0;
-  --white: #fff;
-  --light-blue: #e8eef1;
-  --light-blue-opacity-50: rgba(232, 238, 241, 50%);
-  --black: #222;
-
-  // Container
-  --container: 1290px;
-  --padding: 75px;
-
-  // Gutter
-  --gutter: 30px;
-
-  @media (max-width: $xxl) {
-    --container: 1140px;
-    --padding: 30px;
-  }
-
-  @media (max-width: $xl) {
-    --container: 960px;
-    --padding: 25px;
-  }
-
-  @media (max-width: $lg) {
-    --container: 720px;
-    --padding: 20px;
-  }
-
-  @media (max-width: $md) {
-    --container: 540px;
-    --padding: 16px;
-  }
-
-  @media (max-width: $sm) {
-    --container: 100%;
-  }
-}
-
 // Scss Vars
 $black: #222;
 $white: #fff;

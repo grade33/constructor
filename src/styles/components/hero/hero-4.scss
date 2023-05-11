@@ -1,6 +1,3 @@
-// Main Styles
-@use '../../base/base';
-
 // Utils
 @use '../../utils/mixins' as mix;
 @use '../../utils/variables' as vars;
@@ -94,7 +91,7 @@
     &::after {
       position: absolute;
       z-index: -1;
-      background: linear-gradient(0deg, rgba(vars.$black, 40%), rgba(vars.$black, 40%));
+      background: linear-gradient(0deg, var(--black-40), var(--black-40));
       content: '';
       inset: 0;
     }

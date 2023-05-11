@@ -10,7 +10,7 @@
   width: 100%;
   padding: 16px 0;
   background: var(--white);
-  border-top: 1px solid rgba(vars.$black, 0.1);
+  border-top: 1px solid var(--black-10);
   transform: translateY(-100%);
   visibility: hidden;
   opacity: 0;
@@ -28,7 +28,7 @@
 
   &_black {
     background: var(--black);
-    border-color: rgba(vars.$black, 0.1);
+    border-color: var(--black-10);
   }
 
   &__nav {
