@@ -1,8 +1,8 @@
-new window.helpFunctions.swiper.Swiper('.gallery-5_2 .swiper', {
+new window.helpFunctions.swiper.Swiper('.swiper.gallery-5-2__slider', {
   modules: [window.helpFunctions.swiper.Navigation, window.helpFunctions.swiper.Autoplay],
   navigation: {
-    prevEl: '.gallery-5__slider-btn_prev',
-    nextEl: '.gallery-5__slider-btn_next',
+    prevEl: '.gallery-5-2__slider-btn_prev',
+    nextEl: '.gallery-5-2__slider-btn_next',
   },
   autoplay: {
     delay: 5000,

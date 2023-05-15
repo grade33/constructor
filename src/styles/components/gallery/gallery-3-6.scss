@@ -24,9 +24,41 @@
     }
   }
 
-  @for $i from 1 through 12 {
-    .gallery-3-6__item_#{$i} {
-      grid-column: span #{$i};
+  &__item {
+    &:nth-child(9n - 8) {
+      grid-column: span 8;
+    }
+
+    &:nth-child(9n - 7) {
+      grid-column: span 2;
+    }
+
+    &:nth-child(9n - 6) {
+      grid-column: span 2;
+    }
+
+    &:nth-child(9n - 5) {
+      grid-column: span 5;
+    }
+
+    &:nth-child(9n - 4) {
+      grid-column: span 2;
+    }
+
+    &:nth-child(9n - 3) {
+      grid-column: span 5;
+    }
+
+    &:nth-child(9n - 2) {
+      grid-column: span 4;
+    }
+
+    &:nth-child(9n - 1) {
+      grid-column: span 4;
+    }
+
+    &:nth-child(9n) {
+      grid-column: span 4;
     }
   }
 
@@ -42,6 +74,10 @@
     &-slide {
       height: unset;
     }
+  }
+
+  &__link {
+    width: 100%;
   }
 
   &__img {

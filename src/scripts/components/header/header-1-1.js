@@ -1,3 +1,1 @@
-new window.helpFunctions.Select('.header-1 .select') 
-
-window.helpFunctions.toggleMenu()
+new window.helpFunctions.Select('.header-1-1 .select') 

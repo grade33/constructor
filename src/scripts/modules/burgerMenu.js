@@ -1,6 +1,8 @@
 export function toggleMenu() {
   const menu = document.querySelector(`.menu`);
   const btn = document.querySelector(`.header__burger`);
+  
+  if(!menu || !btn) return;
 
   document.addEventListener('click', (e) => {
     if(btn.contains(e.target)) {

@@ -1,4 +1,4 @@
-new window.helpFunctions.swiper.Swiper('.gallery-3_6 .swiper', {
+new window.helpFunctions.swiper.Swiper('.swiper.gallery-3-6__slider', {
   modules: [window.helpFunctions.swiper.Autoplay],
   autoplay: {
     delay: 5000,
