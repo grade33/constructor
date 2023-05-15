@@ -29,6 +29,8 @@
   }
 
   &__item {
+    max-height: 300px;
+
     &:nth-child(9n - 8) {
       grid-column: span 8;
 

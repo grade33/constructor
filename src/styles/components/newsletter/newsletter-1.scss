@@ -33,7 +33,7 @@
   }
 
   &__desc {
-    @include mix.title;
+    @include mix.h5;
 
     max-width: 480px;
     opacity: 0.5;

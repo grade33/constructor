@@ -1,0 +1,90 @@
+// Utils
+@use '../../utils/mixins' as mix;
+@use '../../utils/variables' as vars;
+@use '../../utils/functions' as fn;
+
+.benefits-num-6 {
+  &.block_dark {
+    .benefits-num-6 {
+      &__list {
+        border-color: var(--white-10);
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(32, 64);
+    align-items: center;
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(12, 20);
+    max-width: 768px;
+    text-align: center;
+  }
+
+  &__title-block {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(4, 12);
+  }
+
+  &__subtitle {
+    @include mix.p14;
+
+    opacity: 0.5;
+  }
+
+  &__title {
+    @include mix.h2;
+  }
+
+  &__desc {
+    @include mix.h5;
+
+    opacity: 0.5;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: fn.cmin(16, 60) 32px;
+    justify-items: center;
+    width: 100%;
+    padding: fn.cmin(24, 64) fn.cmin(18, 64);
+    border: 1px solid var(--black-10);
+    border-radius: 20px;
+
+    @media (max-width: vars.$lg) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: vars.$sm) {
+      grid-template-columns: 1fr;
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    text-align: center;
+
+    &-name {
+      @include mix.p16;
+
+      opacity: 0.8;
+    }
+
+    &-info {
+      @include mix.h3;
+    }
+  }
+}

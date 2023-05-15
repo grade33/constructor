@@ -56,7 +56,7 @@
   }
 
   &__text {
-    @include mix.title;
+    @include mix.h5;
 
     margin-bottom: fn.cmin(12, 24);
   }

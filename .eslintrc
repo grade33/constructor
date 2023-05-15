@@ -8,7 +8,6 @@
   "plugins": ["prettier", "eslint-plugin-prettier"],
   "ignorePatterns": ["node_modules/", "dist/"],
   "rules": {
-    "import/no-unresolved": "off",
     "import/no-extraneous-dependencies": "off",
     "import/prefer-default-export": "off",
     "no-new": "off"

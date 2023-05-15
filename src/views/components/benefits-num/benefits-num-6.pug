@@ -1,0 +1,23 @@
+extends ../../layouts/main
+
+block vars
+  - const groupName = 'benefits-num';
+  - const cssName = 'benefits-num-6';
+  //- - const jsName = 'benefits-num-6';
+
+block content
+  // Добавить к block класс block_dark
+  section.benefits-num-6.section.block
+    .benefits-num-6__container.container
+      .benefits-num-6__text-block
+        .benefits-num-6__title-block 
+          span.benefits-num-6__subtitle Features
+          h2.benefits-num-6__title Analytics that feels like it’s from the future
+        p.benefits-num-6__desc Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.
+      ul.benefits-num-6__list
+        - let i = 0;
+        while i < 6
+          - i++
+          li.benefits-num-6__item 
+            strong.benefits-num-6__item-name Plätze im Restaurant für
+            strong.benefits-num-6__item-info 70 Personen
