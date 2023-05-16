@@ -1,0 +1,88 @@
+// Utils
+@use '../../utils/mixins' as mix;
+@use '../../utils/variables' as vars;
+@use '../../utils/functions' as fn;
+
+.benefits-num-7 {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(32, 60);
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(7, 16);
+
+    @media (max-width: vars.$xl) {
+      max-width: 768px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    @media (max-width: vars.$sm) {
+      gap: 4px;
+    }
+  }
+
+  &__subtitle {
+    @include mix.p14;
+
+    opacity: 0.5;
+  }
+
+  &__title {
+    &-block {
+      display: flex;
+      gap: fn.cmin(12, 24);
+      align-self: flex-start;
+
+      @media (max-width: vars.$xl) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    @include mix.h2;
+  }
+
+  &__desc {
+    @include mix.p20;
+
+    opacity: 0.5;
+  }
+
+  &__list {
+    row-gap: 16px;
+    padding-top: fn.cmin(24, 64);
+    padding-bottom: fn.cmin(24, 64);
+    color: var(--white);
+    background: var(--black);
+    border-radius: 16px;
+
+    &_dark {
+      color: var(--black);
+      background: var(--white);
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__name {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    @include mix.p18;
+
+    &_big {
+      @include mix.h1;
+    }
+  }
+}
