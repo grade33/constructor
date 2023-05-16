@@ -1,0 +1,108 @@
+// Utils
+@use '../../utils/mixins' as mix;
+@use '../../utils/variables' as vars;
+@use '../../utils/functions' as fn;
+
+.benefits-11 {
+  &.block_dark {
+    .benefits-11 {
+      &__info {
+        color: var(--black);
+        background: var(--white);
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(16, 60);
+    align-items: center;
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(12, 16);
+    max-width: 768px;
+    text-align: center;
+  }
+
+  &__title-block {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(4, 12);
+  }
+
+  &__subtitle {
+    @include mix.p14;
+
+    opacity: 0.5;
+  }
+
+  &__title {
+    @include mix.h2;
+  }
+
+  &__desc {
+    @include mix.h5;
+
+    opacity: 0.5;
+  }
+
+  &__list {
+    row-gap: fn.cmin(16, 32);
+  }
+
+  &__item {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+  }
+
+  &__img {
+    &-wrap,
+    & {
+      width: 100%;
+    }
+
+    border-radius: 20px;
+  }
+
+  &__info {
+    position: absolute;
+    right: fn.cmin(12, 20);
+    bottom: fn.cmin(10, 20);
+    left: fn.cmin(12, 20);
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 320px;
+    padding: 16px;
+    color: var(--white);
+    background: var(--basic-black);
+    border-radius: 10px;
+  }
+
+  &__name {
+    &-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    @include mix.h4;
+  }
+
+  &__text {
+    @include mix.p16;
+
+    opacity: 0.7;
+  }
+
+  &__icon {
+    width: fn.cmin(24, 32);
+    height: fn.cmin(24, 32);
+  }
+}

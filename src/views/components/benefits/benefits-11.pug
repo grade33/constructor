@@ -1,0 +1,27 @@
+extends ../../layouts/main
+
+block vars
+  - const groupName = 'benefits';
+  - const cssName = 'benefits-11';
+  //- - const jsName = 'benefits-11';
+
+block content
+  // Добавить к block класс block_dark
+  section.benefits-11.section.block
+    .benefits-11__container.container
+      .benefits-11__text-block 
+        .benefits-11__title-block
+          span.benefits-11__subtitle Features
+          h2.benefits-11__title Cutting-edge features for advanced analytics
+        p.benefits-11__desc Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.
+      ul.row.benefits-11__list
+        - let i = 0
+        while i < 3  
+          - i++
+          li.col-4.col-lg-6.col-md
+            a.benefits-11__item(href="#") 
+              picture.benefits-11__img-wrap
+                img.benefits-11__img(src="@/assets/img/benefits/benefit-10.jpg" alt="")
+              .benefits-11__info 
+                h3.benefits-11__name Speisen & Getränke 
+                p.benefits-11__text Vielfalt für jeden Geschmack
