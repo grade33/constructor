@@ -17,8 +17,7 @@ window.helpFunctions = {
   openModal,
 };
 
-const select = new Select('.header-select');
-select.setMinWidth()
+new Select('.header-select');
 
 window.helpFunctions.openModal();
 window.helpFunctions.toggleMenu();

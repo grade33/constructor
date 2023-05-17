@@ -37,8 +37,6 @@
 
   &__subtitle {
     @include mix.p14;
-
-    opacity: 0.5;
   }
 
   &__title {
@@ -58,7 +56,8 @@
 
   &__desc {
     @include mix.p20;
-
+    
+    max-width: 520px;
     opacity: 0.5;
   }
 

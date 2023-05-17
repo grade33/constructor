@@ -7,6 +7,7 @@ $white: #fff;
 
 // Vars
 :root {
+  --subtitle: gray;
   --red: #e64646;
   --green: #4bb34b;
   --orange: #ffa000;
@@ -103,4 +104,8 @@ $white: #fff;
 
 .text-end {
   text-align: right;
+}
+
+.subtitle {
+  color: var(--subtitle);
 }

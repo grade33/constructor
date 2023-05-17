@@ -12,6 +12,11 @@ $breakpoints: (
   'sm': vars.$sm,
 );
 
+.row-container {
+  padding-right: calc($gutter-width * 0.5);
+  padding-left: calc($gutter-width * 0.5);
+}
+
 // Миксины
 @mixin make-row() {
   display: flex;
