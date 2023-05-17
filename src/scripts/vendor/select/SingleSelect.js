@@ -1,7 +1,7 @@
 export class SingleSelect {
   constructor(selectElement) {
     this.originSelect = selectElement;
-    this.select = null;
+    this.initialSelect = null;
     this.customSelect = null;
     this.selectHead = null;
     this.selectBody = null;
@@ -45,7 +45,7 @@ export class SingleSelect {
     this.currentHeadOption = newHeadOption;
 
     const selectedOption =
-      [...this.select.options].find((option) => option.dataset.id === currentOption.dataset.id) ||
+      [...this.initialSelect.options].find((option) => option.dataset.id === currentOption.dataset.id) ||
       this.optionsCollection[0];
     selectedOption.selected = true;
   }
@@ -96,7 +96,7 @@ export class SingleSelect {
       select.append(option);
     });
 
-    this.select = select;
+    this.initialSelect = select;
     this.customSelect.prepend(select);
   }
 }
