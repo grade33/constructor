@@ -119,11 +119,13 @@
 
   &__title {
     @include mix.h1;
+
+    color: var(--title);
   }
 
   &__desc {
-    opacity: 0.5;
-
     @include mix.p20;
+    
+    color: var(--desc);
   }
 }

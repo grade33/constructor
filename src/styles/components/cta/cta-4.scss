@@ -53,12 +53,14 @@
 
   &__title {
     @include mix.h2;
+
+    color: var(--title);
   }
 
   &__desc {
-    opacity: 0.5;
-
     @include mix.p20;
+
+    color: var(--desc);
   }
 
   &__btn {

@@ -12,6 +12,8 @@
 
   &__title {
     @include mix.h2;
+
+    color: var(--title);
   }
 
   &__list {

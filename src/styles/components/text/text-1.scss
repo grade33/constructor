@@ -25,6 +25,8 @@
 
   &__title {
     @include mix.h5;
+
+    color: var(--title);
   }
 
   &__img {

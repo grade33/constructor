@@ -30,13 +30,14 @@
     @include mix.h1;
 
     max-width: 1024px;
+    color: var(--title);
   }
 
   &__desc {
-    max-width: 640px;
-    opacity: 0.5;
-
     @include mix.p20;
+
+    max-width: 640px;
+    color: var(--desc);
   }
 
   &__btn {

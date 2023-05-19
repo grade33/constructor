@@ -32,7 +32,7 @@
         right: 0;
         width: 16px;
         height: 16px;
-        background: url('@/assets/img/chevron-down-black.svg') no-repeat center / contain;
+        background: url('@/assets/images/chevron-down-black.svg') no-repeat center / contain;
         transform: translateY(-50%);
         transition: transform 0.3s ease-in-out;
         content: '';
@@ -70,7 +70,7 @@
 
       &__head {
         &::after {
-          background-image: url('@/assets/img/chevron-down-white.svg');
+          background-image: url('@/assets/images/chevron-down-white.svg');
         }
       }
 

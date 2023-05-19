@@ -30,13 +30,15 @@
 
   &__title {
     @include mix.h2;
+
+    color: var(--title);
   }
 
   &__desc {
     @include mix.h5;
 
     max-width: 480px;
-    opacity: 0.5;
+    color: var(--desc);
   }
 
   &__form {

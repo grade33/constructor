@@ -24,13 +24,15 @@
   }
 
   &__title {
-    @include mix.h2;
-
     &-block {
       display: flex;
       flex-direction: column;
       gap: fn.cmin(12, 20);
     }
+
+    @include mix.h2;
+
+    color: var(--title);
 
     &-desc {
       @include mix.h5;
@@ -83,7 +85,7 @@
     &-content {
       display: flex;
       flex-direction: column;
-      gap: fn.cmin(16,24);
+      gap: fn.cmin(16, 24);
     }
 
     &-text-block {
@@ -128,6 +130,8 @@
 
   &__desc {
     @include mix.p16;
+
+    color: var(--desc);
   }
 
   &__badge {

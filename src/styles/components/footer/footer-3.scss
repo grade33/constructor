@@ -36,9 +36,9 @@
   }
 
   &__desc {
-    opacity: 0.5;
-
     @include mix.p16;
+
+    color: var(--desc);
   }
 
   &__nav-title,

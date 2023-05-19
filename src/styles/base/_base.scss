@@ -7,7 +7,12 @@ $white: #fff;
 
 // Vars
 :root {
-  --subtitle: gray;
+  // Text Colors
+  --subtitle: #{rgba($black, 0.5)};
+  --title: var(--black);
+  --desc: #{rgba($black, 0.5)};
+
+  // Colors
   --red: #e64646;
   --green: #4bb34b;
   --orange: #ffa000;
@@ -16,7 +21,6 @@ $white: #fff;
   --light-blue: #e8eef1;
   --light-blue-opacity-50: rgba(232, 238, 241, 50%);
   --white: #{$white};
-  --basic-black: #000;
   --black: #{$black};
   --black-10: #{rgba($black, 0.1)};
   --white-10: #{rgba($white, 0.1)};
@@ -26,6 +30,8 @@ $white: #fff;
   --white-40: #{rgba($white, 0.4)};
   --black-50: #{rgba($black, 0.5)};
   --white-50: #{rgba($white, 0.5)};
+  --black-90: #{rgba($black, 0.9)};
+  --white-90: #{rgba($white, 0.9)};
 
   // Container
   --container: 1290px;
@@ -60,7 +66,7 @@ $white: #fff;
 }
 
 .block {
-  @include mix.p18;
+  @include mix.p16;
 
   color: var(--black);
 

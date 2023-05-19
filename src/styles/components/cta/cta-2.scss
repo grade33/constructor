@@ -21,10 +21,15 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    padding: fn.cmin(24, 30) fn.cmin(16, 30);
+    padding: fn.cmin(32, 100) fn.cmin(16, 30);
     text-align: center;
     background: var(--black-10);
     border-radius: 20px;
+
+    @media (max-width: vars.$sm) {
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
 
     &_dark {
       background: var(--white-10);
@@ -39,12 +44,14 @@
 
   &__title {
     @include mix.h2;
+
+    color: var(--title);
   }
 
   &__desc {
-    opacity: 0.5;
-
     @include mix.p20;
+
+    color: var(--desc);
   }
 
   &__btn {

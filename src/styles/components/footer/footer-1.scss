@@ -25,11 +25,12 @@
   &__left {
     display: flex;
     flex-direction: column;
-    gap: fn.cmin(16, 32);
+    gap: fn.cmin(16, 24);
   }
 
   &__desc {
-    opacity: 0.5;
+    max-width: 300px;
+    color: var(--desc);
   }
 
   &__nav-title,
@@ -80,6 +81,10 @@
         gap: 16px;
       }
     }
+  }
+
+  &__subscribe {
+    width: 100%;
   }
 
   &__bottom {

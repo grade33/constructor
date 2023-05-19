@@ -52,13 +52,15 @@
     }
 
     @include mix.h2;
+
+    color: var(--title);
   }
 
   &__desc {
     @include mix.p20;
     
-    max-width: 520px;
-    opacity: 0.5;
+    max-width: 458px;
+    color: var(--desc);
   }
 
   &__list {

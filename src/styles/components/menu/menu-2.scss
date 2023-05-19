@@ -30,6 +30,8 @@
 
   &__title {
     @include mix.h2;
+
+    color: var(--title);
   }
 
   &__img {
@@ -79,5 +81,10 @@
 
   &__btn {
     align-self: center;
+
+    &-icon {
+      width: 24px;
+      height: 24px;
+    }
   }
 }

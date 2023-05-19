@@ -45,6 +45,8 @@
 
   &__title {
     @include mix.h4;
+
+    color: var(--title);
   }
 
   &__form {

@@ -45,12 +45,14 @@
 
   &__title {
     @include mix.h2;
+
+    color: var(--title);
   }
 
   &__desc {
     @include mix.p16;
 
-    opacity: 0.5;
+    color: var(--desc);
   }
 
   &__img {
