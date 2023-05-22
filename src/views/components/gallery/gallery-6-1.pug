@@ -1,0 +1,57 @@
+extends ../../layouts/main
+
+block vars
+  - const groupName = 'gallery';
+  - const cssName = 'gallery-6-1';
+  - const jsName = 'gallery-6-1';
+
+block content
+  section.gallery-6-1.section.block
+    .gallery-6-1__container.container 
+      h2.gallery-6-1__title Gallery 
+    .gallery-6-1__list-block
+      ul.gallery-6-1__list 
+        li.gallery-6-1__item
+          a.gallery-6-1__item-link(data-fslightbox="gallery-6-1" href="https://placehold.co/1200x600")
+            picture.gallery-6-1__img-wrap
+              img.gallery-6-1__img(src="@/assets/images/gallery/6/img-1.jpg" alt="")
+        li.gallery-6-1__item
+          a.gallery-6-1__item-link(data-fslightbox="gallery-6-1" href="https://placehold.co/1200x600")
+            picture.gallery-6-1__img-wrap
+              img.gallery-6-1__img(src="@/assets/images/gallery/6/img-2.jpg" alt="")
+        li.gallery-6-1__item
+          a.gallery-6-1__item-link(data-fslightbox="gallery-6-1" href="https://placehold.co/1200x600")
+            picture.gallery-6-1__img-wrap
+              img.gallery-6-1__img(src="@/assets/images/gallery/6/img-3.jpg" alt="")
+        li.gallery-6-1__item
+          a.gallery-6-1__item-link(data-fslightbox="gallery-6-1" href="https://placehold.co/1200x600")
+            picture.gallery-6-1__img-wrap
+              img.gallery-6-1__img(src="@/assets/images/gallery/6/img-4.jpg" alt="")
+      ul.gallery-6-1__list 
+        li.gallery-6-1__item
+          a.gallery-6-1__item-link(data-fslightbox="gallery-6-1" href="https://placehold.co/1200x600")
+            picture.gallery-6-1__img-wrap
+              img.gallery-6-1__img(src="@/assets/images/gallery/6/img-5.jpg" alt="")
+        li.gallery-6-1__item
+          a.gallery-6-1__item-link(data-fslightbox="gallery-6-1" href="https://placehold.co/1200x600")
+            picture.gallery-6-1__img-wrap
+              img.gallery-6-1__img(src="@/assets/images/gallery/6/img-6.jpg" alt="")
+        li.gallery-6-1__item
+          a.gallery-6-1__item-link(data-fslightbox="gallery-6-1" href="https://placehold.co/1200x600")
+            picture.gallery-6-1__img-wrap
+              img.gallery-6-1__img(src="@/assets/images/gallery/6/img-7.jpg" alt="")
+        li.gallery-6-1__item
+          a.gallery-6-1__item-link(data-fslightbox="gallery-6-1" href="https://placehold.co/1200x600")
+            picture.gallery-6-1__img-wrap
+              img.gallery-6-1__img(src="@/assets/images/gallery/6/img-8.jpg" alt="")
+
+      .swiper.gallery-6-1__slider
+        ul.swiper-wrapper
+          - let i = 0;
+          while i < 11
+            - i++  
+            li.swiper-slide
+              a.gallery-6-1__item-link(data-fslightbox="gallery-6-1" href="https://placehold.co/1200x600")
+                picture.gallery-6-1__img-wrap
+                  img.gallery-6-1__img(src="https://placehold.co/500x400" alt="") 
+

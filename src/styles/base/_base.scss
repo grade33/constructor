@@ -9,8 +9,11 @@ $white: #fff;
 :root {
   // Text Colors
   --subtitle: #{rgba($black, 0.5)};
+  --subtitle-white: #{rgba($white, 0.5)};
   --title: var(--black);
+  --title-white: var(--white);
   --desc: #{rgba($black, 0.5)};
+  --desc-white: #{rgba($white, 0.5)};
 
   // Colors
   --red: #e64646;

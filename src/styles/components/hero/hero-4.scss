@@ -119,12 +119,12 @@
   &__title {
     @include mix.h1;
 
-    color: var(--title);
+    color: var(--title-white);
   }
 
   &__desc {
     @include mix.p20;
 
-    color: var(--desc);
+    color: var(--desc-white);
   }
 }
