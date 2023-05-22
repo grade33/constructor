@@ -7,6 +7,123 @@ $white: #fff;
 
 // Vars
 :root {
+  // Fonts
+  // H1
+  --h1-font-family: 'Inter', sans-serif;
+  --h1-font-size: #{fn.cmin(32, 48)};
+  --h1-line-height: #{fn.cmin(40, 60)};
+  --h1-font-weight: 600;
+  --h1-font-style: normal;
+  --h1-letter-spacing: unset;
+
+  // H2
+  --h2-font-family: 'Inter', sans-serif;
+  --h2-font-size: #{fn.cmin(24, 36)};
+  --h2-line-height: #{fn.cmin(32, 46)};
+  --h2-font-weight: 600;
+  --h2-font-style: normal;
+  --h2-letter-spacing: unset;
+
+  // H3
+  --h3-font-family: 'Inter', sans-serif;
+  --h3-font-size: #{fn.cmin(20, 32)};
+  --h3-line-height: #{fn.cmin(30, 40)};
+  --h3-font-weight: 500;
+  --h3-font-style: normal;
+  --h3-letter-spacing: unset;
+
+  // H4
+  --h4-font-family: 'Inter', sans-serif;
+  --h4-font-size: #{fn.cmin(18, 24)};
+  --h4-line-height: #{fn.cmin(28, 32)};
+  --h4-font-weight: 600;
+  --h4-font-style: normal;
+  --h4-letter-spacing: -0.75px;
+
+  // H5
+  --h5-font-family: 'Inter', sans-serif;
+  --h5-font-size: #{fn.cmin(18, 20)};
+  --h5-line-height: #{fn.cmin(28, 30)};
+  --h5-font-weight: 500;
+  --h5-font-style: normal;
+  --h5-letter-spacing: unset;
+
+  // p20
+  --p20-font-family: 'Inter', sans-serif;
+  --p20-font-size: #{fn.cmin(18, 20)};
+  --p20-line-height: #{fn.cmin(28, 32)};
+  --p20-font-weight: 400;
+  --p20-font-style: normal;
+  --p20-letter-spacing: unset;
+
+  // p18
+  --p18-font-family: 'Inter', sans-serif;
+  --p18-font-size: 18px;
+  --p18-line-height: 26px;
+  --p18-font-weight: 400;
+  --p18-font-style: normal;
+  --p18-letter-spacing: unset;
+
+  // p16
+  --p16-font-family: 'Inter', sans-serif;
+  --p16-font-size: 16px;
+  --p16-line-height: 24px;
+  --p16-font-weight: 400;
+  --p16-font-style: normal;
+  --p16-letter-spacing: unset;
+
+  // p14
+  --p14-font-family: 'Inter', sans-serif;
+  --p14-font-size: 14px;
+  --p14-line-height: 20px;
+  --p14-font-weight: 500;
+  --p14-font-style: normal;
+  --p14-letter-spacing: unset;
+
+  // btn-extralarge
+  --btn-extralarge-gap: 8px;
+  --btn-extralarge-padding: 18px 48px;
+  --btn-extralarge-font-family: 'Inter', sans-serif;
+  --btn-extralarge-font-size: 24px;
+  --btn-extralarge-line-height: 32px;
+  --btn-extralarge-font-weight: 500;
+  --btn-extralarge-font-style: normal;
+  --btn-extralarge-icon-width: 32px;
+  --btn-extralarge-icon-height: 32px;
+
+  // btn-large
+  --btn-large-gap: unset;
+  --btn-large-padding: 14px 32px;
+  --btn-large-font-family: 'Inter', sans-serif;
+  --btn-large-font-size: 18px;
+  --btn-large-line-height: 24px;
+  --btn-large-font-weight: 500;
+  --btn-large-font-style: normal;
+  --btn-large-icon-width: 24px;
+  --btn-large-icon-height: 24px;
+
+  // btn-medium
+  --btn-medium-gap: unset;
+  --btn-medium-padding: 10px 24px;
+  --btn-medium-font-family: 'Inter', sans-serif;
+  --btn-medium-font-size: 16px;
+  --btn-medium-line-height: 20px;
+  --btn-medium-font-weight: 500;
+  --btn-medium-font-style: normal;
+  --btn-medium-icon-width: 20px;
+  --btn-medium-icon-height: 20px;
+
+  // btn-medium
+  --btn-small-gap: unset;
+  --btn-small-padding: 8px 16px;
+  --btn-small-font-family: 'Inter', sans-serif;
+  --btn-small-font-size: 14px;
+  --btn-small-line-height: 18px;
+  --btn-small-font-weight: 500;
+  --btn-small-font-style: normal;
+  --btn-small-icon-width: 16px;
+  --btn-small-icon-height: 16px;
+
   // Text Colors
   --subtitle: #{rgba($black, 0.5)};
   --subtitle-white: #{rgba($white, 0.5)};
@@ -76,7 +193,7 @@ $white: #fff;
 }
 
 .section {
-  padding: fn.cmin(40, 100) 0;
+  padding: #{fn.cmin(40, 100)} 0;
 }
 
 .container {

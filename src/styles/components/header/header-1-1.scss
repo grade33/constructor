@@ -57,26 +57,48 @@
   }
 
   &__contacts {
-    display: flex;
-    gap: 8px;
-    margin-left: auto;
+    &-desktop {
+      display: flex;
+      gap: 8px;
+      margin-left: auto;
 
-    &-btn {
-      svg {
-        @media (min-width: vars.$min-lg) {
-          display: none;
+      &-book {
+        svg {
+          @media (min-width: vars.$min-lg) {
+            display: none;
+          }
         }
       }
 
-      &_mobile {
-        @media (min-width: vars.$min-lg) {
-          display: none;
-        }
+      @media (max-width: vars.$lg) {
+        display: none;
       }
     }
 
-    @media (max-width: vars.$lg) {
-      display: none;
+    &-mobile {
+      display: flex;
+      gap: 7px;
+
+      &-btn {
+        flex: none;
+        padding: 8px;
+        border: 1px solid var(--black);
+        border-radius: 10px;
+      }
+
+      &-book {
+        color: var(--white);
+        background: var(--black);
+      }
+
+      &-icon {
+        width: 24px;
+        height: 24px;
+      }
+
+      @media (min-width: vars.$min-lg) {
+        display: none;
+      }
     }
   }
 

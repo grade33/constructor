@@ -8,131 +8,142 @@
 }
 
 @mixin h1 {
-  font-weight: 600;
-  font-size: fn.cmin(32, 48);
-  font-family: Inter, sans-serif;
-  font-style: normal;
-  line-height: fn.cmin(40, 60);
+  font-weight: var(--h1-font-weight);
+  font-size: var(--h1-font-size);
+  font-family: var(--h1-font-family);
+  font-style: var(--h1-font-style);
+  line-height: var(--h1-font-style);
+  letter-spacing: var(--h1-letter-spacing);
 }
 
 @mixin h2 {
-  font-weight: 600;
-  font-size: fn.cmin(24, 36);
-  font-family: Inter, sans-serif;
-  font-style: normal;
-  line-height: fn.cmin(32, 46);
+  font-weight: var(--h2-font-weight);
+  font-size: var(--h2-font-size);
+  font-family: var(--h2-font-family);
+  font-style: var(--h2-font-style);
+  line-height: var(--h2-font-style);
+  letter-spacing: var(--h2-letter-spacing);
 }
 
 @mixin h3 {
-  font-weight: 500;
-  font-size: fn.cmin(20, 32);
-  font-family: Inter, sans-serif;
-  font-style: normal;
-  line-height: fn.cmin(30, 40);
+  font-weight: var(--h3-font-weight);
+  font-size: var(--h3-font-size);
+  font-family: var(--h3-font-family);
+  font-style: var(--h3-font-style);
+  line-height: var(--h3-font-style);
+  letter-spacing: var(--h3-letter-spacing);
 }
 
 @mixin h4 {
-  font-weight: 600;
-  font-size: fn.cmin(18, 24);
-  font-family: Inter, sans-serif;
-  font-style: normal;
-  line-height: fn.cmin(28, 32);
-  letter-spacing: -0.75px;
+  font-weight: var(--h4-font-weight);
+  font-size: var(--h4-font-size);
+  font-family: var(--h4-font-family);
+  font-style: var(--h4-font-style);
+  line-height: var(--h4-font-style);
+  letter-spacing: var(--h4-letter-spacing);
 }
 
 @mixin h5 {
-  font-weight: 500;
-  font-size: fn.cmin(18, 20);
-  font-family: Inter, sans-serif;
-  font-style: normal;
-  line-height: fn.cmin(28, 30);
+  font-weight: var(--h5-font-weight);
+  font-size: var(--h5-font-size);
+  font-family: var(--h5-font-family);
+  font-style: var(--h5-font-style);
+  line-height: var(--h5-font-style);
+  letter-spacing: var(--h5-letter-spacing);
 }
 
 @mixin p20 {
-  font-weight: 400;
-  font-size: fn.cmin(18, 20);
-  font-family: Inter, sans-serif;
-  font-style: normal;
-  line-height: fn.cmin(28, 32);
+  font-weight: var(--p20-font-weight);
+  font-size: var(--p20-font-size);
+  font-family: var(--p20-font-family);
+  font-style: var(--p20-font-style);
+  line-height: var(--p20-font-style);
+  letter-spacing: var(--p20-letter-spacing);
 }
 
 @mixin p18 {
-  font-weight: 400;
-  font-size: 18px;
-  font-family: Inter, sans-serif;
-  font-style: normal;
-  line-height: 26px;
+  font-weight: var(--p18-font-weight);
+  font-size: var(--p18-font-size);
+  font-family: var(--p18-font-family);
+  font-style: var(--p18-font-style);
+  line-height: var(--p18-font-style);
+  letter-spacing: var(--p18-letter-spacing);
 }
 
 @mixin p16 {
-  font-weight: 400;
-  font-size: 16px;
-  font-family: Inter, sans-serif;
-  font-style: normal;
-  line-height: 24px;
+  font-weight: var(--p16-font-weight);
+  font-size: var(--p16-font-size);
+  font-family: var(--p16-font-family);
+  font-style: var(--p16-font-style);
+  line-height: var(--p16-font-style);
+  letter-spacing: var(--p16-letter-spacing);
 }
 
 @mixin p14 {
-  font-weight: 500;
-  font-size: 14px;
-  font-family: Inter, sans-serif;
-  font-style: normal;
-  line-height: 20px;
+  font-weight: var(--p14-font-weight);
+  font-size: var(--p14-font-size);
+  font-family: var(--p14-font-family);
+  font-style: var(--p14-font-style);
+  line-height: var(--p14-font-style);
+  letter-spacing: var(--p14-letter-spacing);
 }
 
 @mixin btn-extralarge {
-  gap: 8px;
-  padding: 18px 48px;
-  font-weight: 500;
-  font-size: 24px;
-  font-family: Inter, sans-serif;
-  font-style: normal;
-  line-height: 32px;
+  gap: var(--btn-extralarge-gap);
+  padding: var(--btn-extralarge-padding);
+  font-weight: var(--btn-extralarge-font-weight);
+  font-size: var(--btn-extralarge-font-size);
+  font-family: var(--btn-extralarge-font-family);
+  font-style: var(--btn-extralarge-font-style);
+  line-height: var(--btn-extralarge-line-height);
 
   .btn__icon {
-    width: 32px;
-    height: 32px;
+    width: var(--btn-extralarge-width);
+    height: var(--btn-extralarge-height);
   }
 }
 
 @mixin btn-large {
-  padding: 14px 32px;
-  font-weight: 500;
-  font-size: 18px;
-  font-family: Inter, sans-serif;
-  font-style: normal;
-  line-height: 24px;
+  gap: var(--btn-large-gap);
+  padding: var(--btn-large-padding);
+  font-weight: var(--btn-large-font-weight);
+  font-size: var(--btn-large-font-size);
+  font-family: var(--btn-large-font-family);
+  font-style: var(--btn-large-font-style);
+  line-height: var(--btn-large-line-height);
 
   svg {
-    width: 24px;
-    height: 24px;
+    width: var(--btn-large-width);
+    height: var(--btn-large-height);
   }
 }
 
 @mixin btn-medium {
-  padding: 10px 24px;
-  font-weight: 500;
-  font-size: 16px;
-  font-family: Inter, sans-serif;
-  font-style: normal;
-  line-height: 20px;
+  gap: var(--btn-medium-gap);
+  padding: var(--btn-medium-padding);
+  font-weight: var(--btn-medium-font-weight);
+  font-size: var(--btn-medium-font-size);
+  font-family: var(--btn-medium-font-family);
+  font-style: var(--btn-medium-font-style);
+  line-height: var(--btn-medium-line-height);
 
   svg {
-    width: 20px;
-    height: 20px;
+    width: var(--btn-medium-width);
+    height: var(--btn-medium-height);
   }
 }
 
 @mixin btn-small {
-  padding: 8px 16px;
-  font-weight: 500;
-  font-size: 14px;
-  font-family: Inter, sans-serif;
-  font-style: normal;
-  line-height: 18px;
+  gap: var(--btn-small-gap);
+  padding: var(--btn-small-padding);
+  font-weight: var(--btn-small-font-weight);
+  font-size: var(--btn-small-font-size);
+  font-family: var(--btn-small-font-family);
+  font-style: var(--btn-small-font-style);
+  line-height: var(--btn-small-line-height);
 
   svg {
-    width: 16px;
-    height: 16px;
+    width: var(--btn-small-width);
+    height: var(--btn-small-height);
   }
 }
