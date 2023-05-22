@@ -7,41 +7,6 @@
   flex-direction: column;
   gap: fn.cmin(24, 48);
 
-  &_dark {
-    .tickets {
-      &__steps {
-        border-color: var(--white-10);
-
-        &::before {
-          background: var(--white-10);
-        }
-
-        &-item {
-          &,
-          &::before {
-            background: var(--white-10);
-          }
-
-          &_fill {
-            color: var(--black);
-            background: var(--white);
-
-            &::before {
-              background: var(--white);
-            }
-          }
-        }
-      }
-
-      &__item {
-        &-date {
-          color: var(--black);
-          background: var(--white);
-        }
-      }
-    }
-  }
-
   &__steps {
     position: relative;
     z-index: 1;

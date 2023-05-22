@@ -35,7 +35,7 @@
   &__content {
     display: flex;
     flex-direction: column;
-    gap: fn.cmin(32, 64);
+    gap: fn.cmax(32, 64);
     width: 50%;
 
     @media (max-width: vars.$lg) {
@@ -43,19 +43,30 @@
     }
   }
 
-  &__blockquote {
+  &__text-block {
     display: flex;
     flex-direction: column;
+    gap: fn.cmin(16, 32);
   }
 
   &__icon {
     display: block;
     width: fn.cmin(32, 48);
     height: fn.cmin(32, 48);
+  }
+
+  &__blockquote {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    @include mix.h2;
+
     margin-bottom: fn.cmin(16, 32);
   }
 
-  &__text {
+  &__desc {
     @include mix.h5;
 
     margin-bottom: fn.cmin(12, 24);
@@ -64,7 +75,7 @@
   &__cite {
     @include mix.p16;
 
+    color: var(--desc);
     text-align: right;
-    opacity: 0.5;
   }
 }

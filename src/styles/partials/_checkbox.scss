@@ -48,7 +48,6 @@
   &__text {
     @include mix.p14;
 
-    color: var(--grey);
-    opacity: 0.5;
+    color: var(--desc);
   }
 }

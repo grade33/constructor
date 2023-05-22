@@ -10,11 +10,27 @@
     gap: fn.cmin(32, 64);
   }
 
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(12, 16);
+    text-align: center;
+  }
+
+  &__title-block {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(4, 12);
+  }
+
   &__title {
     @include mix.h2;
 
     color: var(--title);
-    text-align: center;
+  }
+
+  &__desc {
+    color: var(--desc);
   }
 
   &__block {
@@ -81,7 +97,7 @@
     &-desc {
       @include mix.p16;
 
-      opacity: 0.5;
+      color: var(--desc);
     }
   }
 }

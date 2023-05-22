@@ -4,15 +4,6 @@
 @use '../../utils/functions' as fn;
 
 .benefits-num-7 {
-  &.block_dark {
-    .benefits-num-7 {
-      &__list {
-        color: var(--black);
-        background: var(--white);
-      }
-    }
-  }
-
   &__container {
     display: flex;
     flex-direction: column;
@@ -70,11 +61,6 @@
     color: var(--white);
     background: var(--black);
     border-radius: 16px;
-
-    &_dark {
-      color: var(--black);
-      background: var(--white);
-    }
   }
 
   &__item {

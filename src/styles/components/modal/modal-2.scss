@@ -6,22 +6,6 @@
 .modal-2 {
   @include mix.p16;
 
-  &.block_dark {
-    .modal-2 {
-      &__content {
-        background: #2d2d2d;
-
-        &-inner {
-          border-top: 1px solid var(--white-10);
-        }
-      }
-
-      &__field {
-        background: var(--black);
-      }
-    }
-  }
-
   &__content {
     position: relative;
     display: flex;

@@ -7,14 +7,6 @@
   position: relative;
   z-index: 20;
 
-  &.block_dark {
-    .header-1-4 {
-      &__inner {
-        background: var(--dark);
-      }
-    }
-  }
-
   &__inner {
     @include mix.p16;
 
@@ -97,11 +89,7 @@
     height: 24px;
     padding: 6px 4px;
     color: var(--black);
-
-    &_dark {
-      color: var(--white);
-    }
-
+    
     @media (min-width: vars.$min-lg) {
       display: none;
     }

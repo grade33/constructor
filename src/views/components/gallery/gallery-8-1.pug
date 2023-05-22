@@ -1,0 +1,68 @@
+extends ../../layouts/main
+
+block vars
+  - const groupName = 'gallery';
+  - const cssName = 'gallery-8-1';
+  - const jsName = 'gallery-8-1';
+
+block content
+  section.gallery-8-1.section.block
+    .gallery-8-1__container.container 
+      h2.gallery-8-1__title Gallery 
+      .row.gallery-8-1__list 
+        a.gallery-8-1__item.gallery-8-1__item_12(data-fslightbox="gallery-8-1" href="https://placehold.co/1200x600")
+          picture.gallery-8-1__img-wrap
+            img.gallery-8-1__img(src="https://placehold.co/1290x516", alt="")
+            
+        a.gallery-8-1__item.gallery-8-1__item_6(data-fslightbox="gallery-8-1" href="https://placehold.co/1200x600")
+          picture.gallery-8-1__img-wrap
+            img.gallery-8-1__img(src="https://placehold.co/550x500", alt="")
+        a.gallery-8-1__item.gallery-8-1__item_3(data-fslightbox="gallery-8-1" href="https://placehold.co/1200x600")
+          picture.gallery-8-1__img-wrap
+            img.gallery-8-1__img(src="https://placehold.co/354x500", alt="")
+        a.gallery-8-1__item.gallery-8-1__item_3(data-fslightbox="gallery-8-1" href="https://placehold.co/1200x600")
+          picture.gallery-8-1__img-wrap
+            img.gallery-8-1__img(src="https://placehold.co/354x500", alt="")
+
+        a.gallery-8-1__item.gallery-8-1__item_4(data-fslightbox="gallery-8-1" href="https://placehold.co/1200x600")
+          picture.gallery-8-1__img-wrap
+            img.gallery-8-1__img(src="https://placehold.co/420x300", alt="")
+        a.gallery-8-1__item.gallery-8-1__item_4(data-fslightbox="gallery-8-1" href="https://placehold.co/1200x600")
+          picture.gallery-8-1__img-wrap
+            img.gallery-8-1__img(src="https://placehold.co/420x300", alt="")
+        a.gallery-8-1__item.gallery-8-1__item_4(data-fslightbox="gallery-8-1" href="https://placehold.co/1200x600")
+          picture.gallery-8-1__img-wrap
+            img.gallery-8-1__img(src="https://placehold.co/420x300", alt="")
+
+        a.gallery-8-1__item.gallery-8-1__item_3(data-fslightbox="gallery-8-1" href="https://placehold.co/1200x600")
+          picture.gallery-8-1__img-wrap
+            img.gallery-8-1__img(src="https://placehold.co/280x400", alt="")
+        a.gallery-8-1__item.gallery-8-1__item_5(data-fslightbox="gallery-8-1" href="https://placehold.co/1200x600")
+          picture.gallery-8-1__img-wrap
+            img.gallery-8-1__img(src="https://placehold.co/500x400", alt="")
+        a.gallery-8-1__item.gallery-8-1__item_2(data-fslightbox="gallery-8-1" href="https://placehold.co/1200x600")
+          picture.gallery-8-1__img-wrap
+            img.gallery-8-1__img(src="https://placehold.co/231x400", alt="")
+        a.gallery-8-1__item.gallery-8-1__item_2(data-fslightbox="gallery-8-1" href="https://placehold.co/1200x600")
+          picture.gallery-8-1__img-wrap
+            img.gallery-8-1__img(src="https://placehold.co/231x400", alt="")
+      .gallery-8-1__slider-block
+        .swiper.gallery-8-1__slider
+          ul.swiper-wrapper
+            - let i = 0;
+            while i < 11
+              - i++  
+              li.swiper-slide
+                a.gallery-8-1__link(data-fslightbox="gallery-8-1" href="https://placehold.co/1200x600")
+                  picture.gallery-8-1__img-wrap
+                    img.gallery-8-1__img(src="https://placehold.co/500x400", alt="")
+          .gallery-8-1__slider-btn-block
+            button.gallery-8-1__slider-btn.gallery-8-1__slider-btn_prev.btn-arrow(type="button")
+              svg.btn-arrow__icon(viewBox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                path(d="M20.25 12H3.75", stroke="currentColor", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                path(d="M10.5 5.25L3.75 12L10.5 18.75", stroke="currentColor", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+            button.gallery-8-1__slider-btn.gallery-8-1__slider-btn_next.btn-arrow(type="button")
+              svg.btn-arrow__icon(viewBox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                path(d="M3.75 12H20.25", stroke="currentColor", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                path(d="M13.5 5.25L20.25 12L13.5 18.75", stroke="currentColor", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")            
+        

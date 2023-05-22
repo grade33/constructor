@@ -6,18 +6,6 @@
 .breadcrumbs-1 {
   padding: fn.cmin(16, 32) 0;
 
-  &.block_dark {
-    .breadcrumbs-1 {
-      &__item {
-        &:not(&:last-child) {
-          &::after {
-            background-image: url('@/assets/images/chevron-down-white.svg');
-          }
-        }
-      }
-    }
-  }
-
   @include mix.p16;
 
   &__list {
@@ -37,16 +25,16 @@
       &::after {
         width: 12px;
         height: 12px;
+        color: var(--desc);
         background: url('@/assets/images/chevron-down-black.svg') no-repeat center / contain;
         transform: rotate(-90deg);
-        opacity: 0.5;
         content: '';
       }
     }
   }
 
   &__link {
-    opacity: 0.5;
+    color: var(--desc);
     transition: opacity 0.3s ease-in-out;
 
     &:hover,

@@ -58,32 +58,4 @@
       }
     }
   }
-
-  &_dark {
-    color: var(--white);
-
-    .select {
-      &__head,
-      &__body {
-        background: var(--black);
-      }
-
-      &__head {
-        &::after {
-          background-image: url('@/assets/images/chevron-down-white.svg');
-        }
-      }
-
-      &__option {
-        &_body {
-          &:hover,
-          &:focus-visible,
-          &:active {
-            color: var(--black) !important;
-            background: var(--white) !important;
-          }
-        }
-      }
-    }
-  }
 }

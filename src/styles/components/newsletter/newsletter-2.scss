@@ -4,12 +4,6 @@
 @use '../../utils/functions' as fn;
 
 .newsletter-2 {
-  &.block_dark {
-    .newsletter-2 {
-      background: var(--white-10);
-    }
-  }
-
   &__content {
     display: flex;
     gap: var(--gutter);
@@ -64,6 +58,6 @@
   &__text {
     @include mix.p14;
 
-    opacity: 0.5;
+    color: var(--desc);
   }
 }

@@ -17,19 +17,6 @@
     }
   }
 
-  &.block_dark {
-    .feedback-3 {
-      &__content {
-        background: var(--white-10);
-      }
-    }
-
-    input,
-    textarea {
-      border-color: var(--white-10) !important;
-    }
-  }
-
   &__content {
     display: flex;
     flex-direction: column;
@@ -37,11 +24,7 @@
     padding: fn.cmax(30, 100) fn.cmax(35, 110);
     background: var(--black-10);
     border-radius: 20px;
-
-    &_dark {
-      background: var(--white-10);
-    }
-
+    
     @media (max-width: vars.$md) {
       padding: fn.cmin(32, 50) fn.cmin(12, 45);
     }

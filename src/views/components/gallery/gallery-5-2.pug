@@ -6,37 +6,19 @@ block vars
   - const jsName = 'gallery-5-2';
 
 block content
-  // Добавить к block класс block_dark
-  // Добавить к btn-arrow класс btn-arrow_dark
   section.gallery-5-2.section.block
     .gallery-5-2__content
       .gallery-5-2__container.container 
         h2.gallery-5-2__title Gallery 
       .swiper.gallery-5-2__slider
         ul.swiper-wrapper 
-          li.swiper-slide
-            a.gallery-5-2__link(data-fslightbox="gallery-3-4" href="https://placehold.co/1200x600")
-              picture.gallery-5-2__img-wrap
-                img.gallery-5-2__img(src="@/assets/images/gallery/5/gallery-1.jpg", alt="")
-          li.swiper-slide
-            a.gallery-5-2__link(data-fslightbox="gallery-3-4" href="https://placehold.co/1200x600")
-              picture.gallery-5-2__img-wrap
-                img.gallery-5-2__img(src="@/assets/images/gallery/5/gallery-2.jpg", alt="")
-          li.swiper-slide
-            a.gallery-5-2__link(data-fslightbox="gallery-3-4" href="https://placehold.co/1200x600")
-              picture.gallery-5-2__img-wrap
-                img.gallery-5-2__img(src="@/assets/images/gallery/5/gallery-3.jpg", alt="")
-          li.swiper-slide
-            a.gallery-5-2__link(data-fslightbox="gallery-3-4" href="https://placehold.co/1200x600")
-              picture.gallery-5-2__img-wrap
-                img.gallery-5-2__img(src="@/assets/images/gallery/5/gallery-1.jpg", alt="")
-          li.swiper-slide
-            a.gallery-5-2__link(data-fslightbox="gallery-3-4" href="https://placehold.co/1200x600")
-              picture.gallery-5-2__img-wrap
-                img.gallery-5-2__img(src="@/assets/images/gallery/5/gallery-2.jpg", alt="")
-          li.swiper-slide
-            picture.gallery-5-2__img-wrap
-              img.gallery-5-2__img(src="@/assets/images/gallery/5/gallery-3.jpg", alt="")
+          - let i = 0;
+          while i < 11
+            - i++  
+            li.swiper-slide
+              a.gallery-5-2__link(data-fslightbox="gallery-5-2" href="https://placehold.co/1200x600")
+                picture.gallery-5-2__img-wrap
+                  img.gallery-5-2__img(src="https://placehold.co/500x400", alt="") 
         .gallery-5-2__slider-btn-block
           button.gallery-5-2__slider-btn.gallery-5-2__slider-btn_prev.btn-arrow(type="button")
             svg.btn-arrow__icon(viewBox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")

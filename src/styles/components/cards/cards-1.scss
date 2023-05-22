@@ -4,14 +4,6 @@
 @use '../../utils/functions' as fn;
 
 .cards-1 {
-  &.block_dark {
-    .cards-1 {
-      &__item {
-        background: var(--white-10);
-      }
-    }
-  }
-
   &__list {
     display: flex;
     flex-direction: column;
@@ -53,7 +45,7 @@
   }
 
   &__text {
-    opacity: 0.5;
+    color: var(--desc);
 
     &_big {
       @include mix.p20;
@@ -83,7 +75,7 @@
     }
 
     &-link {
-      opacity: 0.5;
+      color: var(--desc);
       transition: opacity 0.3s ease-in-out;
 
       &:hover,

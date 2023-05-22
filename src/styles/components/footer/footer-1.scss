@@ -40,7 +40,7 @@
     display: inline-flex;
     gap: 16px;
     width: fit-content;
-    opacity: 0.5;
+    color: var(--desc);
 
     &_icon {
       width: 20px;
@@ -101,7 +101,7 @@
     }
 
     & > * {
-      opacity: 0.5;
+      color: var(--desc);
     }
   }
 

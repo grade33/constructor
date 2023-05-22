@@ -6,10 +6,13 @@ block vars
   //- - const jsName = 'menu-4';
 
 block content
-  // Добавить к block класс block_dark
   section.menu-4.section.block
     .menu-4__container.container 
-        h2.menu-4__title Weekly Lunch menu excerpt
+        .menu-4__text-block 
+          .menu-4__title-block
+            span.menu-4__subtitle.subtitle Delicious
+            h2.menu-4__title Weekly Lunch menu excerpt
+          p.menu-4__desc Montag bis Samstag von 11:30 bis 15:00 Uhr (Dienstag Ruhetag)
         - let i = 0;
         while i < 3
           - i++

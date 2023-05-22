@@ -4,15 +4,6 @@
 @use '../../utils/functions' as fn;
 
 .benefits-10 {
-  &.block_dark {
-    .benefits-10 {
-      &__info {
-        color: var(--black);
-        background: var(--white);
-      }
-    }
-  }
-
   &__container {
     display: flex;
     flex-direction: column;

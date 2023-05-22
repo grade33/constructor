@@ -54,7 +54,7 @@
     &-desc {
       @include mix.p14;
 
-      opacity: 0.5;
+      color: var(--desc);
     }
   }
 

@@ -95,12 +95,6 @@
   &__icon {
     width: fn.cmin(14, 24);
     height: fn.cmin(14, 24);
-    opacity: 0.5;
-  }
-
-  &_dark {
-    color: var(--white);
-    background: var(--black);
-    border-color: var(--white-50);
+    color: var(--desc);
   }
 }

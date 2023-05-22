@@ -78,7 +78,7 @@
     &-desc {
       @include mix.p16;
 
-      opacity: 0.5;
+      color: var(--desc);
     }
   }
 }

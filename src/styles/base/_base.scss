@@ -14,6 +14,7 @@ $white: #fff;
 
   // Colors
   --red: #e64646;
+  --red-2: #ae352f;
   --green: #4bb34b;
   --orange: #ffa000;
   --grey: #979797;
@@ -69,11 +70,6 @@ $white: #fff;
   @include mix.p16;
 
   color: var(--black);
-
-  &_dark {
-    color: var(--white);
-    background: var(--black);
-  }
 }
 
 .section {
@@ -100,18 +96,49 @@ $white: #fff;
   border-radius: 16px;
 }
 
-.text-start {
+.subtitle {
+  color: var(--subtitle);
+}
+
+// Общие классы
+.tal {
   text-align: left;
 }
 
-.text-center {
+.tac {
   text-align: center;
 }
 
-.text-end {
+.tar {
   text-align: right;
 }
 
-.subtitle {
-  color: var(--subtitle);
+.ais {
+  align-items: flex-start;
+}
+
+.aic {
+  align-items: center;
+}
+
+.aie {
+  align-items: flex-end;
+}
+
+.jcs {
+  justify-content: flex-start;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.jce {
+  justify-content: flex-end;
+}
+
+.order {
+  @media (min-width: vars.$min-lg) {
+    order: 10;
+  }
 }
