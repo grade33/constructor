@@ -42,32 +42,6 @@ input {
     transition: color 0.3s ease-in-out;
   }
 
-  &_small {
-    @include mix.btn-small;
-
-    input {
-      padding: 8px 12px;
-    }
-  }
-
-  &_medium {
-    @include mix.btn-medium;
-
-    input {
-      display: flex;
-      gap: 6px;
-      padding: 10px 16px;
-    }
-
-    @media (max-width: vars.$md) {
-      @include mix.btn-large;
-
-      input {
-        padding: 14px 20px;
-      }
-    }
-  }
-
   &_large {
     @include mix.btn-large;
 
@@ -83,6 +57,32 @@ input {
         gap: 6px;
         padding: 10px 16px;
       }
+    }
+  }
+
+  &_medium {
+    @include mix.btn-medium;
+
+    input {
+      display: flex;
+      gap: 6px;
+      padding: 10px 16px;
+    }
+
+    @media (max-width: vars.$md) {
+      @include mix.btn-small;
+
+      input {
+        padding: 10px 16px;
+      }
+    }
+  }
+
+  &_small {
+    @include mix.btn-small;
+
+    input {
+      padding: 8px 12px;
     }
   }
 

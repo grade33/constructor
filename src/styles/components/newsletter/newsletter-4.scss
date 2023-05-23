@@ -1,0 +1,57 @@
+// Utils
+@use '../../utils/mixins' as mix;
+@use '../../utils/variables' as vars;
+@use '../../utils/functions' as fn;
+
+.newsletter-4 {
+  background: var(--black-10);
+  &__container {
+    display: flex;
+    gap: var(--gutter);
+    justify-content: space-between;
+
+    @media (max-width: vars.$lg) {
+      flex-direction: column;
+    }
+
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(12, 16);
+  }
+
+  &__title {
+    @include mix.h3;
+
+    color: var(--title);
+  }
+
+  &__desc {
+    @include mix.h5;
+
+    color: var(--desc);
+  }
+
+  &__form {
+    &-block {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    display: flex;
+    gap: fn.cmin(5, 16);
+
+    @media (max-width: vars.$sm) {
+      gap: 4px;
+    }
+  }
+
+  &__text {
+    @include mix.p14;
+
+    color: var(--desc);
+  }
+}

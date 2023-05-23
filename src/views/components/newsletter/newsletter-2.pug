@@ -3,7 +3,7 @@ extends ../../layouts/main
 block vars
   - const groupName = 'newsletter';
   - const cssName = 'newsletter-2';
-  - const jsName = 'newsletter-2';
+  //- - const jsName = 'newsletter-2';
 
 block content
   include ../../partials/checkbox
@@ -17,8 +17,8 @@ block content
         .newsletter-2__form-block
           form.newsletter-2__form(action="#") 
             .field.field_large
-              label.visually-hidden(for="#newsletter-email") 
-              input#newsletter-email(type="email" placeholder="Enter your email")
+              label.visually-hidden(for="#newsletter-2-email") 
+              input#newsletter-2-email(type="email" placeholder="Enter your email")
             button.btn.btn_large.btn_black(type="submit") Subscribe 
           span.newsletter-2__text We care about your data in our privacy policy.
 

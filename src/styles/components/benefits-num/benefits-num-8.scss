@@ -1,0 +1,81 @@
+// Utils
+@use '../../utils/mixins' as mix;
+@use '../../utils/variables' as vars;
+@use '../../utils/functions' as fn;
+
+.benefits-num-8 {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(32, 48);
+    align-items: center;
+  }
+
+  &__icon {
+    width: fn.cmin(48, 52);
+    height: fn.cmin(48, 52);
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(16, 48);
+    align-items: center;
+    max-width: 800px;
+    text-align: center;
+  }
+
+  &__title-block {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(12, 24);
+    align-items: center;
+  }
+
+  &__title {
+    @include mix.h2;
+
+    color: var(--title);
+  }
+
+  &__desc {
+    @include mix.p20;
+
+    color: var(--desc);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: fn.cmin(16, 48) fn.cmin(16, 32);
+    justify-items: center;
+    width: 100%;
+    padding: fn.cmin(24, 64);
+    color: var(--white);
+    background: var(--black);
+    border-radius: 20px;
+
+    @media (max-width: vars.$md) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__name {
+    @include mix.p18;
+
+    color: var(--desc-white);
+  }
+
+  &__text {
+    @include mix.h3;
+  }
+}
