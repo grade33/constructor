@@ -5,6 +5,7 @@
 
 .newsletter-4 {
   background: var(--black-10);
+
   &__container {
     display: flex;
     gap: var(--gutter);
@@ -13,7 +14,6 @@
     @media (max-width: vars.$lg) {
       flex-direction: column;
     }
-
   }
 
   &__text-block {

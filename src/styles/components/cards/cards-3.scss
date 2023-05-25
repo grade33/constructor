@@ -1,0 +1,145 @@
+// Utils
+@use '../../utils/mixins' as mix;
+@use '../../utils/variables' as vars;
+@use '../../utils/functions' as fn;
+
+.cards-3 {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(32, 64);
+    align-items: center;
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(12, 20);
+    align-items: center;
+    max-width: 768px;
+    text-align: center;
+  }
+
+  &__title-block {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(4, 12);
+  }
+
+  &__title {
+    @include mix.h2;
+
+    color: var(--title);
+  }
+
+  &__desc {
+    @include mix.p20;
+
+    color: var(--desc);
+  }
+
+  &__desktop {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(32, 64);
+    align-items: center;
+    width: 100%;
+
+    @media (max-width: vars.$md) {
+      display: none;
+    }
+  }
+
+  &__mobile {
+    width: 100%;
+
+    @media (min-width: vars.$min-md) {
+      display: none;
+    }
+  }
+
+  &__slider {
+    &-block {
+      margin-right: fn.overhang();
+    }
+
+    width: 100%;
+
+    &-btn {
+      &-block {
+        display: flex;
+        gap: 12px;
+        margin-top: 16px;
+      }
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: fn.cmin(24, 48) fn.cmin(15, 30);
+    width: 100%;
+  }
+
+  &__item {
+    @include mix.p16;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+    background: var(--black-5);
+    border-radius: 20px;
+  }
+
+  &__img {
+    &-wrap,
+    & {
+      width: 100%;
+    }
+
+    border-radius: 10px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    color: var(--title);
+
+    @include mix.h5;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+
+    &-item {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+
+    &-name {
+      &-block {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        min-width: 100px;
+      }
+    }
+
+    &-text {
+      color: var(--desc);
+    }
+
+    &-icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

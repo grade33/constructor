@@ -143,6 +143,8 @@ $white: #fff;
   --light-blue-opacity-50: rgba(232, 238, 241, 50%);
   --white: #{$white};
   --black: #{$black};
+  --black-20: #{rgba($black, 0.2)};
+  --white-20: #{rgba($white, 0.2)};
   --black-10: #{rgba($black, 0.1)};
   --white-10: #{rgba($white, 0.1)};
   --black-5: #{rgba($black, 0.05)};

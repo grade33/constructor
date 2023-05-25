@@ -1,0 +1,101 @@
+// Utils
+@use '../../utils/mixins' as mix;
+@use '../../utils/variables' as vars;
+@use '../../utils/functions' as fn;
+
+.feedback-4 {
+  &__list {
+    row-gap: 32px;
+    align-items: flex-start;
+  }
+
+  &__item {
+    &-order {
+      @media (max-width: vars.$lg) {
+        order: 3;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(24, 36);
+    padding: fn.cmax(32, 58) fn.cmax(20, 60);
+    background: var(--black-10);
+    border-radius: 20px;
+    
+    @media (max-width: vars.$md) {
+      padding-right: 12px;
+      padding-left: 12px;
+    }
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: fn.cmin(4,12);
+    text-align: center;
+  }
+
+  &__title {
+    @include mix.h2;
+
+    color: var(--title);
+  }
+
+  &__desc {
+    @include mix.p20;
+
+    color: var(--desc);
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+  }
+
+  &__field {
+    &-block {
+      &-row {
+        display: flex;
+        gap: fn.cmin(12, 16) 10px;
+
+        @media (max-width: vars.$md) {
+          flex-direction: column;
+        }
+      }
+
+      display: flex;
+      flex-direction: column;
+      gap: fn.cmin(12, 16);
+    }
+
+    width: 100%;
+    padding: 14px 16px;
+  }
+
+  &__textarea {
+    height: 100px;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__btn {
+    width: 100%;
+  }
+
+  &__img {
+    &-wrap,
+    & {
+      width: 100%;
+    }
+
+    border-radius: 20px;
+  }
+}

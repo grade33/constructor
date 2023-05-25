@@ -32,12 +32,15 @@
   }
 
   &__list {
+    &-block {
+      padding-top: fn.cmin(24, 64);
+      padding-bottom: fn.cmin(24, 64);
+      color: var(--white);
+      background: var(--black);
+      border-radius: 16px;
+    }
+
     row-gap: 16px;
-    padding-top: fn.cmin(24, 64);
-    padding-bottom: fn.cmin(24, 64);
-    color: var(--white);
-    background: var(--black);
-    border-radius: 16px;
   }
 
   &__item {

@@ -113,8 +113,8 @@
   line-height: var(--btn-large-line-height);
 
   svg {
-    width: var(--btn-large-width);
-    height: var(--btn-large-height);
+    width: var(--btn-large-icon-width);
+    height: var(--btn-large-icon-height);
   }
 }
 
@@ -128,8 +128,8 @@
   line-height: var(--btn-medium-line-height);
 
   svg {
-    width: var(--btn-medium-width);
-    height: var(--btn-medium-height);
+    width: var(--btn-medium-icon-width);
+    height: var(--btn-medium-icon-height);
   }
 }
 
@@ -143,7 +143,7 @@
   line-height: var(--btn-small-line-height);
 
   svg {
-    width: var(--btn-small-width);
-    height: var(--btn-small-height);
+    width: var(--btn-small-icon-width);
+    height: var(--btn-small-icon-height);
   }
 }
