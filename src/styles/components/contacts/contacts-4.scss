@@ -58,14 +58,14 @@
   }
 
   &__text {
-    @include mix.p16;
+    @include mix.p16-regular;
 
     display: flex;
     flex-direction: column;
     gap: 4px;
 
     &_small {
-      @include mix.p14;
+      @include mix.p14-regular;
 
       display: flex;
       flex-direction: column;

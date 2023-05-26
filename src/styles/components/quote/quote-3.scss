@@ -67,7 +67,7 @@
   }
 
   &__desc {
-    @include mix.p18;
+    @include mix.p18-regular;
 
     margin-bottom: fn.cmin(24, 48);
     color: var(--desc);
@@ -78,6 +78,6 @@
   }
 
   &__cite {
-    @include mix.p16;
+    @include mix.p16-regular;
   }
 }

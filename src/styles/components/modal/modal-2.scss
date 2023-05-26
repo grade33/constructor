@@ -4,7 +4,7 @@
 @use '../../utils/functions' as fn;
 
 .modal-2 {
-  @include mix.p16;
+  @include mix.p16-regular;
 
   &__content {
     position: relative;
@@ -44,7 +44,7 @@
   }
 
   &__field {
-    @include mix.p16;
+    @include mix.p16-regular;
 
     width: 100%;
     min-height: fn.cmin(120, 144);
@@ -59,7 +59,7 @@
     gap: fn.cmin(12, 16);
 
     &-title {
-      @include mix.p20;
+      @include mix.p20-regular;
     }
 
     &-list {

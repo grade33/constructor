@@ -34,7 +34,7 @@
   }
 
   &__desc {
-    @include mix.p20;
+    @include mix.p20-regular;
 
     max-width: 640px;
     color: var(--desc);

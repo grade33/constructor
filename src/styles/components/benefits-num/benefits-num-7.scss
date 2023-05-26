@@ -27,7 +27,7 @@
   }
 
   &__subtitle {
-    @include mix.p14;
+    @include mix.p14-regular;
   }
 
   &__title {
@@ -48,7 +48,7 @@
   }
 
   &__desc {
-    @include mix.p20;
+    @include mix.p20-regular;
 
     max-width: 458px;
     color: var(--desc);
@@ -78,7 +78,7 @@
     flex-direction: column;
     gap: 12px;
 
-    @include mix.p18;
+    @include mix.p18-regular;
 
     &_big {
       @include mix.h1;

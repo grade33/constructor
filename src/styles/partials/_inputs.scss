@@ -10,7 +10,7 @@ textarea {
 .field {
   label {
     &:not(.visually-hidden) {
-      @include mix.p14;
+      @include mix.p14-regular;
 
       color: var(--grey);
     }

@@ -33,7 +33,7 @@
   }
 
   &__desc {
-    @include mix.p20;
+    @include mix.p20-regular;
 
     color: var(--desc);
   }
@@ -82,7 +82,7 @@
   }
 
   &__item {
-    @include mix.p16;
+    @include mix.p16-regular;
 
     display: flex;
     flex-direction: column;

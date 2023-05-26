@@ -33,7 +33,7 @@
   }
 
   &__desc {
-    @include mix.p20;
+    @include mix.p20-regular;
 
     color: var(--desc);
   }
@@ -82,7 +82,7 @@
   }
 
   &__item {
-    @include mix.p14;
+    @include mix.p14-regular;
 
     color: var(--desc);
 
@@ -115,13 +115,13 @@
   }
 
   &__slogan {
-    @include mix.p18;
+    @include mix.p18-regular;
 
     margin-top: 4px;
   }
 
   &__date {
-    @include mix.p14;
+    @include mix.p14-regular;
 
     margin-top: 12px;
   }
@@ -152,7 +152,7 @@
     margin: 0 auto;
     padding: 18px 20px;
 
-    @include mix.p16;
+    @include mix.p16-regular;
 
     svg {
       width: 16px;

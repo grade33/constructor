@@ -4,7 +4,7 @@
 @use '../../utils/functions' as fn;
 
 .modal-1 {
-  @include mix.p16;
+  @include mix.p16-regular;
 
   &__content {
     position: relative;

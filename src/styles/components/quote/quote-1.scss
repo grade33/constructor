@@ -73,7 +73,7 @@
   }
 
   &__cite {
-    @include mix.p16;
+    @include mix.p16-regular;
 
     color: var(--desc);
     text-align: right;

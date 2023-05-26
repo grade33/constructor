@@ -1,0 +1,16 @@
+mixin nav-popup(tagName, className)
+  #{tagName}.header-1-1__nav-item.nav-popup
+    a(href="#" class=className) Locations
+    button.nav-popup__btn(type="button") 
+      svg.nav-popup__icon(viewBox="0 0 16 16", fill="none", xmlns="http://www.w3.org/2000/svg")
+        path(d="M13 6L8 11L3 6", stroke="currentColor", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+    .nav-popup__content
+      ul.nav-popup__list
+        li.nav-popup__item
+          a.nav-popup__link(href="#") Link 1
+        li.nav-popup__item
+          a.nav-popup__link(href="#") Link 2
+        li.nav-popup__item
+          a.nav-popup__link(href="#") Link 3
+        li.nav-popup__item
+          a.nav-popup__link(href="#") Link 4

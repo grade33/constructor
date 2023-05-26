@@ -6,7 +6,7 @@
 .breadcrumbs-1 {
   padding: fn.cmin(16, 32) 0;
 
-  @include mix.p16;
+  @include mix.p16-regular;
 
   &__list {
     display: flex;

@@ -4,7 +4,7 @@
 @use '../../utils/functions' as fn;
 
 .footer-3 {
-  @include mix.p16;
+  @include mix.p16-regular;
 
   &__container {
     display: flex;
@@ -36,14 +36,14 @@
   }
 
   &__desc {
-    @include mix.p16;
+    @include mix.p16-regular;
 
     color: var(--desc);
   }
 
   &__nav-title,
   &__contacts-title {
-    @include mix.p14;
+    @include mix.p14-regular;
 
     display: inline-flex;
     gap: 16px;

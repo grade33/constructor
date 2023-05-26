@@ -58,7 +58,7 @@
   }
 
   &__desc {
-    @include mix.p20;
+    @include mix.p20-regular;
 
     color: var(--desc);
   }

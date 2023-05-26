@@ -7,78 +7,129 @@ $white: #fff;
 
 // Vars
 :root {
-  // Fonts
-  // H1
-  --h1-font-family: 'Inter', sans-serif;
-  --h1-font-size: #{fn.cmin(32, 48)};
-  --h1-line-height: #{fn.cmin(40, 60)};
+  // Headings
   --h1-font-weight: 600;
+  --h1-font-size: #{fn.cmin(40, 48)};
+  --h1-font-family: 'Inter', sans-serif;
   --h1-font-style: normal;
+  --h1-line-height: #{fn.cmin(50, 60)};
   --h1-letter-spacing: unset;
-
-  // H2
-  --h2-font-family: 'Inter', sans-serif;
-  --h2-font-size: #{fn.cmin(24, 36)};
-  --h2-line-height: #{fn.cmin(32, 46)};
   --h2-font-weight: 600;
+  --h2-font-size: #{fn.cmin(32, 40)};
+  --h2-font-family: 'Inter', sans-serif;
   --h2-font-style: normal;
+  --h2-line-height: #{fn.cmin(40, 50)};
   --h2-letter-spacing: unset;
-
-  // H3
-  --h3-font-family: 'Inter', sans-serif;
-  --h3-font-size: #{fn.cmin(20, 32)};
-  --h3-line-height: #{fn.cmin(30, 40)};
   --h3-font-weight: 500;
+  --h3-font-size: #{fn.cmin(24, 32)};
+  --h3-font-family: 'Inter', sans-serif;
   --h3-font-style: normal;
+  --h3-line-height: #{fn.cmin(32, 40)};
   --h3-letter-spacing: unset;
-
-  // H4
-  --h4-font-family: 'Inter', sans-serif;
-  --h4-font-size: #{fn.cmin(18, 24)};
-  --h4-line-height: #{fn.cmin(28, 32)};
   --h4-font-weight: 600;
+  --h4-font-size: #{fn.cmin(20, 24)};
+  --h4-font-family: 'Inter', sans-serif;
   --h4-font-style: normal;
+  --h4-line-height: #{fn.cmin(30, 32)};
   --h4-letter-spacing: -0.75px;
-
-  // H5
-  --h5-font-family: 'Inter', sans-serif;
-  --h5-font-size: #{fn.cmin(18, 20)};
-  --h5-line-height: #{fn.cmin(28, 30)};
   --h5-font-weight: 500;
+  --h5-font-size: 20px;
+  --h5-font-family: 'Inter', sans-serif;
   --h5-font-style: normal;
+  --h5-line-height: 30px;
   --h5-letter-spacing: unset;
 
-  // p20
-  --p20-font-family: 'Inter', sans-serif;
-  --p20-font-size: #{fn.cmin(18, 20)};
-  --p20-line-height: #{fn.cmin(28, 32)};
-  --p20-font-weight: 400;
-  --p20-font-style: normal;
-  --p20-letter-spacing: unset;
-
-  // p18
-  --p18-font-family: 'Inter', sans-serif;
-  --p18-font-size: 18px;
-  --p18-line-height: 26px;
-  --p18-font-weight: 400;
-  --p18-font-style: normal;
-  --p18-letter-spacing: unset;
-
-  // p16
-  --p16-font-family: 'Inter', sans-serif;
-  --p16-font-size: 16px;
-  --p16-line-height: 24px;
-  --p16-font-weight: 400;
-  --p16-font-style: normal;
-  --p16-letter-spacing: unset;
-
-  // p14
-  --p14-font-family: 'Inter', sans-serif;
-  --p14-font-size: 14px;
-  --p14-line-height: 20px;
-  --p14-font-weight: 500;
-  --p14-font-style: normal;
-  --p14-letter-spacing: unset;
+  // Text
+  --p20-regular-font-weight: 400;
+  --p20-regular-font-size: #{fn.cmin(18, 20)};
+  --p20-regular-font-family: 'Inter', sans-serif;
+  --p20-regular-font-style: normal;
+  --p20-regular-line-height: #{fn.cmin(28, 30)};
+  --p20-regular-letter-spacing: unset;
+  --p20-medium-font-weight: 500;
+  --p20-medium-font-size: #{fn.cmin(18, 20)};
+  --p20-medium-font-family: 'Inter', sans-serif;
+  --p20-medium-font-style: normal;
+  --p20-medium-line-height: #{fn.cmin(28, 30)};
+  --p20-medium-letter-spacing: unset;
+  --p20-semibold-font-weight: 600;
+  --p20-semibold-font-size: #{fn.cmin(18, 20)};
+  --p20-semibold-font-family: 'Inter', sans-serif;
+  --p20-semibold-font-style: normal;
+  --p20-semibold-line-height: #{fn.cmin(28, 30)};
+  --p20-semibold-letter-spacing: unset;
+  --p18-regular-font-weight: 400;
+  --p18-regular-font-size: 18px;
+  --p18-regular-font-family: 'Inter', sans-serif;
+  --p18-regular-font-style: normal;
+  --p18-regular-line-height: 28px;
+  --p18-regular-letter-spacing: unset;
+  --p18-medium-font-weight: 500;
+  --p18-medium-font-size: 18px;
+  --p18-medium-font-family: 'Inter', sans-serif;
+  --p18-medium-font-style: normal;
+  --p18-medium-line-height: 28px;
+  --p18-medium-letter-spacing: unset;
+  --p18-semibold-font-weight: 600;
+  --p18-semibold-font-size: 18px;
+  --p18-semibold-font-family: 'Inter', sans-serif;
+  --p18-semibold-font-style: normal;
+  --p18-semibold-line-height: 28px;
+  --p18-semibold-letter-spacing: unset;
+  --p16-regular-font-weight: 400;
+  --p16-regular-font-size: 16px;
+  --p16-regular-font-family: 'Inter', sans-serif;
+  --p16-regular-font-style: normal;
+  --p16-regular-line-height: 24px;
+  --p16-regular-letter-spacing: unset;
+  --p16-medium-font-weight: 500;
+  --p16-medium-font-size: 16px;
+  --p16-medium-font-family: 'Inter', sans-serif;
+  --p16-medium-font-style: normal;
+  --p16-medium-line-height: 24px;
+  --p16-medium-letter-spacing: unset;
+  --p16-semibold-font-weight: 600;
+  --p16-semibold-font-size: 16px;
+  --p16-semibold-font-family: 'Inter', sans-serif;
+  --p16-semibold-font-style: normal;
+  --p16-semibold-line-height: 24px;
+  --p16-semibold-letter-spacing: unset;
+  --p14-regular-font-weight: 400;
+  --p14-regular-font-size: 14px;
+  --p14-regular-font-family: 'Inter', sans-serif;
+  --p14-regular-font-style: normal;
+  --p14-regular-line-height: 20px;
+  --p14-regular-letter-spacing: unset;
+  --p14-medium-font-weight: 500;
+  --p14-medium-font-size: 14px;
+  --p14-medium-font-family: 'Inter', sans-serif;
+  --p14-medium-font-style: normal;
+  --p14-medium-line-height: 20px;
+  --p14-medium-letter-spacing: unset;
+  --p14-semibold-font-weight: 600;
+  --p14-semibold-font-size: 14px;
+  --p14-semibold-font-family: 'Inter', sans-serif;
+  --p14-semibold-font-style: normal;
+  --p14-semibold-line-height: 20px;
+  --p14-semibold-letter-spacing: unset;
+  --p12-regular-font-weight: 400;
+  --p12-regular-font-size: 12px;
+  --p12-regular-font-family: 'Inter', sans-serif;
+  --p12-regular-font-style: normal;
+  --p12-regular-line-height: 16px;
+  --p12-regular-letter-spacing: unset;
+  --p12-medium-font-weight: 500;
+  --p12-medium-font-size: 12px;
+  --p12-medium-font-family: 'Inter', sans-serif;
+  --p12-medium-font-style: normal;
+  --p12-medium-line-height: 16px;
+  --p12-medium-letter-spacing: unset;
+  --p12-semibold-font-weight: 600;
+  --p12-semibold-font-size: 12px;
+  --p12-semibold-font-family: 'Inter', sans-serif;
+  --p12-semibold-font-style: normal;
+  --p12-semibold-line-height: 16px;
+  --p12-semibold-letter-spacing: unset;
 
   // btn-extralarge
   --btn-extralarge-gap: 8px;
@@ -143,18 +194,13 @@ $white: #fff;
   --light-blue-opacity-50: rgba(232, 238, 241, 50%);
   --white: #{$white};
   --black: #{$black};
-  --black-20: #{rgba($black, 0.2)};
-  --white-20: #{rgba($white, 0.2)};
-  --black-10: #{rgba($black, 0.1)};
-  --white-10: #{rgba($white, 0.1)};
   --black-5: #{rgba($black, 0.05)};
   --white-5: #{rgba($white, 0.05)};
-  --black-40: #{rgba($black, 0.4)};
-  --white-40: #{rgba($white, 0.4)};
-  --black-50: #{rgba($black, 0.5)};
-  --white-50: #{rgba($white, 0.5)};
-  --black-90: #{rgba($black, 0.9)};
-  --white-90: #{rgba($white, 0.9)};
+
+  @for $i from 1 through 9 {
+    --white-#{$i * 10}: #{rgba($white, $i / 10)};
+    --black-#{$i * 10}: #{rgba($black, $i / 10)};
+  }
 
   // Container
   --container: 1290px;
@@ -189,13 +235,13 @@ $white: #fff;
 }
 
 .block {
-  @include mix.p16;
+  @include mix.p16-regular;
 
   color: var(--black);
 }
 
 .section {
-  padding: #{fn.cmin(40, 100)} 0;
+  padding: #{#{fn.cmin(40, 100)}} 0;
 }
 
 .container {
@@ -207,7 +253,7 @@ $white: #fff;
 }
 
 .badge {
-  @include mix.p14;
+  @include mix.p14-regular;
 
   display: inline-flex;
   gap: 4px;

@@ -35,7 +35,7 @@
   }
 
   &__desc {
-    @include mix.p20;
+    @include mix.p20-regular;
 
     margin-bottom: fn.cmin(32, 40);
     color: var(--desc);

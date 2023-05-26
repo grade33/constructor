@@ -39,7 +39,7 @@
   }
 
   &__desc {
-    @include mix.p20;
+    @include mix.p20-regular;
 
     color: var(--desc);
   }
@@ -70,7 +70,7 @@
   }
 
   &__name {
-    @include mix.p18;
+    @include mix.p18-regular;
 
     color: var(--desc-white);
   }

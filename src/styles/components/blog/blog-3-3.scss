@@ -42,7 +42,7 @@
   }
 
   &__subtitle {
-    @include mix.p14;
+    @include mix.p14-regular;
   }
 
   &__desktop {
@@ -112,7 +112,7 @@
   }
 
   &__info {
-    @include mix.p14;
+    @include mix.p14-regular;
   }
 
   &__name {
@@ -129,7 +129,7 @@
   }
 
   &__desc {
-    @include mix.p16;
+    @include mix.p16-regular;
 
     color: var(--desc);
   }

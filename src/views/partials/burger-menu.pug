@@ -1,15 +1,50 @@
 mixin menu
   .menu
-    .menu__container.container
-      nav.menu__nav
-        ul.menu__nav-list
-          li.menu__nav-item
-            a.menu__nav-link(href="#") Locations
-          li.menu__nav-item
+    button.menu__burger(type="button")    
+      .menu__burger__content
+        span.menu__burger-item
+        span.menu__burger-item
+        span.menu__burger-item
+    .menu__content
+      .menu__container.container
+        ul.acc.menu__nav
+          li.menu__nav-item.acc__item 
+            .acc__head 
+              a.menu__nav-link(href="#") Locations
+              button.menu__nav-btn.acc__trigger(type="button") 
+                svg.menu__nav-icon(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                  path(d="M13 6L8 11L3 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round")
+            .acc__body
+              .acc__content
+                ul.menu__more
+                  li.menu__more-item
+                    a.menu__more-link(href="#") Link 1
+                  li.menu__more-item
+                    a.menu__more-link(href="#") Link 2
+                  li.menu__more-item
+                    a.menu__more-link(href="#") Link 3
+                  li.menu__more-item
+                    a.menu__more-link(href="#") Link 4
+          li.menu__nav-item.menu__nav-item_normal
+            a.menu__nav-link(href="#") Locataion
+          li.menu__nav-item.menu__nav-item_normal
             a.menu__nav-link(href="#") Restaurant
-          li.menu__nav-item
-            a.menu__nav-link(href="#") Services
-          li.menu__nav-item
-            a.menu__nav-link(href="#") Menu
-          li.menu__nav-item
-            a.menu__nav-link(href="#") Contacts
+          li.menu__nav-item.acc__item 
+            .acc__head 
+              a.menu__nav-link(href="#") Services
+              button.menu__nav-btn.acc__trigger(type="button") 
+                svg.menu__nav-icon(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                  path(d="M13 6L8 11L3 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round")
+            .acc__body
+              .acc__content
+                ul.menu__more
+                  li.menu__more-item
+                    a.menu__more-link(href="#") Link 1
+                  li.menu__more-item
+                    a.menu__more-link(href="#") Link 2
+                  li.menu__more-item
+                    a.menu__more-link(href="#") Link 3
+                  li.menu__more-item
+                    a.menu__more-link(href="#") Link 4
+          li.menu__nav-item.menu__nav-item_normal
+            a.menu__nav-link(href="#") Menu 

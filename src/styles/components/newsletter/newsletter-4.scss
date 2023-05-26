@@ -50,7 +50,7 @@
   }
 
   &__text {
-    @include mix.p14;
+    @include mix.p14-regular;
 
     color: var(--desc);
   }
