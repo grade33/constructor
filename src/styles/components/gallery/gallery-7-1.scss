@@ -7,7 +7,8 @@
   &__content {
     display: flex;
     flex-direction: column;
-    gap: fn.cmin(24, 32);
+    gap: fn.cmin(24, 48);
+    align-items: center;
   }
 
   &__title {
@@ -53,6 +54,7 @@
 
   .swiper {
     &-slide {
+      width: auto;
       height: unset;
     }
   }
