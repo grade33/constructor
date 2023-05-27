@@ -198,8 +198,8 @@ $white: #fff;
   --white-5: #{rgba($white, 0.05)};
 
   @for $i from 1 through 9 {
-    --white-#{$i * 10}: #{rgba($white, $i / 10)};
-    --black-#{$i * 10}: #{rgba($black, $i / 10)};
+    --white-#{$i * 10}: #{rgba($white, $i * 0.1)};
+    --black-#{$i * 10}: #{rgba($black, $i * 0.1)};
   }
 
   // Container
@@ -303,6 +303,30 @@ $white: #fff;
 
 .jce {
   justify-content: flex-end;
+}
+
+.ass {
+  align-self: flex-start;
+}
+
+.asc {
+  align-self: center;
+}
+
+.ase {
+  align-self: flex-end;
+}
+
+.jss {
+  justify-self: flex-start;
+}
+
+.jsc {
+  justify-self: center;
+}
+
+.jse {
+  justify-self: flex-end;
 }
 
 .order {

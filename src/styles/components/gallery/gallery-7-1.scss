@@ -3,7 +3,7 @@
 @use '../../utils/variables' as vars;
 @use '../../utils/functions' as fn;
 
-.gallery-5-2 {
+.gallery-7-1 {
   &__content {
     display: flex;
     flex-direction: column;
@@ -28,11 +28,12 @@
       height: 100%;
     }
 
-    @include mix.ratio(1070, 600);
+    @include mix.ratio(850, 400);
 
-    border-radius: 20px;
+    border-radius: 12px;
 
     @media (max-width: vars.$md) {
+      border-radius: 20px;
       aspect-ratio: 1/1;
     }
   }
@@ -42,27 +43,10 @@
 
     &-btn {
       &-block {
-        @media (max-width: vars.$md) {
-          display: flex;
-          gap: 12px;
-          justify-content: center;
-          margin-top: 24px;
-        }
-      }
-
-      @media (min-width: vars.$min-md) {
-        position: absolute;
-        top: 50%;
-        z-index: 5;
-        transform: translateY(-50%);
-
-        &_prev {
-          left: 15%;
-        }
-
-        &_next {
-          right: 15%;
-        }
+        display: flex;
+        gap: fn.cmin(12, 16);
+        justify-content: center;
+        margin-top: fn.cmin(24, 60);
       }
     }
   }

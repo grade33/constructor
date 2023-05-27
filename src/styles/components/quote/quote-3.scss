@@ -6,7 +6,7 @@
 .quote-3 {
   &__container {
     display: flex;
-    gap: fn.cmin(32, 80) var(--gutter);
+    gap: var(--gutter) fn.cmin(32, 80);
     align-items: center;
     justify-content: space-between;
 
