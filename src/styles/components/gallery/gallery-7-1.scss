@@ -54,8 +54,12 @@
 
   .swiper {
     &-slide {
-      width: auto;
       height: unset;
+
+      @media (min-width: vars.$min-md) {
+        width: auto;
+        max-width: 100%;
+      }
     }
   }
 }

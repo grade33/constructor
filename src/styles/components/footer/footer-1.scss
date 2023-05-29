@@ -38,7 +38,7 @@
     @include mix.p14-regular;
 
     display: inline-flex;
-    gap: 16px;
+    gap: 12px;
     width: fit-content;
     color: var(--desc);
 
@@ -52,7 +52,7 @@
   &__contacts-list {
     display: flex;
     flex-direction: column;
-    gap: fn.cmin(12, 16);
+    gap: 12px;
   }
 
   &__nav {

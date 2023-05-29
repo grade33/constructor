@@ -13,7 +13,7 @@
   &__text-block {
     display: flex;
     flex-direction: column;
-    gap: fn.cmin(12, 20);
+    gap: fn.cmin(12, 16);
     align-self: center;
     max-width: 768px;
     text-align: center;
@@ -64,8 +64,8 @@
   &__list {
     display: flex;
     flex-direction: column;
-    gap: fn.cmin(24, 48);
-    justify-content: space-between;
+    gap: fn.cmin(24, 64);
+    justify-content: center;
     height: 100%;
   }
 

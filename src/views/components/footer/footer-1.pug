@@ -10,7 +10,7 @@ block content
     .footer-1__container.container
       .footer-1__top
         .row.footer-1__list
-          .footer-1__item.col-5.col-lg.footer-1__item-left
+          .footer-1__item.col-6.col-xl-5.col-lg.footer-1__item-left
             .footer-1__left
               a.footer-1__logo(href="#") 
                 img.footer-1__logo-img(src="http://via.placeholder.com/158x36", alt="")
@@ -21,7 +21,11 @@ block content
                 li.footer__schedule-item Küche: Mo./Mi./Do./So. bis 22:00 Uhr, Fr./Sa. bis 22:30 Uhr
           .footer-1__item.col-2.col-lg-4.col-sm 
             .footer-1__nav 
-              .footer-1__nav-title Product
+              .footer-1__nav-title
+                svg.footer-1__nav-title_icon(viewBox="0 0 20 20", fill="none", xmlns="http://www.w3.org/2000/svg")
+                  path(d="M5 15L15 5", stroke="currentColor", stroke-width="1.25", stroke-linecap="round", stroke-linejoin="round")
+                  path(d="M6.875 5H15V13.125", stroke="currentColor", stroke-width="1.25", stroke-linecap="round", stroke-linejoin="round")
+                | Product
               ul.footer-1__nav-list 
                 li.footer-1__nav-item
                   a.footer-1__nav-link(href="#") Overview
@@ -37,7 +41,11 @@ block content
                   a.footer-1__nav-link(href="#") Releases
           .footer-1__item.col-2.col-lg-4.col-sm 
             .footer-1__nav 
-              .footer-1__nav-title Company
+              .footer-1__nav-title
+                svg.footer-1__nav-title_icon(viewBox="0 0 20 20", fill="none", xmlns="http://www.w3.org/2000/svg")
+                  path(d="M5 15L15 5", stroke="currentColor", stroke-width="1.25", stroke-linecap="round", stroke-linejoin="round")
+                  path(d="M6.875 5H15V13.125", stroke="currentColor", stroke-width="1.25", stroke-linecap="round", stroke-linejoin="round")
+                | Company
               ul.footer-1__nav-list 
                 li.footer-1__nav-item
                   a.footer-1__nav-link(href="#") About us
