@@ -30,6 +30,7 @@
     @include mix.p14-regular;
   }
 
+
   &__title {
     &-block {
       display: flex;
@@ -58,8 +59,8 @@
     &-block {
       padding-top: fn.cmin(24, 64);
       padding-bottom: fn.cmin(24, 64);
-      color: var(--white);
-      background: var(--black);
+      color: var(--neutral-100);
+      background: var(--neutral-900);
       border-radius: 16px;
     }
 

@@ -1,0 +1,14 @@
+@use '../../utils/mixins' as mix;
+@use '../../utils/variables' as vars;
+@use '../../utils/functions' as fn;
+
+.section-btn {
+  padding: 50px;
+  background: rgb(177, 177, 177);
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 30px;
+  }
+}

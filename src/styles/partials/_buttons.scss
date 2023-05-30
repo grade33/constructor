@@ -8,11 +8,11 @@
   align-items: center;
   justify-content: center;
   width: fit-content;
-  color: var(--black);
+  color: var(--neutral-900);
   white-space: nowrap;
   text-align: center;
   border: 1px solid transparent;
-  border-radius: 10px;
+  border-radius: 12px;
 
   &_all {
     @media (max-width: vars.$sm) {
@@ -20,62 +20,49 @@
     }
   }
 
-  &_extralarge {
-    @include mix.btn-extralarge;
+  &_l {
+    @include mix.btn-l;
 
     @media (max-width: vars.$md) {
-      @include mix.btn-large;
+      @include mix.btn-m;
     }
   }
 
-  &_large {
-    @include mix.btn-large;
+  &_m {
+    @include mix.btn-m;
 
     @media (max-width: vars.$md) {
-      @include mix.btn-medium;
+      @include mix.btn-s;
     }
   }
 
-  &_medium {
-    @include mix.btn-medium;
+  &_s {
+    @include mix.btn-s;
 
     @media (max-width: vars.$md) {
-      @include mix.btn-small;
+      @include mix.btn-xs;
     }
   }
 
-  &_small {
-    @include mix.btn-small;
+  &_xs {
+    @include mix.btn-xs;
   }
 
-  &_white {
-    color: var(--black);
-    background: var(--white);
-    border-color: var(--white);
+  &_primary {
+    color: var(--neutral-100);
+    background: var(--neutral-900);
+    border-color: var(--neutral-900);
   }
 
-  &_black {
-    color: var(--white);
-    background: var(--black);
-    border-color: var(--black);
+  &_secondary {
+    color: var(--neutral-900);
+    background: var(--neutral-100);
+    border-color: var(--neutral-100);
   }
 
-  &_blue {
-    color: var(--black);
-    background: var(--light-blue);
-    border-color: var(--light-blue);
-  }
-
-  &_trs {
-    &-black {
-      color: var(--black);
-      border-color: var(--black);
-    }
-
-    &-white {
-      color: var(--white);
-      border-color: var(--white);
-    }
+  &_outline {
+    color: var(--neutral-900);
+    border-color: var(--neutral-900);
   }
 }
 
@@ -87,9 +74,9 @@
   width: fit-content;
   width: fn.cmin(32, 56);
   height: fn.cmin(32, 56);
-  color: var(--black);
-  background: var(--white);
-  border: 1px solid var(--black-50);
+  color: var(--neutral-900);
+  background: var(--neutral-100);
+  border: 1px solid var(--neutral-600);
   border-radius: 50%;
 
   &__icon {

@@ -22,7 +22,7 @@
     width: 24px;
     height: 24px;
     padding: 6px 4px;
-    color: var(--black);
+    color: var(--neutral-900);
 
     &__content {
       position: relative;
@@ -85,8 +85,8 @@
     max-height: calc(100vh - 100%);
     padding: 16px 0;
     overflow: auto;
-    background: var(--white);
-    border-top: 1px solid var(--black-10);
+    background: var(--neutral-100);
+    border-top: 1px solid var(--neutral-100);
     transform: translateY(-100%);
     visibility: hidden;
     opacity: 0;
@@ -160,7 +160,7 @@
       &:hover,
       &:focus-visible,
       &:active {
-        background: var(--black-10);
+        background: var(--neutral-100);
       }
     }
   }

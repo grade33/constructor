@@ -15,7 +15,7 @@
     gap: fn.cmin(8, 16);
     align-items: flex-start;
     padding: 16px fn.cmin(12, 24);
-    background: var(--black-10);
+    background: var(--neutral-800);
     border-radius: 10px;
 
     @include mix.p16-regular;

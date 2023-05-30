@@ -22,7 +22,7 @@
     flex-direction: column;
     gap: fn.cmin(24, 36);
     padding: fn.cmax(32, 58) fn.cmax(20, 60);
-    background: var(--black-10);
+    background: var(--neutral-100);
     border-radius: 20px;
     
     @media (max-width: vars.$md) {

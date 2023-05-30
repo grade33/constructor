@@ -48,7 +48,7 @@
     justify-items: center;
     width: 100%;
     padding: fn.cmin(24, 64) fn.cmin(18, 64);
-    border: 1px solid var(--black-10);
+    border: 1px solid var(--neutral-600);
     border-radius: 20px;
 
     @media (max-width: vars.$lg) {

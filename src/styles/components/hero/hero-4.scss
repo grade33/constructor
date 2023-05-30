@@ -5,7 +5,7 @@
 
 .hero-4 {
   overflow: hidden;
-  color: var(--white);
+  color: var(--neutral-100);
 
   &__slider {
     width: 100%;
@@ -90,7 +90,7 @@
     &::after {
       position: absolute;
       z-index: -1;
-      background: linear-gradient(0deg, var(--black-40), var(--black-40));
+      background: linear-gradient(0deg, rgba(#000, .4), rgba(#000, .4));
       content: '';
       inset: 0;
     }
@@ -118,14 +118,10 @@
 
   &__title {
     @include mix.h1;
-
-    color: var(--title-white);
   }
 
   &__desc {
     @include mix.p20-regular;
-
-    color: var(--desc-white);
   }
 
   &__btn-block {

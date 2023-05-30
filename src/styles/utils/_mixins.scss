@@ -190,62 +190,62 @@
 }
 
 // Buttons
-@mixin btn-extralarge {
-  gap: var(--btn-extralarge-gap);
-  padding: var(--btn-extralarge-padding);
-  font-weight: var(--btn-extralarge-font-weight);
-  font-size: var(--btn-extralarge-font-size);
-  font-family: var(--btn-extralarge-font-family);
-  font-style: var(--btn-extralarge-font-style);
-  line-height: var(--btn-extralarge-line-height);
+@mixin btn-l {
+  gap: var(--btn-l-gap);
+  padding: var(--btn-l-padding);
+  font-weight: var(--btn-l-font-weight);
+  font-size: var(--btn-l-font-size);
+  font-family: var(--btn-l-font-family);
+  font-style: var(--btn-l-font-style);
+  line-height: var(--btn-l-line-height);
 
   .btn__icon {
-    width: var(--btn-extralarge-icon-width);
-    height: var(--btn-extralarge-icon-height);
+    width: var(--btn-l-icon-width);
+    height: var(--btn-l-icon-height);
   }
 }
 
-@mixin btn-large {
-  gap: var(--btn-large-gap);
-  padding: var(--btn-large-padding);
-  font-weight: var(--btn-large-font-weight);
-  font-size: var(--btn-large-font-size);
-  font-family: var(--btn-large-font-family);
-  font-style: var(--btn-large-font-style);
-  line-height: var(--btn-large-line-height);
+@mixin btn-m {
+  gap: var(--btn-m-gap);
+  padding: var(--btn-m-padding);
+  font-weight: var(--btn-m-font-weight);
+  font-size: var(--btn-m-font-size);
+  font-family: var(--btn-m-font-family);
+  font-style: var(--btn-m-font-style);
+  line-height: var(--btn-m-line-height);
 
   svg {
-    width: var(--btn-large-icon-width);
-    height: var(--btn-large-icon-height);
+    width: var(--btn-m-icon-width);
+    height: var(--btn-m-icon-height);
   }
 }
 
-@mixin btn-medium {
-  gap: var(--btn-medium-gap);
-  padding: var(--btn-medium-padding);
-  font-weight: var(--btn-medium-font-weight);
-  font-size: var(--btn-medium-font-size);
-  font-family: var(--btn-medium-font-family);
-  font-style: var(--btn-medium-font-style);
-  line-height: var(--btn-medium-line-height);
+@mixin btn-s {
+  gap: var(--btn-s-gap);
+  padding: var(--btn-s-padding);
+  font-weight: var(--btn-s-font-weight);
+  font-size: var(--btn-s-font-size);
+  font-family: var(--btn-s-font-family);
+  font-style: var(--btn-s-font-style);
+  line-height: var(--btn-s-line-height);
 
   svg {
-    width: var(--btn-medium-icon-width);
-    height: var(--btn-medium-icon-height);
+    width: var(--btn-s-icon-width);
+    height: var(--btn-s-icon-height);
   }
 }
 
-@mixin btn-small {
-  gap: var(--btn-small-gap);
-  padding: var(--btn-small-padding);
-  font-weight: var(--btn-small-font-weight);
-  font-size: var(--btn-small-font-size);
-  font-family: var(--btn-small-font-family);
-  font-style: var(--btn-small-font-style);
-  line-height: var(--btn-small-line-height);
+@mixin btn-xs {
+  gap: var(--btn-xs-gap);
+  padding: var(--btn-xs-padding);
+  font-weight: var(--btn-xs-font-weight);
+  font-size: var(--btn-xs-font-size);
+  font-family: var(--btn-xs-font-family);
+  font-style: var(--btn-xs-font-style);
+  line-height: var(--btn-xs-line-height);
 
   svg {
-    width: var(--btn-small-icon-width);
-    height: var(--btn-small-icon-height);
+    width: var(--btn-xs-icon-width);
+    height: var(--btn-xs-icon-height);
   }
 }

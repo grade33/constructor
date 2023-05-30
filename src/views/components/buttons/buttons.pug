@@ -1,0 +1,24 @@
+extends ../../layouts/main
+
+block vars
+  - const groupName = 'buttons';
+  - const cssName = 'buttons';
+  //- - const jsName = 'buttons';
+
+block content
+  section.section-btn.section.block
+    .section-btn__container.container 
+      ul.section-btn__list
+        li.section-btn__item
+          button.btn.btn_m(type="button") Click me
+        li.section-btn__item
+          button.btn.btn_m.btn_secondary(type="button") Click me
+        li.section-btn__item
+          button.btn.btn_m.btn_primary(type="button") Click me
+        li.section-btn__item
+          button.btn.btn_m.btn_blue(type="button") Click me
+        li.section-btn__item
+          button.btn.btn_m.btn_trs-white(type="button") Click me
+        li.section-btn__item
+          button.btn.btn_m.btn_outline(type="button") Click me
+      

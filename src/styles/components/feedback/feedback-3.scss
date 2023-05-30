@@ -22,7 +22,7 @@
     flex-direction: column;
     gap: fn.cmin(16, 48);
     padding: fn.cmax(30, 100) fn.cmax(35, 110);
-    background: var(--black-10);
+    background: var(--neutral-100);
     border-radius: 20px;
     
     @media (max-width: vars.$md) {
@@ -81,7 +81,7 @@
       padding: 12px 0;
       font-weight: 500;
       line-height: 1.25;
-      border-bottom: 1px solid var(--black-10);
+      border-bottom: 1px solid var(--neutral-100);
 
       &::placeholder {
         color: 0.5;

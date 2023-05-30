@@ -5,7 +5,7 @@
 
 .hero-5 {
   overflow: hidden;
-  color: var(--white);
+  color: var(--neutral-100);
 
   &__slider {
     width: 100%;
@@ -37,7 +37,7 @@
       gap: fn.cmin(6, 8);
       align-items: center;
       justify-content: center;
-      color: var(--white);
+      color: var(--neutral-100);
       transform: translateX(-50%);
 
       &-bullet {
@@ -91,7 +91,7 @@
     &::after {
       position: absolute;
       z-index: -1;
-      background: linear-gradient(0deg, var(--black-40), var(--black-40));
+      background: linear-gradient(0deg, rgba(#000, 0.4), rgba(#000, 0.4));
       content: '';
       inset: 0;
     }
@@ -119,13 +119,9 @@
 
   &__title {
     @include mix.h1;
-
-    color: var(--title-white);
   }
 
   &__desc {
     @include mix.p20-regular;
-
-    color: var(--desc-white);
   }
 }
