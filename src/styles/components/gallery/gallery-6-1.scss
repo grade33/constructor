@@ -73,6 +73,10 @@
   &__slider {
     width: 100%;
 
+    @media (min-width: vars.$min-md) {
+      display: none;
+    }
+
     &-btn {
       &-block {
         display: flex;

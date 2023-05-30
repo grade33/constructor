@@ -7,6 +7,8 @@
     "dev": "cross-env NODE_ENV=development gulp",
     "build": "cross-env NODE_ENV=production gulp build",
     "serve": "cross-env NODE_ENV=production gulp serve",
+    "deploy": "gh-pages -d dist -r https://github.com/grade33/constructor.git",
+    "deploy2": "gh-pages -d dist -r https://github.com/einzelwerk/constructor.git",
     "lint:styles": "stylelint \"src/**/*.scss\"",
     "lint:scripts": "eslint \"src/**/*.js\""
   },
@@ -29,6 +31,7 @@
     "eslint-import-resolver-webpack": "^0.13.2",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-webpack-plugin": "^4.0.0",
+    "gh-pages": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-cli": "^2.3.0",

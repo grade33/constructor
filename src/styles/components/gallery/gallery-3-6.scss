@@ -78,6 +78,10 @@
   }
 
   &__slider {
+    @media (min-width: vars.$min-md) {
+      display: none;
+    }
+
     width: 100%;
 
     &-btn {
