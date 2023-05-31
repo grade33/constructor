@@ -6,14 +6,14 @@
 .header-1-4 {
   position: relative;
   z-index: 20;
-
+  
   &__inner {
     @include mix.p16-regular;
-
+    
     display: flex;
     align-items: center;
     height: 80px;
-    background: var(--neutral-100);
+    background: var(--white);
 
     @media (max-width: vars.$lg) {
       height: 72px;
@@ -62,12 +62,6 @@
     margin-left: auto;
 
     &-btn {
-      svg {
-        @media (min-width: vars.$min-lg) {
-          display: none;
-        }
-      }
-
       &_mobile {
         @media (min-width: vars.$min-lg) {
           display: none;

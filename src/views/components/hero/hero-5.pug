@@ -6,6 +6,8 @@ block vars
   - const jsName = 'hero-5';
 
 block content
+  include ../../partials/text-block
+
   // Темной темы тут нет
   section.hero-5.block
     .hero-5__slider.swiper
@@ -18,14 +20,7 @@ block content
               picture.hero-5__bg-wrap
                 img.hero-5__bg(src="@/assets/images/hero/bg-5.jpg", alt="")
               .hero-5__content
-                .hero-5__text-block
-                  h2.hero-5__title New furnishings in the main hall. There are blankets for winter gatherings
-                  p.hero-5__desc Discover and buy from amazing makers of food, wine, knives, ceramics and more from around the world
-                a.hero-5__btn.btn.btn_l.btn_secondary(href="#")
-                  | Reserve a table 
-                  svg.btn__icon(viewBox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
-                    path(stroke="currentColor", d="M3.75 12H20.25", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
-                    path(stroke="currentColor", d="M13.5 5.25L20.25 12L13.5 18.75", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                +text-block('ais tal', {btn: 'l', white: true})
       .hero-5__slider-btn-block
         button.hero-5__slider-btn.hero-5__slider-btn_prev.btn-arrow(type="button")
           svg.btn-arrow__icon(viewBox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")

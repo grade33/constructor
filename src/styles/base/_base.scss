@@ -23,11 +23,6 @@ $white: #fff;
   --neutral-900: #101828;
   --neutral-1000: #0f1014;
 
-  // Text Colors
-  --subtitle: var(--neutral-500);
-  --title: var(--neutral-900);
-  --desc: var(--neutral-500);
-
   // Headings
   --h1-font-weight: 600;
   --h1-font-size: #{fn.cmin(40, 48)};
@@ -258,69 +253,95 @@ $white: #fff;
   border-radius: 16px;
 }
 
+.icon {
+  width: 48px;
+  height: 48px;
+  color: var(--neutral-900);
+}
+
+.title-h1 {
+  @include mix.h1;
+
+  color: var(--neutral-900);
+}
+
+.title {
+  @include mix.h2;
+
+  color: var(--neutral-900);
+}
+
 .subtitle {
-  color: var(--subtitle);
+  @include mix.p14-regular;
+
+  color: var(--neutral-600);
+}
+
+.desc {
+  @include mix.p20-regular;
+
+  color: var(--neutral-600);
 }
 
 // Общие классы
 .tal {
-  text-align: left;
+  text-align: left !important;
 }
 
 .tac {
-  text-align: center;
+  text-align: center !important;
 }
 
 .tar {
-  text-align: right;
+  text-align: right !important;
 }
 
 .ais {
-  align-items: flex-start;
+  align-items: flex-start !important;
 }
 
 .aic {
-  align-items: center;
+  align-items: center !important;
 }
 
 .aie {
-  align-items: flex-end;
+  align-items: flex-end !important;
 }
 
 .jcs {
-  justify-content: flex-start;
+  justify-content: flex-start !important;
 }
 
 .jcc {
-  justify-content: center;
+  justify-content: center !important;
 }
 
 .jce {
-  justify-content: flex-end;
+  justify-content: flex-end !important;
 }
 
 .ass {
-  align-self: flex-start;
+  align-self: flex-start !important;
 }
 
 .asc {
-  align-self: center;
+  align-self: center !important;
 }
 
 .ase {
-  align-self: flex-end;
+  align-self: flex-end !important;
 }
 
 .jss {
-  justify-self: flex-start;
+  justify-self: flex-start !important;
 }
 
 .jsc {
-  justify-self: center;
+  justify-self: center !important;
 }
 
 .jse {
-  justify-self: flex-end;
+  justify-self: flex-end !important;
 }
 
 .order {

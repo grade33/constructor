@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     height: 80px;
-    background: var(--neutral-100);
+    background: var(--white);
 
     @media (max-width: vars.$lg) {
       height: 72px;
@@ -61,14 +61,6 @@
       display: flex;
       gap: 8px;
       margin-left: auto;
-
-      &-book {
-        svg {
-          @media (min-width: vars.$min-lg) {
-            display: none;
-          }
-        }
-      }
 
       @media (max-width: vars.$lg) {
         display: none;

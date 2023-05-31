@@ -6,33 +6,32 @@ block vars
   //- - const jsName = 'benefits-8';
 
 block content
+  include ../../partials/text-block
+  include ../../partials/bottom-info
+
   section.benefits-8.section.block
     .benefits-8__container.container
-      .benefits-8__text-block 
-        .benefits-8__title-block 
-          span.benefits-8__subtitle.subtitle Features
-          h2.benefits-8__title Cutting-edge features for advanced analytics
-        p.benefits-8__desc Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.
+      +text-block('', {btn: 'm'})
       ul.row.benefits-8__list
         li.col-4.col-lg-6.col-sm
           .benefits-8__item 
             picture.benefits-8__item-img-wrap
-              img.benefits-8__item-img(src="@/assets/images/benefits/benefit-8.jpg", alt="")
+              img.benefits-8__item-img(src="@/assets/images/benefits/benefit-8.jpg" alt="")
             .benefits-8__item-text-block
               h3.benefits-8__item-name Interior
               p.benefits-8__item-desc An all-in-one customer service platform that helps you balance everything your customers need to be happy.
         li.col-4.col-lg-6.col-sm
           .benefits-8__item 
             picture.benefits-8__item-img-wrap
-              img.benefits-8__item-img(src="@/assets/images/benefits/benefit-8.jpg", alt="")
+              img.benefits-8__item-img(src="@/assets/images/benefits/benefit-8.jpg" alt="")
             .benefits-8__item-text-block
               h3.benefits-8__item-name Cosiness
               p.benefits-8__item-desc You can even sync designs from your cloud storage!
         li.col-4.col-lg-6.col-sm
           .benefits-8__item 
             picture.benefits-8__item-img-wrap
-              img.benefits-8__item-img(src="@/assets/images/benefits/benefit-8.jpg", alt="")
+              img.benefits-8__item-img(src="@/assets/images/benefits/benefit-8.jpg" alt="")
             .benefits-8__item-text-block
               h3.benefits-8__item-name Comfort
               p.benefits-8__item-desc An all-in-one customer service platform that helps you balance everything your customers need to be happy.
-              
+      +bottom-info('', {size: 'm'})

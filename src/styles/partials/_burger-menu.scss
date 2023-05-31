@@ -85,8 +85,8 @@
     max-height: calc(100vh - 100%);
     padding: 16px 0;
     overflow: auto;
-    background: var(--neutral-100);
-    border-top: 1px solid var(--neutral-100);
+    background: var(--white);
+    border-top: 1px solid var(--neutral-200);
     transform: translateY(-100%);
     visibility: hidden;
     opacity: 0;
@@ -155,12 +155,13 @@
     &-link {
       width: 100%;
       padding: 8px 0;
+      color: var(--neutral-600);
       transition: background-color 0.3s ease-in-out;
 
       &:hover,
       &:focus-visible,
       &:active {
-        background: var(--neutral-100);
+        color: var(--neutral-900);
       }
     }
   }

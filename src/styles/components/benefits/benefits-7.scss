@@ -10,37 +10,6 @@
     gap: fn.cmin(32, 64);
   }
 
-  &__text-block {
-    display: flex;
-    flex-direction: column;
-    gap: fn.cmin(12, 16);
-    align-self: center;
-    max-width: 768px;
-    text-align: center;
-  }
-
-  &__title-block {
-    display: flex;
-    flex-direction: column;
-    gap: fn.cmin(4, 12);
-  }
-
-  &__subtitle {
-    @include mix.p16-regular;
-  }
-
-  &__title {
-    @include mix.h2;
-
-    color: var(--title);
-  }
-
-  &__desc {
-    @include mix.p20-regular;
-
-    color: var(--desc);
-  }
-
   &__desktop {
     @media (max-width: vars.$lg) {
       display: none;
@@ -85,13 +54,8 @@
     }
 
     &-icon {
-      width: 40px;
-      height: 40px;
-
-      @media (max-width: vars.$md) {
-        width: 48px;
-        height: 48px;
-      }
+      width: 48px;
+      height: 48px;
     }
 
     &-name {
@@ -100,6 +64,8 @@
 
     &-desc {
       @include mix.p16-regular;
+
+      color: var(--neutral-600);
     }
   }
 

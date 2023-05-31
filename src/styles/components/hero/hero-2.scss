@@ -7,44 +7,12 @@
   &__container {
     display: flex;
     flex-direction: column;
-    gap: fn.cmin(20, 48);
-  }
-
-  &__content {
-    display: flex;
-    flex-direction: column;
-    gap: fn.cmin(20, 48);
-
-    @media (max-width: vars.$md) {
-      order: 3;
-    }
+    gap: fn.cmin(24, 64);
   }
 
   &__text-block {
-    display: flex;
-    flex-direction: column;
-    gap: fn.cmin(12, 20);
-  }
-
-  &__title {
-    @include mix.h1;
-
-    max-width: 1024px;
-    color: var(--title);
-  }
-
-  &__desc {
-    @include mix.p20-regular;
-
-    max-width: 640px;
-    color: var(--desc);
-  }
-
-  &__btn {
-    &-block {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
+    @media (max-width: vars.$md) {
+      order: 3;
     }
   }
 

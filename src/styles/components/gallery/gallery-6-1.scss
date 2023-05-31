@@ -33,15 +33,15 @@
       gap: 16px;
       width: 100%;
       margin: 0 auto;
+
+      @media (max-width: vars.$md) {
+        display: none;
+      }
     }
 
     display: flex;
     gap: 16px;
     margin: 0 -34px;
-
-    @media (max-width: vars.$md) {
-      display: none;
-    }
   }
 
   &__item {
@@ -50,7 +50,6 @@
 
   &__link {
     width: 100%;
-    height: 100%;
   }
 
   &__img {
@@ -60,22 +59,27 @@
       height: 100%;
     }
 
-    border-radius: 12px;
+    border-radius: 20px;
 
     @media (max-width: vars.$md) {
-      @include mix.ratio(300, 328);
+      aspect-ratio: 1/1;
     }
   }
 
   &__slider {
-    &-block {
-      margin-right: fn.overhang();
+    @media (min-width: vars.$min-md) {
+      display: none;
     }
 
     width: 100%;
 
-    @media (min-width: vars.$min-md) {
-      display: none;
+    &-btn {
+      &-block {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        margin-top: 24px;
+      }
     }
   }
 

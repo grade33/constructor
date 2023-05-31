@@ -13,6 +13,14 @@
   text-align: center;
   border: 1px solid transparent;
   border-radius: 12px;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+  &:hover,
+  &:focus-visible,
+  &:active {
+    background: #eaecf0;
+    border-color: #eaecf0;
+  }
 
   &_all {
     @media (max-width: vars.$sm) {
@@ -52,17 +60,52 @@
     color: var(--neutral-100);
     background: var(--neutral-900);
     border-color: var(--neutral-900);
+
+    &:hover,
+    &:focus-visible,
+    &:active {
+      background: #575d68;
+      border-color: #575d68;
+    }
   }
 
   &_secondary {
     color: var(--neutral-900);
     background: var(--neutral-100);
     border-color: var(--neutral-100);
+
+    &:hover,
+    &:focus-visible,
+    &:active {
+      background: #b6bac1;
+      border-color: #b6bac1;
+    }
   }
 
   &_outline {
     color: var(--neutral-900);
     border-color: var(--neutral-900);
+
+    &:hover,
+    &:focus-visible,
+    &:active {
+      color: var(--neutral-100);
+      background: var(--neutral-900);
+      border-color: var(--neutral-900);
+    }
+
+    &-white {
+      color: var(--neutral-100);
+      border-color: var(--neutral-100);
+
+      &:hover,
+      &:focus-visible,
+      &:active {
+        color: var(--neutral-900);
+        background: var(--neutral-100);
+        border-color: var(--neutral-100);
+      }
+    }
   }
 }
 

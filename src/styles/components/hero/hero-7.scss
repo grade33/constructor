@@ -18,10 +18,4 @@
 
     border-radius: fn.cmin(10, 20);
   }
-
-  &__title {
-    @include mix.h1;
-
-    color: var(--title);
-  }
 }

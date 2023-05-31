@@ -6,13 +6,11 @@ block vars
   //- - const jsName = 'benefits-7';
 
 block content
+  include ../../partials/text-block
+
   section.benefits-7.section.block
     .benefits-7__container.container
-      .benefits-7__text-block 
-        .benefits-7__title-block 
-          span.benefits-7__subtitle.subtitle Features
-          h2.benefits-7__title Cutting-edge features for advanced analytics
-        p.benefits-7__desc Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.
+      +text-block('', {btn: 'm'})
       .row.benefits-7__desktop
         .col-4
           ul.benefits-7__list 

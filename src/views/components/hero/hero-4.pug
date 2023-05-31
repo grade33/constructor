@@ -6,6 +6,8 @@ block vars
   - const jsName = 'hero-4';
 
 block content
+  include ../../partials/text-block
+
   // Темной темы тут нет
   section.hero-4.block
     .hero-4__slider.swiper
@@ -18,15 +20,6 @@ block content
               picture.hero-4__bg-wrap
                 img.hero-4__bg(src="@/assets/images/hero/bg-5.jpg", alt="")
               .hero-4__content.hero-4__content_center
-                .hero-4__text-block
-                  h2.hero-4__title Welcome to our restaurant
-                  p.hero-4__desc Discover and buy from amazing makers of food, wine, knives, ceramics and more from around the world
-                .hero-4__btn-block
-                  button.hero-4__btn.btn.btn_m.btn_primary(type="button") Book a table
-                  a.hero-4__btn.btn.btn_m.btn_secondary(href="#")
-                    | Reserve a table 
-                    svg.btn__icon(viewBox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
-                      path(stroke="currentColor", d="M3.75 12H20.25", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
-                      path(stroke="currentColor", d="M13.5 5.25L20.25 12L13.5 18.75", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                +text-block('', {btn: 'l', white: true})
       .hero-4__slider-pagination.hero-4__slider-pagination_dark
 

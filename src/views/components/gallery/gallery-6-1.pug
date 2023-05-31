@@ -9,16 +9,6 @@ block content
   section.gallery-6-1.section.block
     .gallery-6-1__container.container 
       h2.gallery-6-1__title Gallery 
-      .gallery-6-1__slider
-        .swiper.gallery-6-1__slider
-          ul.swiper-wrapper
-            - let i = 0;
-            while i < 11
-              - i++  
-              li.swiper-slide
-                a.gallery-6-1__link(data-fslightbox="gallery-6-1" href="https://placehold.co/1200x600")
-                  picture.gallery-6-1__img-wrap
-                    img.gallery-6-1__img(src="https://placehold.co/500x400" alt="") 
     .gallery-6-1__list-block
       ul.gallery-6-1__list 
         li.gallery-6-1__item
@@ -54,6 +44,22 @@ block content
           a.gallery-6-1__link(data-fslightbox="gallery-6-1" href="https://placehold.co/1200x600")
             picture.gallery-6-1__img-wrap
               img.gallery-6-1__img(src="@/assets/images/gallery/6/img-8.jpg" alt="")
-
+    .swiper.gallery-6-1__slider
+      ul.swiper-wrapper 
+        - let i = 0;
+        while i < 11
+          - i++  
+          li.swiper-slide
+            a.gallery-6-1__link(data-fslightbox="gallery-6-1" href="https://placehold.co/1200x600")
+              picture.gallery-6-1__img-wrap
+                img.gallery-6-1__img(src="https://placehold.co/500x400", alt="") 
+      .gallery-6-1__slider-btn-block
+        button.gallery-6-1__slider-btn.gallery-6-1__slider-btn_prev.btn-arrow(type="button")
+          svg.btn-arrow__icon(viewBox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+            path(d="M20.25 12H3.75", stroke="currentColor", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+            path(d="M10.5 5.25L3.75 12L10.5 18.75", stroke="currentColor", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+        button.gallery-6-1__slider-btn.gallery-6-1__slider-btn_next.btn-arrow(type="button")
+          svg.btn-arrow__icon(viewBox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+            path(d="M3.75 12H20.25", stroke="currentColor", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+            path(d="M13.5 5.25L20.25 12L13.5 18.75", stroke="currentColor", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")      
       
-

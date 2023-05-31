@@ -6,13 +6,12 @@ block vars
   //- - const jsName = 'benefits-10';
 
 block content
+  include ../../partials/text-block
+  include ../../partials/bottom-info
+
   section.benefits-10.section.block
     .benefits-10__container.container
-      .benefits-10__text-block 
-        .benefits-10__title-block
-          span.benefits-10__subtitle.subtitle Features
-          h2.benefits-10__title Cutting-edge features for advanced analytics
-        p.benefits-10__desc Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.
+      +text-block('', {btn: 'm'})
       ul.row.benefits-10__list
         - let i = 0
         while i < 3  
@@ -28,3 +27,4 @@ block content
                     path(d="M8 24L24 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
                     path(d="M11 8H24V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
                 p.benefits-10__text Vielfalt für jeden Geschmack
+      +bottom-info('', {size: 'm'})

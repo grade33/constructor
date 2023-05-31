@@ -1,0 +1,16 @@
+@use '../utils/mixins' as mix;
+@use '../utils/variables' as vars;
+@use '../utils/functions' as fn;
+
+.bottom-info {
+  display: flex;
+  flex-direction: column;
+  gap: fn.cmin(16, 32);
+  align-items: center;
+  max-width: 630px;
+  text-align: center;
+
+  &__desc {
+    @include mix.p20-regular;
+  }
+}
