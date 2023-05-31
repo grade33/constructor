@@ -18,45 +18,20 @@
     display: flex;
     flex-direction: column;
     gap: fn.cmin(32, 50);
-    width: 50%;
 
-    @media (max-width: vars.$lg) {
-      order: 2;
-      width: 100%;
+    @media (min-width: vars.$min-lg) {
+      width: 50%;
     }
-  }
-
-  &__text-block {
-    display: flex;
-    flex-direction: column;
-    gap: fn.cmin(16, 30);
-  }
-
-  &__title-block {
-    display: flex;
-    flex-direction: column;
-    gap: fn.cmin(4, 12);
-  }
-
-  &__subtitle {
-    @include mix.p16-regular;
-  }
-
-  &__title {
-    @include mix.h2;
-
-    color: var(--title);
-  }
-
-  &__desc {
-    @include mix.p16-regular;
-
-    color: var(--desc);
   }
 
   &__img {
     &-block {
       flex-grow: 1;
+    }
+
+    &-wrap,
+    & {
+      width: 100%;
     }
 
     @include mix.ratio(576, 550);

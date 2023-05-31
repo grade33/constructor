@@ -36,7 +36,7 @@ $white: #fff;
   --h2-font-style: normal;
   --h2-line-height: #{fn.cmin(40, 50)};
   --h2-letter-spacing: unset;
-  --h3-font-weight: 500;
+  --h3-font-weight: 600;
   --h3-font-size: #{fn.cmin(24, 32)};
   --h3-font-family: 'Inter', sans-serif;
   --h3-font-style: normal;
@@ -48,7 +48,7 @@ $white: #fff;
   --h4-font-style: normal;
   --h4-line-height: #{fn.cmin(30, 32)};
   --h4-letter-spacing: -0.75px;
-  --h5-font-weight: 500;
+  --h5-font-weight: 600;
   --h5-font-size: 20px;
   --h5-font-family: 'Inter', sans-serif;
   --h5-font-style: normal;
@@ -348,4 +348,12 @@ $white: #fff;
   @media (min-width: vars.$min-lg) {
     order: 10;
   }
+
+  @media (max-width: vars.$lg) {
+    width: 100%;
+  }
 }
+
+// ! где используются этот класс
+
+// ! где используются цвет --title, --subtitle, --desc

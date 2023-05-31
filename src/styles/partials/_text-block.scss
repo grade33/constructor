@@ -3,11 +3,32 @@
 @use '../utils/functions' as fn;
 
 .text-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: var(--neutral-900);
-  text-align: center;
+  &:not(&_desc-right) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--neutral-900);
+    text-align: center;
+  }
+
+  &_desc-right {
+    align-items: center;
+    justify-content: space-between;
+
+    .text-block {
+      &__desktop {
+        @media (max-width: vars.$lg) {
+          display: none;
+        }
+      }
+
+      &__mobile {
+        @media (min-width: vars.$min-lg) {
+          display: none;
+        }
+      }
+    }
+  }
 
   &_white {
     color: var(--neutral-100);
@@ -34,6 +55,7 @@
   }
 
   &__subtitle {
+    display: block;
     margin-bottom: fn.cmin(6, 16);
 
     @media (max-width: vars.$sm) {
@@ -46,7 +68,12 @@
   }
 
   &__desc {
-    max-width: 850px;
+    &-block {
+      display: flex;
+      flex-direction: column;
+      gap: fn.cmin(12, 24);
+      max-width: 850px;
+    }
   }
 
   &__btn-block {

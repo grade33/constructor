@@ -6,13 +6,12 @@ block vars
   //- - const jsName = 'benefits-num-7';
 
 block content
+  include ../../partials/text-block
+  include ../../partials/bottom-info
+
   section.benefits-num-7.section.block
     .benefits-num-7__container.container
-      .benefits-num-7__text-block
-        span.benefits-num-7__subtitle.subtitle Features
-        .benefits-num-7__title-block
-          h2.benefits-num-7__title Gönnen Sie sich eine Auszeit für eine kulinarische Reise durch Italien 
-          p.benefits-num-7__desc Geniessen Sie unsere Köstlichkeiten und italienische Spezialitäten. Unsere Köche zaubern für Sie unvergessliche Geschmackserlebnisse. 
+      +text-block('', {btn: 'm', descRight: true})
       .benefits-num-7__list-block
         ul.row.benefits-num-7__list
           li.col-4.col-md
@@ -30,4 +29,4 @@ block content
               h3.benefits-num-7__name 
                 span.benefits-num-7__name_big 10k
                 | Global downloads
-                
+      +bottom-info('', {size: 'm'})

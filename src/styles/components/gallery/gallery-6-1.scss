@@ -4,26 +4,16 @@
 @use '../../utils/functions' as fn;
 
 .gallery-6-1 {
-  display: flex;
-  flex-direction: column;
-  gap: fn.cmin(24, 32);
-  overflow: hidden;
-
   &__container {
     display: flex;
     flex-direction: column;
-    gap: fn.cmin(24, 32);
+    gap: fn.cmin(24, 64);
+    align-items: center;
   }
 
-  &__title {
-    @include mix.h2;
-
-    color: var(--title);
-    text-align: center;
-
-    @media (max-width: vars.$md) {
-      text-align: center;
-    }
+  &__content {
+    margin: 0 fn.overhang();
+    overflow: hidden;
   }
 
   &__list {
@@ -31,7 +21,7 @@
       display: flex;
       flex-direction: column;
       gap: 16px;
-      width: 100%;
+      width: 100vw;
       margin: 0 auto;
 
       @media (max-width: vars.$md) {
@@ -71,14 +61,14 @@
       display: none;
     }
 
-    width: 100%;
+    width: 100vw;
 
     &-btn {
       &-block {
         display: flex;
         gap: 12px;
         justify-content: center;
-        margin-top: 24px;
+        margin-top: fn.cmin(24, 32);
       }
     }
   }

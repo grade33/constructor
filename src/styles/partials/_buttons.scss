@@ -117,14 +117,13 @@
   width: fit-content;
   width: fn.cmin(32, 56);
   height: fn.cmin(32, 56);
-  color: var(--neutral-900);
-  background: var(--neutral-100);
+  color: var(--neutral-600);
+  background: var(--white);
   border: 1px solid var(--neutral-600);
   border-radius: 50%;
 
   &__icon {
     width: fn.cmin(14, 24);
     height: fn.cmin(14, 24);
-    color: var(--desc);
   }
 }

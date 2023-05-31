@@ -4,17 +4,11 @@
 @use '../../utils/functions' as fn;
 
 .gallery-5-2 {
-  &__content {
+  &__container {
     display: flex;
     flex-direction: column;
-    gap: fn.cmin(24, 32);
-  }
-
-  &__title {
-    @include mix.h2;
-
-    color: var(--title);
-    text-align: center;
+    gap: fn.cmin(24, 64);
+    align-items: center;
   }
 
   &__link {
@@ -38,7 +32,12 @@
   }
 
   &__slider {
-    width: 100%;
+    &-block {
+      margin: 0 fn.overhang();
+      overflow: hidden;
+    }
+
+    width: 100vw;
 
     &-btn {
       &-block {
@@ -46,7 +45,7 @@
           display: flex;
           gap: 12px;
           justify-content: center;
-          margin-top: 24px;
+          margin-top: fn.cmin(24, 32);
         }
       }
 

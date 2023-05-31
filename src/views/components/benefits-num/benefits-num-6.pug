@@ -6,13 +6,12 @@ block vars
   //- - const jsName = 'benefits-num-6';
 
 block content
+  include ../../partials/text-block
+  include ../../partials/bottom-info
+
   section.benefits-num-6.section.block
     .benefits-num-6__container.container
-      .benefits-num-6__text-block
-        .benefits-num-6__title-block 
-          span.benefits-num-6__subtitle.subtitle Features
-          h2.benefits-num-6__title Analytics that feels like it’s from the future
-        p.benefits-num-6__desc Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.
+      +text-block('', {btn: 'm'})
       ul.benefits-num-6__list
         - let i = 0;
         while i < 6
@@ -20,3 +19,5 @@ block content
           li.benefits-num-6__item 
             strong.benefits-num-6__item-name Plätze im Restaurant für
             strong.benefits-num-6__item-info 70 Personen
+      +bottom-info('', {size: 'm'})
+      

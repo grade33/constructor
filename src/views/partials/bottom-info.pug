@@ -1,6 +1,6 @@
 include ./btn-block
 
 mixin bottom-info(className, data)
-  .bottom-info
+  .bottom-info(class=className)
     p.benefits-info__desc Create screens directly in Method or add your images from Sketch or Figma. You can even sync designs from your cloud storage!
     +btn-block('', {size: data.size, white: data.white})
