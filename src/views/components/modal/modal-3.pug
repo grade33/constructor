@@ -1,0 +1,43 @@
+extends ../../layouts/main
+
+block vars
+  - const groupName = 'modal';
+  - const cssName = 'modal-3';
+  //- - const jsName = 'modal-3';
+
+block content
+  include ../../partials/fields
+
+  // Удалить класс modal_active перед добавления в конструктор
+  // Кнопкам для открытия дать data-modal-open атрибут с значением modal-3
+  section.modal-3.odal.modal_amctive.block(data-modal="modal-3")
+    .modal__inner
+      .modal-3__content
+        .modal-3__title-block
+          h2.modal-3__title Tisch reservieren
+          button.modal-3__close.modal__close(type="button")
+            svg.modal__close-icon(viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M25 7L7 25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+              path(d="M25 25L7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+        .modal-3__content-inner
+          form.modal-3__form(action="#") 
+            .modal-3__form-content
+              .modal-3__fields
+                .modal-3__fields-row
+                  +input('', {error: true, size: 'l', placeholder: 'Name',  type: 'text', name: 'modal-3-name'})
+                  +input('', {disabled: true, size: 'l', placeholder: 'Telefon',  type: 'tel', name: 'modal-3-telefon'})
+                .modal-3__fields-row
+                  +input('', {size: 'l', placeholder: 'Email',  type: 'email', name: 'modal-3-Email'})
+                  +input('', {size: 'l', type: 'date', name: 'modal-3-date'})
+                .modal-3__fields-row
+                  +input('', {size: 'l', type: 'time', name: 'modal-3-time'})
+                  +input('', {size: 'l', placeholder: 'Anzahl Gäste',  type: 'text', name: 'modal-3-guests'})
+                +textarea('', {size: 'l', placeholder: 'Nachricht', name: 'modal-3-news'})
+            button.modal-3__btn.btn.btn_m.btn_primary(type="button")
+              svg(viewBox="0 0 16 16", fill="none", xmlns="http://www.w3.org/2000/svg")
+                path(d="M9.60547 11.6665L6.39794 7.99983L9.60547 4.33317", stroke="currentColor", stroke-linecap="round", stroke-linejoin="round")
+              |Reservieren
+              svg(viewBox="0 0 16 16", fill="none", xmlns="http://www.w3.org/2000/svg")
+                path(d="M6.39453 11.6665L9.60206 7.99983L6.39453 4.33317", stroke="currentColor", stroke-linecap="round", stroke-linejoin="round")   
+            
+            

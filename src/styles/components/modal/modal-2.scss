@@ -28,9 +28,13 @@
   }
 
   &__title {
-    @include mix.h4;
+    &-block {
+      display: flex;
+      gap: 32px;
+      justify-content: space-between;
+    }
 
-    color: var(--title);
+    @include mix.h4;
   }
 
   &__form {
@@ -49,8 +53,13 @@
     width: 100%;
     min-height: fn.cmin(120, 144);
     padding: fn.cmin(12, 24);
-    background: var(--neutral-100);
+    background: var(--white);
+    border: 1px solid var(--neutral-200);
     border-radius: 20px;
+
+    &::placeholder {
+      color: var(--neutral-400);
+    }
   }
 
   &__social {

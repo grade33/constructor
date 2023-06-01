@@ -26,23 +26,29 @@
   }
 
   &__close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 24px fn.cmin(16, 24);
-    color: var(--desc);
-    transition: opacity 0.3s ease-in-out;
+    margin: -32px;
+    padding: 32px;
+    color: var(--neutral-600);
+    transition: color 0.3s ease-in-out;
+
+    &_absolute {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 0;
+      padding: 24px fn.cmin(16,24);
+    }
 
     &:hover,
     &:focus-visible,
     &:active {
-      opacity: 1;
+      color: var(--neutral-900);
     }
 
     &-icon {
       width: fn.cmin(24, 32);
       height: fn.cmin(24, 32);
+      transition: color 0.3s ease-in-out;
     }
   }
-
 }

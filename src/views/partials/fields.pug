@@ -1,0 +1,20 @@
+mixin input(className, data)
+  //- size, title, helper, type, name, error, disabled
+  - const sizeClass = data.size === 'l' ? 'field_l' : data.size === 'm' ? 'field_m' : data.size === 's' ? 'field_s' : ''
+  - const errorClass = data.error ? 'field_error' : ''
+  .field(class=`${className} ${sizeClass} ${errorClass}`)
+    if data.title
+      label.field__label(for=data.name)=data.title
+    input.field__input(id=data.name disabled=(data.disabled || false) type=data.type placeholder=data.placeholder name=data.name)
+    if data.helper || data.error
+      span.field__helper=(data.helper || 'Falsches Datum')
+
+mixin textarea(className, data)
+  //- title, helper, type, name
+  - const sizeClass = data.size === 'l' ? 'field_l' : data.size === 'm' ? 'field_m' : data.size === 's' ? 'field_s' : ''
+  .field(class=`${className} ${sizeClass}`)
+    if data.title
+      label.field__label(for=data.name)=data.title
+    textarea.field__input(id=data.name placeholder=data.placeholder name=data.name rows="1")
+    if data.helper
+      span.field__helper=data.helper

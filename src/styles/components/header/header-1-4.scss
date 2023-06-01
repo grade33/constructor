@@ -6,6 +6,10 @@
 .header-1-4 {
   position: relative;
   z-index: 20;
+
+  .header__nav-active {
+    @include mix.p16-semibold;
+  }
   
   &__inner {
     @include mix.p16-regular;

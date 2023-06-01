@@ -28,7 +28,6 @@
     top: 0;
     right: 0;
     padding: 24px fn.cmin(16, 24);
-    color: var(--desc);
     transition: opacity 0.3s ease-in-out;
 
     &:hover,
@@ -57,8 +56,6 @@
 
   &__title {
     @include mix.h2;
-
-    color: var(--title);
   }
 
   &__subtitle {

@@ -6,17 +6,19 @@ block vars
   //- - const jsName = 'modal-2';
 
 block content
+  include ../../partials/fields
+
   // Удалить класс modal_active перед добавления в конструктор
   // Кнопкам для открытия дать data-modal-open атрибут с значением modal-2
   section.modal-2.modal.modal_active.block(data-modal="modal-2")
     .modal__inner
       .modal-2__content
-        button.modal__close(type="button")
-          svg.modal__close-icon(viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg")
-            path(d="M25 7L7 25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
-            path(d="M25 25L7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
         .modal-2__title-block
           h2.modal-2__title Freunden erzählen
+          button.modal__close(type="button")
+            svg.modal__close-icon(viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M25 7L7 25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+              path(d="M25 25L7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
         .modal-2__content-inner
           form.modal-2__form(action="#") 
             label.modal-2__label(for="#modal-2-message") Ihr Kommentar

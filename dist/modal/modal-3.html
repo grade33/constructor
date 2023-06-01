@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/libs.css">
+    <link rel="stylesheet" href="../assets/styles/typography.css">
+    <link rel="stylesheet" href="../assets/styles/main.css">
+    <link rel="stylesheet" href="../assets/styles/modal/modal-3.css">
+    <script defer src="../assets/scripts/base.js"></script>
+  </head>
+  <body>
+    <!-- Удалить класс modal_active перед добавления в конструктор-->
+    <!-- Кнопкам для открытия дать data-modal-open атрибут с значением modal-3-->
+    <section class="modal-3 odal modal_amctive block" data-modal="modal-3">
+      <div class="modal__inner">
+        <div class="modal-3__content">
+          <div class="modal-3__title-block">
+            <h2 class="modal-3__title">Tisch reservieren</h2>
+            <button class="modal-3__close modal__close" type="button">
+              <svg class="modal__close-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25 7L7 25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M25 25L7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="modal-3__content-inner">
+            <form class="modal-3__form" action="#"> 
+              <div class="modal-3__form-content">
+                <div class="modal-3__fields">
+                  <div class="modal-3__fields-row">
+                        <div class="field  field_l field_error">
+                          <input class="field__input" id="modal-3-name" type="text" placeholder="Name" name="modal-3-name"><span class="field__helper">Falsches Datum</span>
+                        </div>
+                        <div class="field  field_l ">
+                          <input class="field__input" id="modal-3-telefon" disabled type="tel" placeholder="Telefon" name="modal-3-telefon">
+                        </div>
+                  </div>
+                  <div class="modal-3__fields-row">
+                        <div class="field  field_l ">
+                          <input class="field__input" id="modal-3-Email" type="email" placeholder="Email" name="modal-3-Email">
+                        </div>
+                        <div class="field  field_l ">
+                          <input class="field__input" id="modal-3-date" type="date" name="modal-3-date">
+                        </div>
+                  </div>
+                  <div class="modal-3__fields-row">
+                        <div class="field  field_l ">
+                          <input class="field__input" id="modal-3-time" type="time" name="modal-3-time">
+                        </div>
+                        <div class="field  field_l ">
+                          <input class="field__input" id="modal-3-guests" type="text" placeholder="Anzahl Gäste" name="modal-3-guests">
+                        </div>
+                  </div>
+                      <div class="field  field_l">
+                        <textarea class="field__input" id="modal-3-news" placeholder="Nachricht" name="modal-3-news" rows="1"></textarea>
+                      </div>
+                </div>
+              </div>
+              <button class="modal-3__btn btn btn_m btn_primary" type="button">
+                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.60547 11.6665L6.39794 7.99983L9.60547 4.33317" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>Reservieren
+                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.39453 11.6665L9.60206 7.99983L6.39453 4.33317" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">  </path>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
